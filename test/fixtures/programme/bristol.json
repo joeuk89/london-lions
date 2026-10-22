@@ -1,0 +1,148 @@
+{
+  "gathered_at": "2026-10-22T09:00:00.000Z",
+  "fixture": {
+    "id": "slb-championship-2026-27-0007",
+    "competition": "slb-championship-2026-27",
+    "competition_name": "SLB Championship",
+    "opponent": "bristol-flyers",
+    "opponent_name": "Bristol Flyers",
+    "designated_home": true,
+    "tipoff": "2026-10-24T17:00:00.000Z",
+    "venue": {
+      "name": "Copper Box Arena",
+      "address": "Queen Elizabeth Olympic Park, London E20 3HB",
+      "in_london": true,
+      "home_venue": true
+    },
+    "home": true,
+    "away": false,
+    "venue_change": false
+  },
+  "lions": {
+    "name": "London Lions",
+    "record": { "position": 1, "won": 6, "lost": 0 },
+    "leaders": {
+      "points": [{ "name": "Thomas Kennedy", "value": 11.5 }],
+      "rebounds": [{ "name": "Joel Scott", "value": 4.8 }, { "name": "Thomas Kennedy", "value": 4.7 }],
+      "assists": [{ "name": "Morayo Soluade", "value": 4.2 }],
+      "threes": [{ "name": "Landrius Horton", "made": 2.0, "attempted": 4.6 }],
+      "steals": [{ "name": "Deane Williams", "value": 1.5 }, { "name": "Keenan Evans", "value": 1.5 }]
+    },
+    "results": [
+      { "date": "2026-10-21T16:00:00.000Z", "competition_name": "EuroCup", "opponent_name": "U-BT Cluj-Napoca", "home": false, "for": 89, "against": 72 },
+      { "date": "2026-10-18T16:30:00.000Z", "competition_name": "SLB", "opponent_name": "Cheshire Phoenix", "home": false, "for": 87, "against": 83 },
+      { "date": "2026-10-15T18:30:00.000Z", "competition_name": "EuroCup", "opponent_name": "Skyliners Frankfurt", "home": true, "for": 76, "against": 81 },
+      { "date": "2026-10-06T18:30:00.000Z", "competition_name": "EuroCup", "opponent_name": "La Laguna Tenerife", "home": true, "for": 89, "against": 77 },
+      { "date": "2026-10-02T18:30:00.000Z", "competition_name": "SLB", "opponent_name": "Leicester Riders", "home": true, "for": 71, "against": 66 },
+      { "date": "2026-09-30T15:30:00.000Z", "competition_name": "EuroCup", "opponent_name": "Siauliai", "home": false, "for": 71, "against": 74 },
+      { "date": "2026-09-27T15:00:00.000Z", "competition_name": "SLB", "opponent_name": "Liverpool Basketball", "home": true, "for": 78, "against": 49 },
+      { "date": "2026-09-23T18:00:00.000Z", "competition_name": "SLB", "opponent_name": "Cheshire Phoenix", "home": true, "for": 91, "against": 81 },
+      { "date": "2026-09-20T15:00:00.000Z", "competition_name": "SLB", "opponent_name": "Newcastle Eagles", "home": true, "for": 84, "against": 76 },
+      { "date": "2026-09-18T18:30:00.000Z", "competition_name": "SLB", "opponent_name": "Bristol Flyers", "home": false, "for": 80, "against": 78 }
+    ],
+    "highlights": [
+      { "title": "Lions handle business in Cluj", "url": "https://www.youtube.com/watch?v=ujAttbC3_tw", "published": "2026-10-21T21:00:00.000Z" },
+      { "title": "Lions edge Cheshire 87–83", "url": "https://www.youtube.com/watch?v=rr-eHWukD8U", "published": "2026-10-18T20:00:00.000Z" }
+    ],
+    "roster": [
+      { "number": 1, "name": "Joel Scott", "position": "C/F", "season": { "pts": 10.4, "reb": 4.8, "min": 22 } },
+      { "number": 2, "name": "Maxwell Lewis III", "position": "F" },
+      { "number": 3, "name": "Devante Jones", "position": "G", "season": { "pts": 9.4, "ast": 3.6 } },
+      { "number": 5, "name": "Ade Adebayo", "position": "F" },
+      { "number": 6, "name": "Morayo Soluade", "position": "F" },
+      { "number": 7, "name": "Joshua O’Garro", "position": "F" },
+      { "number": 8, "name": "Emilis Zibuda", "position": "F" },
+      { "number": 10, "name": "Ethan Price", "position": "C/F" },
+      { "number": 12, "name": "Keenan Evans", "position": "G" },
+      { "number": 21, "name": "Aaryn Rai", "position": "F" },
+      { "number": 22, "name": "Tarik Phillip", "position": "G" },
+      { "number": 23, "name": "Landrius Horton", "position": "F/G", "season": { "pts": 9.8 } },
+      { "number": 31, "name": "Deane Williams", "position": "C/F" },
+      { "number": 54, "name": "Thomas Kennedy", "position": "C", "season": { "pts": 11.5, "reb": 4.7 } }
+    ]
+  },
+  "opponent": {
+    "name": "Bristol Flyers",
+    "record": { "position": 2, "won": 4, "lost": 2 },
+    "leaders": {
+      "points": [{ "name": "Davion Bailey", "value": 18.3 }],
+      "rebounds": [{ "name": "Cameron Holden", "value": 6.5 }],
+      "assists": [{ "name": "Cameron Holden", "value": 4.5 }],
+      "threes": [{ "name": "Davion Bailey", "made": 2.8, "attempted": 7.3 }],
+      "steals": [{ "name": "Zachary Anderson", "value": 1.3 }, { "name": "Kasen Jennings", "value": 1.3 }]
+    },
+    "results": [
+      { "date": "2026-10-18", "competition_name": "SLB", "opponent_name": "Liverpool Basketball", "home": true, "for": 90, "against": 89 },
+      { "date": "2026-10-09", "competition_name": "SLB", "opponent_name": "Leicester Riders", "home": false, "for": 78, "against": 73 },
+      { "date": "2026-10-02", "competition_name": "SLB", "opponent_name": "Manchester Basketball", "home": true, "for": 76, "against": 58 },
+      { "date": "2026-09-25", "competition_name": "SLB", "opponent_name": "Newcastle Eagles", "home": false, "for": 68, "against": 94 },
+      { "date": "2026-09-20", "competition_name": "SLB", "opponent_name": "Cheshire Phoenix", "home": false, "for": 101, "against": 92 },
+      { "date": "2026-09-18", "competition_name": "SLB", "opponent_name": "London Lions", "home": true, "for": 78, "against": 80 }
+    ],
+    "highlights": [
+      { "title": "Flyers 90–89 Liverpool", "url": "https://www.bristolflyers.co.uk/video/highlights/bristol-flyers-90-89-liverpool-basketball-game-highlights/", "published": "2026-10-18T21:00:00.000Z" }
+    ],
+    "roster": [
+      { "number": 0, "name": "Cameron Holden", "position": "G", "season": { "pts": 9.2, "reb": 6.5, "ast": 4.5 } },
+      { "number": 1, "name": "Zac Triplett", "position": "G" },
+      { "number": 2, "name": "Michael Diggins Jr", "position": "F", "season": { "pts": 12.2, "reb": 5.5 } },
+      { "number": 4, "name": "Matteus Case", "position": "G", "season": { "pts": 10.0, "min": 14 } },
+      { "number": 5, "name": "Davion Bailey", "position": "G", "season": { "pts": 18.3 } },
+      { "number": 9, "name": "Dylan Wilkie", "position": "G" },
+      { "number": 10, "name": "Zachary Anderson", "position": "F" },
+      { "number": 13, "name": "Kasen Jennings", "position": "G" },
+      { "number": 21, "name": "Marcus Delpeche", "position": "C/F" },
+      { "number": 22, "name": "Malcolm Delpeche", "position": "C" },
+      { "number": 24, "name": "Imam Toure", "position": "F" },
+      { "number": 25, "name": "Milos Dugalic", "position": "F" },
+      { "number": 99, "name": "Nojus Zajankauskas", "position": "G" }
+    ]
+  },
+  "head_to_head": {
+    "scope": "this-season",
+    "meetings": [
+      { "date": "2026-09-18T18:30:00.000Z", "competition_name": "SLB", "home": false, "venue_name": "SGS College Arena", "lions": 80, "opponent": 78 }
+    ]
+  },
+  "table": {
+    "competition_name": "SLB Championship",
+    "rows": [
+      { "team": "London Lions", "played": 6, "won": 6, "lost": 0, "points": 12 },
+      { "team": "Bristol Flyers", "played": 6, "won": 4, "lost": 2, "points": 8 },
+      { "team": "Caledonia Gladiators", "played": 5, "won": 3, "lost": 2, "points": 6 },
+      { "team": "Newcastle Eagles", "played": 5, "won": 3, "lost": 2, "points": 6 },
+      { "team": "B. Braun Sheffield Sharks", "played": 4, "won": 2, "lost": 2, "points": 4 },
+      { "team": "Cheshire Phoenix", "played": 5, "won": 2, "lost": 3, "points": 4 },
+      { "team": "Liverpool Basketball", "played": 5, "won": 2, "lost": 3, "points": 4 },
+      { "team": "Manchester Basketball", "played": 6, "won": 2, "lost": 4, "points": 4 },
+      { "team": "Surrey 89ers", "played": 3, "won": 1, "lost": 2, "points": 2 },
+      { "team": "Leicester Riders", "played": 5, "won": 0, "lost": 5, "points": 0 }
+    ]
+  },
+  "next": [
+    { "tipoff": "2026-10-28T19:30:00.000Z", "competition_name": "EuroCup", "opponent_name": "Turk Telekom Ankara", "home": true, "venue_name": "Copper Box Arena", "venue_change": false },
+    { "tipoff": "2026-10-30T19:00:00.000Z", "competition_name": "SLB", "opponent_name": "Sheffield Sharks", "home": true, "venue_name": "New City College Hackney", "venue_change": true },
+    { "tipoff": "2026-11-04T19:30:00.000Z", "competition_name": "EuroCup", "opponent_name": "Maxima Roma", "home": false, "venue_name": "Palazzetto dello Sport", "venue_change": false },
+    { "tipoff": "2026-11-06T19:00:00.000Z", "competition_name": "SLB", "opponent_name": "Leicester Riders", "home": true, "venue_name": "New City College Hackney", "venue_change": true }
+  ],
+  "data_sources": ["gs-schedule", "el-games", "gs-lions-stats", "gs-lions-roster", "gs-bristol", "gs-bristol-stats", "gs-bristol-roster", "gs-standings", "yt-lions", "bf-video"],
+  "sources": {
+    "club-report-cluj": { "publisher": "London Lions", "title": "Lions dominate second half to beat Cluj 89–72 on the road", "url": "https://www.thelondonlions.com/news/lions-dominate-second-half-to-beat-cluj-89-72-on-the-road", "published": "2026-10-21" },
+    "club-report-cheshire": { "publisher": "London Lions", "title": "Lions edge Cheshire 87–83 to extend unbeaten SLB start to 6–0", "url": "https://www.thelondonlions.com/news/lions-edge-cheshire-87-83-to-extend-unbeaten-slb-start-to-6-0", "published": "2026-10-18" },
+    "club-report-bristol": { "publisher": "London Lions", "title": "London Lions hold off Bristol to open SLB campaign with victory", "url": "https://www.thelondonlions.com/news/london-lions-hold-off-bristol-to-open-slb-campaign-with-victory", "published": "2026-09-18" },
+    "club-news-saily": { "publisher": "London Lions", "title": "London Lions and Saily announce principal partnership upgrade", "url": "https://www.thelondonlions.com/news/london-lions-and-saily-announce-principal-partnership-upgrade", "published": "2026-10-14" },
+    "club-news-angt": { "publisher": "London Lions", "title": "London Lions NextGen team to compete in ANGT Vienna pre-qualifier", "url": "https://www.thelondonlions.com/news/london-lions-nextgen-team-to-compete-in-angt-vienna-pre-qualifier", "published": "2026-10-13" },
+    "gs-schedule": { "publisher": "Genius Sports (SLB)", "title": "Lions fixtures and results", "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178242/schedule" },
+    "gs-standings": { "publisher": "Genius Sports (SLB)", "title": "SLB Championship standings", "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/standings" },
+    "gs-lions-stats": { "publisher": "Genius Sports (SLB)", "title": "Lions player statistics", "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178242/statistics" },
+    "gs-lions-roster": { "publisher": "Genius Sports (SLB)", "title": "Lions roster", "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178242/roster" },
+    "gs-bristol": { "publisher": "Genius Sports (SLB)", "title": "Bristol Flyers summary", "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178237" },
+    "gs-bristol-stats": { "publisher": "Genius Sports (SLB)", "title": "Bristol Flyers player statistics", "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178237/statistics" },
+    "gs-bristol-roster": { "publisher": "Genius Sports (SLB)", "title": "Bristol Flyers roster", "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178237/roster" },
+    "el-games": { "publisher": "EuroLeague", "title": "EuroCup 2026-27 games (API)", "url": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/games" },
+    "bf-recap": { "publisher": "Bristol Flyers", "title": "Game recap: Bristol Flyers 90–89 Liverpool Basketball", "url": "https://www.bristolflyers.co.uk/mens-first-team/game-recap-bristol-flyers-90-89-liverpool-basketball-slb-championship/", "published": "2026-10-18" },
+    "bf-news": { "publisher": "Bristol Flyers", "title": "Men's first team news", "url": "https://www.bristolflyers.co.uk/mens-first-team/" },
+    "bf-video": { "publisher": "Bristol Flyers", "title": "Highlights: Bristol Flyers 90–89 Liverpool Basketball", "url": "https://www.bristolflyers.co.uk/video/highlights/bristol-flyers-90-89-liverpool-basketball-game-highlights/", "published": "2026-10-18" },
+    "yt-lions": { "publisher": "YouTube", "title": "London Lions channel feed", "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBKv-7gkxC6kA-_yOB1JMiw" }
+  }
+}
