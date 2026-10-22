@@ -1,0 +1,66 @@
+name: Fixture sync
+
+on:
+  schedule:
+    # 07:00 Europe/London is 06:00 UTC in summer and 07:00 UTC in winter; the guard step picks the right one.
+    - cron: '7 6,7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generated-output
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Only run at 07:00 UK
+        id: guard
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "$(TZ=Europe/London date +%H)" = "07" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Not 07:00 in Europe/London; nothing to do."
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.guard.outputs.run == 'true'
+
+      - uses: actions/setup-node@v4
+        if: steps.guard.outputs.run == 'true'
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+        if: steps.guard.outputs.run == 'true'
+
+      - name: Sync fixtures
+        if: steps.guard.outputs.run == 'true'
+        run: node src/sync/run.js --notice "$RUNNER_TEMP/notice.json"
+
+      - name: Commit state and feeds
+        if: steps.guard.outputs.run == 'true'
+        run: |
+          git add data feeds
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Sync fixtures: $(node -e "console.log(require('$RUNNER_TEMP/notice.json').subject)")"
+          git pull --rebase
+          git push
+
+      - name: Email the change notice
+        if: steps.guard.outputs.run == 'true'
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        run: node src/sync/send-email.js "$RUNNER_TEMP/notice.json"

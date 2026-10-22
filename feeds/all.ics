@@ -1,0 +1,739 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//joeuk89/london-lions//fixture sync//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:London Lions fixtures
+X-WR-TIMEZONE:Europe/London
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0001
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20260918T183000Z
+DTEND:20260918T203000Z
+SUMMARY:Bristol Flyers v London Lions (SLB Championship)
+LOCATION:SGS College Arena\, SGS WISE Campus\, New Road\, Stoke Gifford\, B
+ ristol BS34 8LP
+DESCRIPTION:SLB Championship\nAway\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882425/boxscore
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882425/boxscore
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0002
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20260920T150000Z
+DTEND:20260920T170000Z
+SUMMARY:London Lions v Newcastle Eagles (SLB Championship) (venue change)
+LOCATION:New City College Hackney\, Falkirk Street\, London N1 6HQ
+DESCRIPTION:SLB Championship\nHome\nVenue change: New City College Hackney\
+ nhttps://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/match
+ /2882456/boxscore
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882456/boxscore
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0003
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20260923T180000Z
+DTEND:20260923T200000Z
+SUMMARY:London Lions v Cheshire Phoenix (SLB Championship) (venue change)
+LOCATION:New City College Hackney\, Falkirk Street\, London N1 6HQ
+DESCRIPTION:SLB Championship\nHome\nVenue change: New City College Hackney\
+ nhttps://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/match
+ /2882535/boxscore
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882535/boxscore
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0004
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20260927T150000Z
+DTEND:20260927T170000Z
+SUMMARY:London Lions v Liverpool Basketball (SLB Championship)
+LOCATION:Copper Box Arena\, Queen Elizabeth Olympic Park\, London E20 3HB
+DESCRIPTION:SLB Championship\nHome\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882433/boxscore
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882433/boxscore
+END:VEVENT
+BEGIN:VEVENT
+UID:eurocup-2026-27-0014
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20260930T153000Z
+DTEND:20260930T173000Z
+SUMMARY:Siauliai v London Lions (EuroCup)
+LOCATION:Siauliai Arena\, J. Jablonskio g. 16\, Siauliai\, Lithuania
+DESCRIPTION:EuroCup\nAway\nhttps://www.euroleaguebasketball.net/eurocup/gam
+ e-center/2026/8/
+STATUS:CONFIRMED
+URL:https://www.euroleaguebasketball.net/eurocup/game-center/2026/8/
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0005
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261002T183000Z
+DTEND:20261002T203000Z
+SUMMARY:London Lions v Leicester Riders (SLB Championship)
+LOCATION:Copper Box Arena\, Queen Elizabeth Olympic Park\, London E20 3HB
+DESCRIPTION:SLB Championship\nHome\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882434/boxscore
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882434/boxscore
+END:VEVENT
+BEGIN:VEVENT
+UID:eurocup-2026-27-0013
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261006T183000Z
+DTEND:20261006T203000Z
+SUMMARY:London Lions v La Laguna Tenerife (EuroCup)
+LOCATION:Copper Box Arena\, Queen Elizabeth Olympic Park\, London E20 3HB
+DESCRIPTION:EuroCup\nHome\nhttps://www.euroleaguebasketball.net/eurocup/gam
+ e-center/2026/21/
+STATUS:CONFIRMED
+URL:https://www.euroleaguebasketball.net/eurocup/game-center/2026/21/
+END:VEVENT
+BEGIN:VEVENT
+UID:eurocup-2026-27-0012
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261015T183000Z
+DTEND:20261015T203000Z
+SUMMARY:London Lions v Skyliners Frankfurt (EuroCup)
+LOCATION:Copper Box Arena\, Queen Elizabeth Olympic Park\, London E20 3HB
+DESCRIPTION:EuroCup\nHome\nhttps://www.euroleaguebasketball.net/eurocup/gam
+ e-center/2026/40/
+STATUS:CONFIRMED
+URL:https://www.euroleaguebasketball.net/eurocup/game-center/2026/40/
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0006
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261018T163000Z
+DTEND:20261018T183000Z
+SUMMARY:Cheshire Phoenix v London Lions (SLB Championship)
+LOCATION:Cheshire Oaks Arena\, Stanney Lane\, Ellesmere Port CH65 9LB
+DESCRIPTION:SLB Championship\nAway\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882463/boxscore
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882463/boxscore
+END:VEVENT
+BEGIN:VEVENT
+UID:eurocup-2026-27-0011
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261021T160000Z
+DTEND:20261021T180000Z
+SUMMARY:U-BT Cluj-Napoca v London Lions (EuroCup)
+LOCATION:BT Arena\, Aleea Stadionului 4\, Cluj-Napoca\, Romania
+DESCRIPTION:EuroCup\nAway\nhttps://www.euroleaguebasketball.net/eurocup/gam
+ e-center/2026/54/
+STATUS:CONFIRMED
+URL:https://www.euroleaguebasketball.net/eurocup/game-center/2026/54/
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0007
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261024T170000Z
+DTEND:20261024T190000Z
+SUMMARY:London Lions v Bristol Flyers (SLB Championship)
+LOCATION:Copper Box Arena\, Queen Elizabeth Olympic Park\, London E20 3HB
+DESCRIPTION:SLB Championship\nHome\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882472/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882472/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:eurocup-2026-27-0010
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261028T193000Z
+DTEND:20261028T213000Z
+SUMMARY:London Lions v Turk Telekom Ankara (EuroCup)
+LOCATION:Copper Box Arena\, Queen Elizabeth Olympic Park\, London E20 3HB
+DESCRIPTION:EuroCup\nHome\nhttps://www.euroleaguebasketball.net/eurocup/gam
+ e-center/2026/71/
+STATUS:CONFIRMED
+URL:https://www.euroleaguebasketball.net/eurocup/game-center/2026/71/
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0008
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261030T190000Z
+DTEND:20261030T210000Z
+SUMMARY:London Lions v Sheffield Sharks (SLB Championship) (venue change)
+LOCATION:New City College Hackney\, Falkirk Street\, London N1 6HQ
+DESCRIPTION:SLB Championship\nHome\nVenue change: New City College Hackney\
+ nhttps://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/match
+ /2882464/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882464/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:eurocup-2026-27-0009
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261104T193000Z
+DTEND:20261104T213000Z
+SUMMARY:Maxima Roma v London Lions (EuroCup)
+LOCATION:Palazzetto dello Sport\, Piazza Apollodoro 10\, Rome\, Italy
+DESCRIPTION:EuroCup\nAway\nhttps://www.euroleaguebasketball.net/eurocup/gam
+ e-center/2026/87/
+STATUS:CONFIRMED
+URL:https://www.euroleaguebasketball.net/eurocup/game-center/2026/87/
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0009
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261106T190000Z
+DTEND:20261106T210000Z
+SUMMARY:London Lions v Leicester Riders (SLB Championship) (venue change)
+LOCATION:New City College Hackney\, Falkirk Street\, London N1 6HQ
+DESCRIPTION:SLB Championship\nHome\nVenue change: New City College Hackney\
+ nhttps://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/match
+ /2882470/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882470/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:eurocup-2026-27-0008
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261110T193000Z
+DTEND:20261110T213000Z
+SUMMARY:London Lions v Reyer Venice (EuroCup)
+LOCATION:Copper Box Arena\, Queen Elizabeth Olympic Park\, London E20 3HB
+DESCRIPTION:EuroCup\nHome\nhttps://www.euroleaguebasketball.net/eurocup/gam
+ e-center/2026/102/
+STATUS:CONFIRMED
+URL:https://www.euroleaguebasketball.net/eurocup/game-center/2026/102/
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0010
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261113T193000Z
+DTEND:20261113T213000Z
+SUMMARY:London Lions v Surrey 89ers (SLB Championship)
+LOCATION:Copper Box Arena\, Queen Elizabeth Olympic Park\, London E20 3HB
+DESCRIPTION:SLB Championship\nHome\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882478/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882478/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:eurocup-2026-27-0007
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261117T193000Z
+DTEND:20261117T213000Z
+SUMMARY:London Lions v Siauliai (EuroCup)
+LOCATION:Copper Box Arena\, Queen Elizabeth Olympic Park\, London E20 3HB
+DESCRIPTION:EuroCup\nHome\nhttps://www.euroleaguebasketball.net/eurocup/gam
+ e-center/2026/120/
+STATUS:CONFIRMED
+URL:https://www.euroleaguebasketball.net/eurocup/game-center/2026/120/
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0011
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261120T193000Z
+DTEND:20261120T213000Z
+SUMMARY:Sheffield Sharks v London Lions (SLB Championship)
+LOCATION:Canon Medical Arena\, Olympic Legacy Park\, Sheffield S9 3TY
+DESCRIPTION:SLB Championship\nAway\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882483/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882483/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0012
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261122T160000Z
+DTEND:20261122T180000Z
+SUMMARY:Manchester Basketball v London Lions (SLB Championship)
+LOCATION:National Basketball Performance Centre\, Sportcity\, Manchester M1
+ 1 3FF
+DESCRIPTION:SLB Championship\nAway\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882486/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882486/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0013
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261202T193000Z
+DTEND:20261202T213000Z
+SUMMARY:London Lions v Caledonia Gladiators (SLB Championship)
+LOCATION:Copper Box Arena\, Queen Elizabeth Olympic Park\, London E20 3HB
+DESCRIPTION:SLB Championship\nHome\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2886240/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2886240/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:eurocup-2026-27-0006
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261208T200000Z
+DTEND:20261208T220000Z
+SUMMARY:La Laguna Tenerife v London Lions (EuroCup)
+LOCATION:Pabellon Santiago Martin\, Calle Mercedes s/n\, La Laguna\, Teneri
+ fe\, Spain
+DESCRIPTION:EuroCup\nAway\nhttps://www.euroleaguebasketball.net/eurocup/gam
+ e-center/2026/133/
+STATUS:CONFIRMED
+URL:https://www.euroleaguebasketball.net/eurocup/game-center/2026/133/
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0014
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261213T160000Z
+DTEND:20261213T180000Z
+SUMMARY:Liverpool Basketball v London Lions (SLB Championship)
+LOCATION:M&S Bank Arena\, Kings Dock\, Liverpool L3 4FP
+DESCRIPTION:SLB Championship\nAway\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882506/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882506/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:eurocup-2026-27-0005
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261215T183000Z
+DTEND:20261215T203000Z
+SUMMARY:Skyliners Frankfurt v London Lions (EuroCup)
+LOCATION:Suwag Energie Arena\, Silostrasse 46\, Frankfurt am Main\, Germany
+DESCRIPTION:EuroCup\nAway\nhttps://www.euroleaguebasketball.net/eurocup/gam
+ e-center/2026/152/
+STATUS:CONFIRMED
+URL:https://www.euroleaguebasketball.net/eurocup/game-center/2026/152/
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0015
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261218T193000Z
+DTEND:20261218T213000Z
+SUMMARY:London Lions v Manchester Basketball (SLB Championship)
+LOCATION:Copper Box Arena\, Queen Elizabeth Olympic Park\, London E20 3HB
+DESCRIPTION:SLB Championship\nHome\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882510/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882510/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0016
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261220T140000Z
+DTEND:20261220T160000Z
+SUMMARY:Surrey 89ers v London Lions (SLB Championship)
+LOCATION:Surrey Sports Park\, Richard Meyjes Road\, Guildford GU2 7AD
+DESCRIPTION:SLB Championship\nAway\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882511/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882511/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:eurocup-2026-27-0004
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261223T193000Z
+DTEND:20261223T213000Z
+SUMMARY:London Lions v U-BT Cluj-Napoca (EuroCup)
+LOCATION:Copper Box Arena\, Queen Elizabeth Olympic Park\, London E20 3HB
+DESCRIPTION:EuroCup\nHome\nhttps://www.euroleaguebasketball.net/eurocup/gam
+ e-center/2026/166/
+STATUS:CONFIRMED
+URL:https://www.euroleaguebasketball.net/eurocup/game-center/2026/166/
+END:VEVENT
+BEGIN:VEVENT
+UID:eurocup-2026-27-0003
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261229T163000Z
+DTEND:20261229T183000Z
+SUMMARY:Turk Telekom Ankara v London Lions (EuroCup)
+LOCATION:Ankara Spor Salonu\, Ankara Hipodromu Kavsagi No:2\, Ankara\, Turk
+ iye
+DESCRIPTION:EuroCup\nAway\nhttps://www.euroleaguebasketball.net/eurocup/gam
+ e-center/2026/183/
+STATUS:CONFIRMED
+URL:https://www.euroleaguebasketball.net/eurocup/game-center/2026/183/
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0017
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20270102T180000Z
+DTEND:20270102T200000Z
+SUMMARY:London Lions v Sheffield Sharks (SLB Championship)
+LOCATION:Copper Box Arena\, Queen Elizabeth Olympic Park\, London E20 3HB
+DESCRIPTION:SLB Championship\nHome\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882518/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882518/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:eurocup-2026-27-0002
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20270105T193000Z
+DTEND:20270105T213000Z
+SUMMARY:London Lions v Maxima Roma (EuroCup)
+LOCATION:Copper Box Arena\, Queen Elizabeth Olympic Park\, London E20 3HB
+DESCRIPTION:EuroCup\nHome\nhttps://www.euroleaguebasketball.net/eurocup/gam
+ e-center/2026/199/
+STATUS:CONFIRMED
+URL:https://www.euroleaguebasketball.net/eurocup/game-center/2026/199/
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-cup-2026-27-0001
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20270110T160000Z
+DTEND:20270110T180000Z
+SUMMARY:London Lions v TBC (SLB Cup)
+LOCATION:Copper Box Arena\, Queen Elizabeth Olympic Park\, London E20 3HB
+DESCRIPTION:SLB Cup\nHome\nhttps://hosted.dcd.shared.geniussports.com/SLB/e
+ n/competition/49599/match/2882640/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49599/mat
+ ch/2882640/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:eurocup-2026-27-0001
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20270112T190000Z
+DTEND:20270112T210000Z
+SUMMARY:Reyer Venice v London Lions (EuroCup)
+LOCATION:Palasport Taliercio\, Via Vendramin 10\, Venezia Mestre\, Italy
+DESCRIPTION:EuroCup\nAway\nhttps://www.euroleaguebasketball.net/eurocup/gam
+ e-center/2026/214/
+STATUS:CONFIRMED
+URL:https://www.euroleaguebasketball.net/eurocup/game-center/2026/214/
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0018
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20270122T193000Z
+DTEND:20270122T213000Z
+SUMMARY:Surrey 89ers v London Lions (SLB Championship)
+LOCATION:Surrey Sports Park\, Richard Meyjes Road\, Guildford GU2 7AD
+DESCRIPTION:SLB Championship\nAway\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882528/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882528/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0019
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20270129T193000Z
+DTEND:20270129T213000Z
+SUMMARY:Leicester Riders v London Lions (SLB Championship)
+LOCATION:Mattioli Arena\, Charter Street\, Leicester LE1 3UD
+DESCRIPTION:SLB Championship\nAway\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882536/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882536/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0020
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20270205T193000Z
+DTEND:20270205T213000Z
+SUMMARY:Newcastle Eagles v London Lions (SLB Championship)
+LOCATION:Vertu Arena\, Scotswood Road\, Newcastle upon Tyne NE4 7AF
+DESCRIPTION:SLB Championship\nAway\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882529/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882529/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0021
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20270214T160000Z
+DTEND:20270214T180000Z
+SUMMARY:Caledonia Gladiators v London Lions (SLB Championship)
+LOCATION:Playsport Arena\, Playsport Scotland\, East Kilbride G75 0YH
+DESCRIPTION:SLB Championship\nAway\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882545/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882545/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0022
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20270219T193000Z
+DTEND:20270219T213000Z
+SUMMARY:London Lions v Bristol Flyers (SLB Championship)
+LOCATION:Copper Box Arena\, Queen Elizabeth Olympic Park\, London E20 3HB
+DESCRIPTION:SLB Championship\nHome\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882549/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882549/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0023
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20270305T193000Z
+DTEND:20270305T213000Z
+SUMMARY:London Lions v Cheshire Phoenix (SLB Championship)
+LOCATION:Copper Box Arena\, Queen Elizabeth Olympic Park\, London E20 3HB
+DESCRIPTION:SLB Championship\nHome\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882544/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882544/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0024
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20270307T150000Z
+DTEND:20270307T170000Z
+SUMMARY:Manchester Basketball v London Lions (SLB Championship)
+LOCATION:National Basketball Performance Centre\, Sportcity\, Manchester M1
+ 1 3FF
+DESCRIPTION:SLB Championship\nAway\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882550/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882550/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0025
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20270314T160000Z
+DTEND:20270314T180000Z
+SUMMARY:London Lions v Surrey 89ers (SLB Championship)
+LOCATION:Copper Box Arena\, Queen Elizabeth Olympic Park\, London E20 3HB
+DESCRIPTION:SLB Championship\nHome\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882567/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882567/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0026
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20270326T193000Z
+DTEND:20270326T213000Z
+SUMMARY:Liverpool Basketball v London Lions (SLB Championship)
+LOCATION:M&S Bank Arena\, Kings Dock\, Liverpool L3 4FP
+DESCRIPTION:SLB Championship\nAway\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882577/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882577/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0027
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20270328T150000Z
+DTEND:20270328T170000Z
+SUMMARY:London Lions v Newcastle Eagles (SLB Championship)
+LOCATION:Copper Box Arena\, Queen Elizabeth Olympic Park\, London E20 3HB
+DESCRIPTION:SLB Championship\nHome\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882564/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882564/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0028
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20270402T183000Z
+DTEND:20270402T203000Z
+SUMMARY:Bristol Flyers v London Lions (SLB Championship)
+LOCATION:SGS College Arena\, SGS WISE Campus\, New Road\, Stoke Gifford\, B
+ ristol BS34 8LP
+DESCRIPTION:SLB Championship\nAway\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882570/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882570/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0029
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20270404T150000Z
+DTEND:20270404T170000Z
+SUMMARY:Sheffield Sharks v London Lions (SLB Championship)
+LOCATION:Canon Medical Arena\, Olympic Legacy Park\, Sheffield S9 3TY
+DESCRIPTION:SLB Championship\nAway\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882583/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882583/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0030
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20270409T183000Z
+DTEND:20270409T203000Z
+SUMMARY:Leicester Riders v London Lions (SLB Championship)
+LOCATION:Mattioli Arena\, Charter Street\, Leicester LE1 3UD
+DESCRIPTION:SLB Championship\nAway\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882586/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882586/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0031
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20270413T180000Z
+DTEND:20270413T200000Z
+SUMMARY:Caledonia Gladiators v London Lions (SLB Championship)
+LOCATION:Playsport Arena\, Playsport Scotland\, East Kilbride G75 0YH
+DESCRIPTION:SLB Championship\nAway\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2925013/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2925013/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0032
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20270416T183000Z
+DTEND:20270416T203000Z
+SUMMARY:London Lions v Liverpool Basketball (SLB Championship)
+LOCATION:Copper Box Arena\, Queen Elizabeth Olympic Park\, London E20 3HB
+DESCRIPTION:SLB Championship\nHome\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882592/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882592/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0033
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20270418T163000Z
+DTEND:20270418T183000Z
+SUMMARY:Cheshire Phoenix v London Lions (SLB Championship)
+LOCATION:Cheshire Oaks Arena\, Stanney Lane\, Ellesmere Port CH65 9LB
+DESCRIPTION:SLB Championship\nAway\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882603/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882603/preview
+END:VEVENT
+BEGIN:VEVENT
+UID:slb-championship-2026-27-0034
+DTSTAMP:20261022T000000Z
+LAST-MODIFIED:20261022T000000Z
+SEQUENCE:1
+DTSTART:20270423T183000Z
+DTEND:20270423T203000Z
+SUMMARY:Newcastle Eagles v London Lions (SLB Championship)
+LOCATION:Vertu Arena\, Scotswood Road\, Newcastle upon Tyne NE4 7AF
+DESCRIPTION:SLB Championship\nAway\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2882515/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2882515/preview
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+[
+  { "key": "bristol-flyers", "name": "Bristol Flyers", "genius_team_id": "178237" },
+  { "key": "caledonia-gladiators", "name": "Caledonia Gladiators", "genius_team_id": "178239" },
+  { "key": "cheshire-phoenix", "name": "Cheshire Phoenix", "genius_team_id": "178240" },
+  { "key": "leicester-riders", "name": "Leicester Riders", "genius_team_id": "178241" },
+  { "key": "liverpool-basketball", "name": "Liverpool Basketball", "genius_team_id": "201265" },
+  { "key": "manchester-basketball", "name": "Manchester Basketball", "genius_team_id": "178234" },
+  { "key": "newcastle-eagles", "name": "Newcastle Eagles", "genius_team_id": "178236" },
+  { "key": "sheffield-sharks", "name": "Sheffield Sharks", "genius_team_id": "178235", "aliases": ["B. Braun Sheffield Sharks"] },
+  { "key": "surrey-89ers", "name": "Surrey 89ers", "genius_team_id": "178238" },
+  { "key": "reyer-venice", "name": "Reyer Venice", "euroleague_code": "VNC", "aliases": ["Umana Reyer Venice"] },
+  { "key": "maxima-roma", "name": "Maxima Roma", "euroleague_code": "MRO" },
+  { "key": "turk-telekom-ankara", "name": "Turk Telekom Ankara", "euroleague_code": "TTK", "aliases": ["Turk Telekom"] },
+  { "key": "u-bt-cluj-napoca", "name": "U-BT Cluj-Napoca", "euroleague_code": "CLU", "aliases": ["U-BT Cluj", "Cluj"] },
+  { "key": "skyliners-frankfurt", "name": "Skyliners Frankfurt", "euroleague_code": "FRA", "aliases": ["Skyliners"] },
+  { "key": "la-laguna-tenerife", "name": "La Laguna Tenerife", "euroleague_code": "TNF", "aliases": ["LL Tenerife"] },
+  { "key": "siauliai", "name": "Siauliai", "euroleague_code": "SIA", "aliases": ["Siauliai Basketball"] },
+  { "key": "tbc", "name": "TBC", "aliases": ["To be determined", "TBD"] }
+]

@@ -1,0 +1,3 @@
+# Node for the sync and the programme run
+
+Both GitHub Actions jobs are plain Node 22 ES modules with the built-in test runner, not Python or a framework. The programme mock was rendered with a Node Playwright script and the PDF step is Playwright on the runner's Chrome, so one runtime covers parsing, rendering and email; Node 22 is preinstalled on the runner and `fetch`, `Intl` time zones and `node:test` come built in, leaving two dependencies (cheerio for the two HTML sources, nodemailer for Gmail SMTP). No TypeScript: the modules are small, and a build step would be one more thing to fail unattended at 07:00.

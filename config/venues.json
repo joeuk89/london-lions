@@ -1,0 +1,21 @@
+{
+  "genius:35248": { "name": "Copper Box Arena", "address": "Queen Elizabeth Olympic Park, London E20 3HB", "in_london": true, "home_venue": true, "aliases": ["Copper Box Arena"] },
+  "euroleague:AUW3": { "name": "Copper Box Arena", "address": "Queen Elizabeth Olympic Park, London E20 3HB", "in_london": true, "home_venue": true, "aliases": ["COPPER BOX ARENA"] },
+  "genius:38666": { "name": "New City College Hackney", "address": "Falkirk Street, London N1 6HQ", "in_london": true, "aliases": ["NCC Fitness", "New City College Hackney"] },
+  "genius:35244": { "name": "SGS College Arena", "address": "SGS WISE Campus, New Road, Stoke Gifford, Bristol BS34 8LP", "in_london": false },
+  "genius:35245": { "name": "Playsport Arena", "address": "Playsport Scotland, East Kilbride G75 0YH", "in_london": false },
+  "genius:35246": { "name": "Cheshire Oaks Arena", "address": "Stanney Lane, Ellesmere Port CH65 9LB", "in_london": false },
+  "genius:35247": { "name": "Mattioli Arena", "address": "Charter Street, Leicester LE1 3UD", "in_london": false },
+  "genius:35249": { "name": "National Basketball Performance Centre", "address": "Sportcity, Manchester M11 3FF", "in_london": false },
+  "genius:35250": { "name": "Vertu Arena", "address": "Scotswood Road, Newcastle upon Tyne NE4 7AF", "in_london": false },
+  "genius:35251": { "name": "Canon Medical Arena", "address": "Olympic Legacy Park, Sheffield S9 3TY", "in_london": false },
+  "genius:35252": { "name": "Surrey Sports Park", "address": "Richard Meyjes Road, Guildford GU2 7AD", "in_london": false },
+  "genius:37046": { "name": "M&S Bank Arena", "address": "Kings Dock, Liverpool L3 4FP", "in_london": false },
+  "euroleague:AHP1": { "name": "Siauliai Arena", "address": "J. Jablonskio g. 16, Siauliai, Lithuania", "in_london": false },
+  "euroleague:AID1": { "name": "Pabellon Santiago Martin", "address": "Calle Mercedes s/n, La Laguna, Tenerife, Spain", "in_london": false },
+  "euroleague:AJK": { "name": "Palazzetto dello Sport", "address": "Piazza Apollodoro 10, Rome, Italy", "in_london": false },
+  "euroleague:ARE": { "name": "Palasport Taliercio", "address": "Via Vendramin 10, Venezia Mestre, Italy", "in_london": false },
+  "euroleague:ATN1": { "name": "Suwag Energie Arena", "address": "Silostrasse 46, Frankfurt am Main, Germany", "in_london": false },
+  "euroleague:ATT2": { "name": "Ankara Spor Salonu", "address": "Ankara Hipodromu Kavsagi No:2, Ankara, Turkiye", "in_london": false },
+  "euroleague:AUV4": { "name": "BT Arena", "address": "Aleea Stadionului 4, Cluj-Napoca, Romania", "in_london": false }
+}

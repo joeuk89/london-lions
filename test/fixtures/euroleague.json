@@ -1,0 +1,87 @@
+{
+ "data": [
+  {
+   "gameCode": 71,
+   "identifier": "U2026_71",
+   "season": {
+    "name": "EuroCup 2026-27",
+    "code": "U2026",
+    "alias": "2026-27",
+    "competitionCode": "U",
+    "year": 2026,
+    "startDate": "2026-07-01T00:00:00"
+   },
+   "utcDate": "2026-10-28T19:30:00Z",
+   "date": "2026-10-28T20:30:00",
+   "localDate": "2026-10-28T19:30:00",
+   "localTimeZone": 0,
+   "gameStatus": "Confirmed",
+   "played": false,
+   "isNeutralVenue": false,
+   "local": {
+    "club": {
+     "code": "LLI",
+     "name": "London Lions",
+     "abbreviatedName": "London"
+    },
+    "score": 0
+   },
+   "road": {
+    "club": {
+     "code": "TTK",
+     "name": "Turk Telekom Ankara",
+     "abbreviatedName": "Turk Telekom"
+    },
+    "score": 0
+   },
+   "venue": {
+    "name": "COPPER BOX ARENA",
+    "code": "AUW3",
+    "address": "Queen Elizabeth Olympic Park, London, United Kingdom"
+   },
+   "round": 5
+  },
+  {
+   "gameCode": 54,
+   "identifier": "U2026_54",
+   "season": {
+    "name": "EuroCup 2026-27",
+    "code": "U2026",
+    "alias": "2026-27",
+    "competitionCode": "U",
+    "year": 2026,
+    "startDate": "2026-07-01T00:00:00"
+   },
+   "utcDate": "2026-10-21T16:00:00Z",
+   "date": "2026-10-21T18:00:00",
+   "localDate": "2026-10-21T19:00:00",
+   "localTimeZone": 3,
+   "gameStatus": "Confirmed",
+   "played": true,
+   "isNeutralVenue": false,
+   "local": {
+    "club": {
+     "code": "CLU",
+     "name": "U-BT Cluj-Napoca",
+     "abbreviatedName": "U-BT Cluj"
+    },
+    "score": 72
+   },
+   "road": {
+    "club": {
+     "code": "LLI",
+     "name": "London Lions",
+     "abbreviatedName": "London"
+    },
+    "score": 89
+   },
+   "venue": {
+    "name": "BT ARENA",
+    "code": "AUV4",
+    "address": "4 Aleea Stadionului, Cluj-Napoca 400375, Romania"
+   },
+   "round": 4
+  }
+ ],
+ "total": 2
+}
