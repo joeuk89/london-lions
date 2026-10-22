@@ -1,0 +1,3 @@
+# Internal fixture id as the calendar UID
+
+Every fixture gets an internal id the first time the sync sees it, stored in the committed state file, and that id is the ICS UID for life. The source ids (Genius Sports match id, EuroLeague game code) are pinned to it as attributes and used for matching on later runs; the club page has no id at all and its slug keeps the old date after a reschedule, so no source id can serve as the UID across all three competitions. A reschedule, venue change or withdrawal therefore updates the subscriber's existing calendar event instead of deleting one and creating another.
