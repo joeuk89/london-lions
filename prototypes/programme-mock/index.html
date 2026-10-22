@@ -1,0 +1,479 @@
+<!doctype html>
+<!--
+PROTOTYPE. Throwaway mock for wayfinder ticket #9: what does a programme look and read like?
+Three variants of one programme (London Lions v Bristol Flyers, Sat 24 Oct 2026), switchable
+with ?variant=A|B|C and the floating bar. ?venue=changed shows the venue-change treatment.
+Content is hand-written from public sources read on 22 Oct 2026; every section lists them.
+-->
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lions v Flyers programme</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#000;--paper:#fff;--gold:#C9A227;--gold-deep:#7A5C0B;--stone:#5C5A55;--rule:#E6E2D6;--wash:#F7F4EC;
+  --serif:"Fraunces",Georgia,serif;--sans:"IBM Plex Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:16px;line-height:1.5;font-variation-settings:"opsz" 12;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+a{color:inherit}
+h1,h2,h3{margin:0;font-weight:600;line-height:1.1}
+p{margin:0 0 .8em}
+table{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:13px;line-height:1.3}
+th,td{text-align:left;padding:5px 6px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-weight:600;color:var(--stone)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+tr.us td{background:var(--wash);font-weight:600}
+.src{font-family:var(--sans);font-size:11.5px;color:var(--stone);line-height:1.35;margin:.6em 0 0}
+.src a{color:var(--gold-deep);text-decoration:none;border-bottom:1px solid var(--rule)}
+.form{font-family:var(--sans);font-weight:600;letter-spacing:.08em;font-size:14px}
+.form .w{color:var(--gold-deep)}.form .l{color:var(--stone)}
+.venue-flag{background:var(--gold);color:var(--ink);padding:10px 14px;font-family:var(--sans);font-size:14px;font-weight:600;line-height:1.35}
+.venue-flag small{display:block;font-weight:400;margin-top:2px}
+.demo{font-family:var(--sans);font-size:11px;color:var(--stone)}
+
+/* ---------- Variant A: Programme ---------- */
+.A .cover{background:var(--ink);color:var(--paper);min-height:100svh;padding:28px 20px;display:flex;flex-direction:column;justify-content:space-between}
+.A .cover .date{color:var(--gold);font-family:var(--sans);font-size:15px;font-weight:500}
+.A .cover .title{font-weight:300;font-variation-settings:"opsz" 144;font-size:clamp(44px,12vw,112px);line-height:.92;letter-spacing:-.02em;margin:auto 0 .2em}
+.A .cover .title i{font-style:italic;color:var(--gold);font-weight:300}
+.A .cover .title b{display:block;font-weight:700}
+.A .cover .where{font-family:var(--sans);font-size:15px;line-height:1.4}
+.A .cover .where strong{display:block;font-size:30px;font-family:var(--serif);font-weight:600;line-height:1}
+.A .cover .venue-flag{margin:16px 0 0}
+.A .body{max-width:38em;margin:0 auto;padding:12px 20px 60px}
+.A section{padding:26px 0 8px;border-top:3px solid var(--ink)}
+.A section+section{border-top-width:1px;border-top-color:var(--rule)}
+.A h2{font-size:30px;font-variation-settings:"opsz" 72;font-weight:600;letter-spacing:-.01em;margin-bottom:12px}
+.A h2 i{color:var(--gold-deep);font-weight:400}
+.A h3{font-family:var(--sans);font-size:13px;font-weight:600;color:var(--stone);margin:16px 0 6px}
+.A .lede{font-size:19px;line-height:1.4;font-variation-settings:"opsz" 18}
+.scores{font-family:var(--sans);font-size:14px;margin:0 0 10px;padding:0;list-style:none}
+.scores li{display:flex;justify-content:space-between;gap:10px;padding:4px 0;border-bottom:1px solid var(--rule)}
+.scores li span:last-child{font-variant-numeric:tabular-nums;white-space:nowrap}
+.A .players{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin:0 0 6px}
+.A .players div{font-size:14.5px;line-height:1.35}
+.A .players b{display:block;font-size:17px}
+.A .players small{font-family:var(--sans);color:var(--stone);font-size:12px}
+.A .watch{list-style:none;padding:0;margin:0}
+.A .watch li{padding:8px 0 8px 18px;position:relative}
+.A .watch li::before{content:"";position:absolute;left:0;top:16px;width:9px;height:9px;background:var(--gold)}
+.A .next{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-family:var(--sans);font-size:14px}
+.A .next b{font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* ---------- Variant B: Briefing ---------- */
+.B{font-family:var(--sans);font-size:14.5px}
+.B .top{background:var(--ink);color:var(--paper);padding:14px 16px}
+.B .top h1{font-family:var(--serif);font-weight:600;font-size:24px;font-variation-settings:"opsz" 48}
+.B .top h1 span{color:var(--gold)}
+.B .top p{margin:4px 0 0;color:#ddd;font-size:13.5px}
+.B .facts{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--rule);border-bottom:1px solid var(--rule)}
+.B .facts div{background:var(--paper);padding:10px 14px}
+.B .facts small{display:block;color:var(--stone);font-size:12px}
+.B .facts strong{font-family:var(--serif);font-size:22px;font-weight:600;line-height:1.1;display:block;margin-top:2px}
+.B .facts em{font-style:normal;font-size:12.5px;color:var(--stone)}
+.B .body{max-width:44em;margin:0 auto;padding:0 16px 60px}
+.B section{padding:14px 0 6px;border-bottom:1px solid var(--rule)}
+.B h2{font-size:15px;font-weight:600;margin-bottom:8px;display:flex;align-items:baseline;gap:8px}
+.B h2 sup{font-weight:400;color:var(--gold-deep);font-size:11px}
+.B p{font-size:14.5px;line-height:1.45;margin-bottom:.5em}
+.B ul{margin:0 0 .5em;padding-left:18px}
+.B li{margin:2px 0}
+.B .two{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+.B .notes{padding:16px 0;font-size:12px;color:var(--stone);line-height:1.4}
+.B .notes ol{padding-left:18px;margin:4px 0 0}
+.B .venue-flag{font-size:13.5px}
+
+/* ---------- Variant C: Head to head ---------- */
+.C .hero{padding:16px 16px 0}
+.C .hero .meta{font-family:var(--sans);font-size:14px;color:var(--stone);margin-bottom:6px}
+.C .hero h1{font-size:clamp(34px,9vw,64px);font-weight:700;line-height:1;letter-spacing:-.02em;font-variation-settings:"opsz" 144}
+.C .hero h1 i{font-weight:300;font-style:italic;color:var(--gold-deep)}
+.C .compare{display:grid;grid-template-columns:1fr auto 1fr;gap:0 8px;margin:18px 0 0;font-family:var(--sans);font-size:13.5px;border-top:3px solid var(--ink)}
+.C .compare .k{color:var(--stone);text-align:center;font-size:12px;align-self:center;padding:8px 0;border-bottom:1px solid var(--rule)}
+.C .compare .l,.C .compare .r{padding:8px 0;border-bottom:1px solid var(--rule);font-weight:500}
+.C .compare .r{text-align:right}
+.C .compare .hd{font-family:var(--serif);font-size:20px;font-weight:600;padding:10px 0 6px;border-bottom:1px solid var(--ink)}
+.C .compare .hd.r{color:var(--gold-deep)}
+.C .wrap{display:grid;grid-template-columns:1fr;gap:0 28px;max-width:60em;margin:0 auto;padding:0 16px 60px}
+.C article{max-width:38em}
+.C section{padding:22px 0 4px}
+.C h2{font-size:24px;font-weight:600;font-variation-settings:"opsz" 48;margin-bottom:8px}
+.C h2::before{content:"";display:block;width:36px;height:5px;background:var(--gold);margin-bottom:10px}
+.C .lede{font-size:18px;line-height:1.4}
+.C details{font-family:var(--sans);font-size:12px;color:var(--stone);margin:.5em 0 0}
+.C summary{cursor:pointer;color:var(--gold-deep)}
+.C details a{color:inherit}
+.C .table-wrap td,.C .table-wrap th{padding:4px 6px}
+.C .venue-flag{margin:12px 0 0}
+@media (min-width:860px){
+  .C .wrap{grid-template-columns:1fr 240px}
+  .C aside.sources{font-family:var(--sans);font-size:12px;color:var(--stone);padding-top:30px;line-height:1.45}
+  .C aside.sources h3{font-size:12px;color:var(--ink);margin:0 0 6px;font-family:var(--sans)}
+  .C aside.sources p{margin:0 0 10px}
+  .C details{display:none}
+}
+@media (min-width:860px){.A .players{grid-template-columns:1fr 1fr 1fr}}
+
+/* ---------- switcher (not part of the design) ---------- */
+#proto-bar{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);background:#1b1b1b;color:#fff;border-radius:999px;padding:6px 8px;display:flex;gap:6px;align-items:center;font:13px/1 system-ui,sans-serif;box-shadow:0 6px 24px rgba(0,0,0,.35);z-index:99;max-width:96vw}
+#proto-bar button{background:#333;color:#fff;border:0;border-radius:999px;padding:7px 11px;font:inherit;cursor:pointer}
+#proto-bar button[aria-pressed=true]{background:var(--gold);color:#000}
+#proto-bar .lbl{padding:0 6px;white-space:nowrap}
+
+/* ---------- print / A5 ---------- */
+@page{size:A5;margin:11mm 12mm}
+@media print{
+  body{font-size:11pt}
+  #proto-bar{display:none}
+  .A .cover{min-height:auto;height:calc(210mm - 22mm);break-after:page;padding:0}
+  .A .body,.B .body,.C .wrap{max-width:none;padding:0}
+  .A .cover .title{font-size:52pt}
+  .A h2{font-size:20pt;break-after:avoid}
+  .C .hero{padding:0}
+  .C .hero h1{font-size:34pt}
+  .C .wrap{display:block}
+  .C aside.sources{display:none}
+  .C details{display:block}
+  .C details summary{list-style:none}
+  .C details[open] summary{display:none}
+  .A .players,.B .facts{break-inside:avoid}
+  h3{break-after:avoid}
+  section{break-inside:auto}
+  tr{break-inside:avoid}
+  a{text-decoration:none}
+  .B .top,.B .facts{break-inside:avoid}
+  .B .facts{grid-template-columns:repeat(4,1fr)}
+  .B .facts strong{font-size:15pt}
+}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<nav id="proto-bar" aria-label="Prototype switcher"></nav>
+<script>
+// ------------------------------------------------------------------ content
+const S = {
+  clubReportCluj: ['Club report, 21 Oct', 'https://www.thelondonlions.com/news/lions-dominate-second-half-to-beat-cluj-89-72-on-the-road'],
+  clubReportCheshire: ['Club report, 18 Oct', 'https://www.thelondonlions.com/news/lions-edge-cheshire-87-83-to-extend-unbeaten-slb-start-to-6-0'],
+  clubReportBristol: ['Club report, 18 Sep', 'https://www.thelondonlions.com/news/london-lions-hold-off-bristol-to-open-slb-campaign-with-victory'],
+  clubFixture: ['Club fixture page', 'https://www.thelondonlions.com/fixtures/october-24-2026-18-00-00'],
+  clubSchedule: ['Club schedule', 'https://www.thelondonlions.com/schedule'],
+  clubNews: ['Club news', 'https://www.thelondonlions.com/news'],
+  gsSchedule: ['Genius Sports fixtures', 'https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178242/schedule'],
+  gsStandings: ['SLB standings, 22 Oct', 'https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/standings'],
+  gsLionsStats: ['Lions stats (Genius Sports)', 'https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178242/statistics'],
+  gsLionsRoster: ['Lions roster (Genius Sports)', 'https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178242/roster'],
+  gsBristol: ['Bristol summary (Genius Sports)', 'https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178237'],
+  gsBristolStats: ['Bristol stats (Genius Sports)', 'https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178237/statistics'],
+  gsBristolRoster: ['Bristol roster (Genius Sports)', 'https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178237/roster'],
+  elApi: ['EuroLeague API', 'https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/games'],
+  bfRecap: ['Flyers report, 18 Oct', 'https://www.bristolflyers.co.uk/mens-first-team/game-recap-bristol-flyers-90-89-liverpool-basketball-slb-championship/'],
+  bfNews: ["Flyers men's news", 'https://www.bristolflyers.co.uk/mens-first-team/'],
+  bfPreview: ['Flyers preview, 16 Oct', 'https://www.bristolflyers.co.uk/news/game-preview-bristol-flyers-vs-liverpool-basketball-slb-championship/'],
+  yt: ['Lions YouTube feed', 'https://www.youtube.com/feeds/videos.xml?channel_id=UCBKv-7gkxC6kA-_yOB1JMiw'],
+  saily: ['Club news, 14 Oct', 'https://www.thelondonlions.com/news/london-lions-and-saily-announce-principal-partnership-upgrade'],
+  angt: ['Club news, 13 Oct', 'https://www.thelondonlions.com/news/london-lions-nextgen-team-to-compete-in-angt-vienna-pre-qualifier'],
+};
+const params = new URLSearchParams(location.search);
+const VENUE_CHANGED = params.get('venue') === 'changed';
+const fixture = {
+  day: 'Saturday 24 October 2026', tip: '18:00', comp: 'SLB Championship',
+  venue: VENUE_CHANGED ? 'New City College, Hackney' : 'Copper Box Arena',
+  address: VENUE_CHANGED ? 'Falkirk Street, London N1 6HQ' : 'Queen Elizabeth Olympic Park, London E20 3HB',
+};
+const lionsResults = [
+  ['Wed 21 Oct', 'EuroCup', 'at U-BT Cluj-Napoca', 'W 89–72'],
+  ['Sun 18 Oct', 'SLB', 'at Cheshire Phoenix', 'W 87–83'],
+  ['Thu 15 Oct', 'EuroCup', 'v Skyliners Frankfurt', 'L 76–81'],
+  ['Tue 6 Oct', 'EuroCup', 'v La Laguna Tenerife', 'W 89–77'],
+  ['Fri 2 Oct', 'SLB', 'v Leicester Riders', 'W 71–66'],
+  ['Wed 30 Sep', 'EuroCup', 'at Siauliai', 'L 71–74'],
+  ['Sun 27 Sep', 'SLB', 'v Liverpool Basketball', 'W 78–49'],
+  ['Wed 23 Sep', 'SLB', 'v Cheshire Phoenix', 'W 91–81'],
+  ['Sun 20 Sep', 'SLB', 'v Newcastle Eagles', 'W 84–76'],
+  ['Fri 18 Sep', 'SLB', 'at Bristol Flyers', 'W 80–78'],
+];
+const bristolResults = [
+  ['Sun 18 Oct', 'SLB', 'v Liverpool Basketball', 'W 90–89'],
+  ['Mid-Oct', 'ENBL', 'at Syntainics MBC (Germany)', 'L 84–106'],
+  ['Fri 9 Oct', 'SLB', 'at Leicester Riders', 'W 78–73'],
+  ['Fri 2 Oct', 'SLB', 'v Manchester Basketball', 'W 76–58'],
+  ['Fri 25 Sep', 'SLB', 'at Newcastle Eagles', 'L 68–94'],
+  ['Sun 20 Sep', 'SLB', 'at Cheshire Phoenix', 'W 101–92'],
+  ['Fri 18 Sep', 'SLB', 'v London Lions', 'L 78–80'],
+];
+const table = [
+  ['London Lions',6,6,0,12],['Bristol Flyers',6,4,2,8],['Caledonia Gladiators',5,3,2,6],['Newcastle Eagles',5,3,2,6],
+  ['B. Braun Sheffield Sharks',4,2,2,4],['Cheshire Phoenix',5,2,3,4],['Liverpool Basketball',5,2,3,4],['Manchester Basketball',6,2,4,4],
+  ['Surrey 89ers',3,1,2,2],['Leicester Riders',5,0,5,0],
+];
+const lionsRoster = [
+  [1,'Joel Scott','C/F'],[2,'Maxwell Lewis III','F'],[3,'Devante Jones','G'],[5,'Ade Adebayo','F'],[6,'Morayo Soluade','F'],[7,'Joshua O’Garro','F'],
+  [8,'Emilis Zibuda','F'],[10,'Ethan Price','C/F'],[12,'Keenan Evans','G'],[21,'Aaryn Rai','F'],[22,'Tarik Phillip','G'],[23,'Landrius Horton','F/G'],
+  [31,'Deane Williams','C/F'],[54,'Thomas Kennedy','C'],
+];
+const bristolRoster = [
+  [0,'Cameron Holden','G'],[1,'Zac Triplett','G'],[2,'Michael Diggins Jr','F'],[4,'Matteus Case','G'],[5,'Davion Bailey','G'],[9,'Dylan Wilkie','G'],
+  [10,'Zachary Anderson','F'],[13,'Kasen Jennings','G'],[21,'Marcus Delpeche','C/F'],[22,'Malcolm Delpeche','C'],[24,'Imam Toure','F'],[25,'Milos Dugalic','F'],[99,'Nojus Zajankauskas','G'],
+];
+const lionsKey = [
+  ['Thomas Kennedy', '11.5 pts, 4.7 reb, 60.9% from the field', 'Leads the Lions in scoring and has not taken a three. Went 7 of 7 inside at Cluj on Wednesday.'],
+  ['Joel Scott', '10.4 pts, 4.8 reb in 22 minutes', 'Scored the late baskets and both closing free throws at Cheshire; 15 points and five rebounds at Cluj.'],
+  ['Landrius Horton', '9.8 pts, 43.5% from three on 23 attempts', 'Led the Lions with 16 at Bristol in September, including the three that tied the game late. 4 of 5 from deep at Cheshire.'],
+  ['Devante Jones', '9.4 pts, 3.6 ast, 90% from the line', 'Converted both free throws with 18.8 seconds left to beat Bristol in September.'],
+];
+const bristolKey = [
+  ['Davion Bailey', '18.3 pts, 7.3 three-point attempts a game', 'The Flyers’ scorer. 17 points, six assists and three steals against Liverpool last Sunday. Missed the open jumper that would have beaten London in September.'],
+  ['Michael Diggins Jr', '12.2 pts, 5.5 reb, 2.0 blocks', 'The 2.07 m forward who protects the rim and takes nearly five threes a game.'],
+  ['Cameron Holden', '9.2 pts, 6.5 reb, 4.5 ast', 'The point guard. Leads the team in assists and rebounds but also averages 3.3 turnovers.'],
+  ['Matteus Case', '10.0 pts in 14 minutes, 56.8% from the field', 'Scoring off the bench at a rate nobody else on either roster matches.'],
+];
+const h2h = [
+  ['18 Sep 2026', 'SLB', 'at Bristol', 'Lions 80–78'],
+  ['10 Apr 2026', 'SLB', 'at Bristol', 'Lions 83–76'],
+  ['27 Mar 2026', 'SLB', 'Copper Box', 'Lions 77–57'],
+  ['4 Jan 2026', 'SLB Trophy', 'at Bristol', 'Lions 77–76'],
+];
+const next = [
+  ['Wed 28 Oct, 19:30', 'EuroCup', 'v Turk Telekom Ankara, Copper Box'],
+  ['Fri 30 Oct, 19:00', 'SLB', 'at B. Braun Sheffield Sharks'],
+  ['Wed 4 Nov, 19:30', 'EuroCup', 'at Maxima Roma (the club page says 20:00; the EuroLeague API says 19:30 UK and wins)'],
+  ['Fri 6 Nov, 19:00', 'SLB', 'at Leicester Riders'],
+];
+const videos = [
+  ['Lions handle business in Cluj (highlights, 21 Oct)', 'https://www.youtube.com/watch?v=ujAttbC3_tw'],
+  ['Lions edge Cheshire 87–83 (highlights, 18 Oct)', 'https://www.youtube.com/watch?v=rr-eHWukD8U'],
+  ['Flyers 90–89 Liverpool (highlights, 18 Oct)', 'https://www.bristolflyers.co.uk/video/highlights/bristol-flyers-90-89-liverpool-basketball-game-highlights/'],
+];
+
+// ------------------------------------------------------------------ helpers
+const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+const srcLine = keys => `<p class="src">Sources: ${keys.map(k => `<a href="${S[k][1]}">${esc(S[k][0])}</a>`).join(', ')}</p>`;
+const formStrip = res => `<span class="form">${res.slice(0,5).reverse().map(r => `<span class="${r[3][0]==='W'?'w':'l'}">${r[3][0]}</span>`).join(' ')}</span>`;
+const tableHtml = (cls='') => `<table class="${cls}"><thead><tr><th></th><th>Team</th><th class="n">P</th><th class="n">W</th><th class="n">L</th><th class="n">Pts</th></tr></thead><tbody>${
+  table.map((r,i) => `<tr class="${r[0]==='London Lions'||r[0]==='Bristol Flyers'?'us':''}"><td class="n">${i+1}</td><td>${esc(r[0])}</td><td class="n">${r[1]}</td><td class="n">${r[2]}</td><td class="n">${r[3]}</td><td class="n">${r[4]}</td></tr>`).join('')}</tbody></table>`;
+const rosterHtml = r => `<table><tbody>${r.map(p => `<tr><td class="n" style="width:2.2em">${p[0]}</td><td>${esc(p[1])}</td><td style="color:var(--stone)">${p[2]}</td></tr>`).join('')}</tbody></table>`;
+const resultsHtml = (res, cls='scores') => `<ul class="${cls}">${res.map(r => `<li><span>${r[0]} <em style="color:var(--stone)">${r[1]}</em> ${esc(r[2])}</span><span>${r[3]}</span></li>`).join('')}</ul>`;
+const venueFlag = (extra='') => VENUE_CHANGED ? `<div class="venue-flag">Venue change: this game is at ${esc(fixture.venue)}, not the Copper Box. ${esc(fixture.address)}.<small>Nearest: Hoxton (Overground), 5 minutes on foot. Buses 67, 149, 242, 243 stop on Kingsland Road. <span class="demo">Demo only: the real game is at the Copper Box.</span></small></div>${extra}` : '';
+
+// ------------------------------------------------------------------ Variant A: Programme
+function VariantA(){
+  return `<div class="A">
+  <header class="cover">
+    <div class="date">${fixture.day}, ${fixture.comp}</div>
+    <h1 class="title">London Lions <i>v</i> <b>Bristol Flyers</b></h1>
+    <div class="where"><strong>${fixture.tip}</strong>${esc(fixture.venue)}, ${esc(fixture.address)}${venueFlag()}</div>
+  </header>
+  <main class="body">
+  <section>
+    <p class="lede">Six from six in the league and back from Romania, the Lions host the one side that has come within two of them. Bristol sit second, have won four of their last five, and lost to London by two in September on a missed open jumper.</p>
+    ${srcLine(['gsStandings','clubReportBristol','gsBristol'])}
+  </section>
+  <section>
+    <h2>Form <i>6–0 in the SLB, 2–2 in Europe</i></h2>
+    <p>Four games in ten days end on Saturday. The Lions beat Cheshire 87–83 on Sunday with a 10–0 run to close the first half and Joel Scott’s free throws with 13 seconds left, then held U-BT Cluj to 72 points on Wednesday after a 40–37 half-time lead. “Our defence, 72 points is crazy,” said head coach Tautvydas Sabonis.</p>
+    ${resultsHtml(lionsResults)}
+    ${srcLine(['clubReportCluj','clubReportCheshire','gsSchedule','elApi'])}
+  </section>
+  <section>
+    <h2>Lions roster <i>and who to watch</i></h2>
+    <div class="players">${lionsKey.map(k => `<div><b>${esc(k[0])}</b><small>${esc(k[1])}</small><br>${esc(k[2])}</div>`).join('')}</div>
+    <h3>Full roster</h3>
+    ${rosterHtml(lionsRoster)}
+    ${srcLine(['gsLionsStats','gsLionsRoster','clubReportCluj','clubReportCheshire','clubReportBristol'])}
+  </section>
+  <section>
+    <h2>Club news</h2>
+    <p>Saily, the travel eSIM app, moved up to principal partner on 14 October, its third season with the club. The NextGen team play the Adidas Next Generation Tournament pre-qualifier in Vienna. The club’s 13 October report covers the Lions’ game against the Portland Trail Blazers.</p>
+    ${srcLine(['saily','angt','clubNews'])}
+  </section>
+  <section>
+    <h2>Bristol Flyers <i>second, 4–2</i></h2>
+    <p>Andreas Kapoulas’s side have won four of five in the league since losing here, including 90–89 over Liverpool last Sunday when Davion Bailey’s left-handed lay-in with 16 seconds left stood up after two missed free throws at the other end. In between they went to Germany in the ENBL and lost 106–84 at Syntainics MBC. They have had six days off; the Lions have had three.</p>
+    <p>They shoot threes, nearly 30 a game: Bailey takes more than seven, Zach Anderson more than six, and Diggins and Jennings nearly five each. Holden runs the offence and rebounds like a forward, but gives the ball away 3.3 times a game.</p>
+    <div class="players">${bristolKey.map(k => `<div><b>${esc(k[0])}</b><small>${esc(k[1])}</small><br>${esc(k[2])}</div>`).join('')}</div>
+    <h3>Last five</h3>
+    ${resultsHtml(bristolResults.slice(0,5))}
+    <h3>Full roster</h3>
+    ${rosterHtml(bristolRoster)}
+    ${srcLine(['gsBristol','gsBristolStats','gsBristolRoster','bfRecap','bfNews'])}
+  </section>
+  <section>
+    <h2>Things to watch</h2>
+    <ul class="watch">
+      <li><b>Inside against outside.</b> Kennedy and Scott score almost entirely at the rim; Bristol take nearly 30 threes a game. Whichever shot falls decides it.</li>
+      <li><b>Bristol’s turnovers.</b> Holden averages 3.3 and Jennings 2.2. Five Lions average more than a steal a game, and London took the ball off Cluj on an inbound on Wednesday.</li>
+      <li><b>The free-throw line.</b> September was decided there. Jones is 9 of 10 this season, Evans 18 of 21; Tarik Phillip is 5 of 14.</li>
+      <li><b>Legs.</b> London played in Romania on Wednesday. Bristol last played on Sunday.</li>
+    </ul>
+    ${srcLine(['gsLionsStats','gsBristolStats','clubReportBristol','clubReportCluj'])}
+  </section>
+  <section>
+    <h2>Head to head <i>four Lions wins, three by seven or fewer</i></h2>
+    ${resultsHtml(h2h)}
+    <p>September: Bristol led 18–17 after a quarter, London by 14 in the second, tied at 47 in the third, and Holden’s free throws put the Flyers 78–75 up before Horton’s three and Jones’s two from the line.</p>
+    ${srcLine(['clubSchedule','clubReportBristol'])}
+  </section>
+  <section>
+    <h2>SLB table</h2>
+    ${tableHtml()}
+    ${srcLine(['gsStandings'])}
+  </section>
+  <section>
+    <h2>Notable</h2>
+    <ul class="watch">
+      <li>Kennedy has made 28 of 46 shots in the league and attempted no threes.</li>
+      <li>Bailey’s 110 points are 37 more than any Bristol team-mate.</li>
+      <li>The Lions’ smallest winning margin this season is two, at Bristol.</li>
+    </ul>
+    ${srcLine(['gsLionsStats','gsBristolStats','gsSchedule'])}
+  </section>
+  <section>
+    <h2>Watch</h2>
+    <ul class="watch">${videos.map(v => `<li><a href="${v[1]}">${esc(v[0])}</a></li>`).join('')}</ul>
+    ${srcLine(['yt','bfNews'])}
+  </section>
+  <section>
+    <h2>What’s next</h2>
+    <div class="next">${next.map(n => `<b>${n[0]}</b><span><em style="color:var(--stone)">${n[1]}</em> ${esc(n[2])}</span>`).join('')}</div>
+    ${srcLine(['clubSchedule','elApi','gsSchedule'])}
+  </section>
+  </main></div>`;
+}
+
+// ------------------------------------------------------------------ Variant B: Briefing
+function VariantB(){
+  const refs = []; const ref = k => { let i = refs.indexOf(k); if (i<0){refs.push(k); i=refs.length-1;} return `<sup>${i+1}</sup>`; };
+  const h = (t, keys) => `<h2>${t}${keys.map(ref).join('')}</h2>`;
+  const body = `<div class="B">
+  <header class="top"><h1>London Lions <span>v</span> Bristol Flyers</h1><p>${fixture.day}, ${fixture.tip}, ${esc(fixture.venue)}. ${fixture.comp}.</p>${venueFlag()}</header>
+  <div class="facts">
+    <div><small>Lions, SLB</small><strong>1st, 6–0</strong><em>${formStrip(lionsResults.filter(r=>r[1]==='SLB'))}</em></div>
+    <div><small>Flyers, SLB</small><strong>2nd, 4–2</strong><em>${formStrip(bristolResults.filter(r=>r[1]==='SLB'))}</em></div>
+    <div><small>Last meeting</small><strong>80–78</strong><em>at Bristol, 18 Sep, Jones FTs at 18.8 s</em></div>
+    <div><small>Rest</small><strong>3 days v 6</strong><em>Lions played Cluj Wed; Flyers Sun</em></div>
+  </div>
+  <main class="body">
+  <section>${h('The short version', ['gsStandings','clubReportBristol','gsBristol'])}
+    <p>Only unbeaten side in the league hosts the second-placed side that lost here by two. Bristol shoot threes and turn it over; London score inside and steal it. September came down to free throws.</p>
+  </section>
+  <section>${h('Lions form', ['clubReportCluj','clubReportCheshire','gsSchedule','elApi'])}
+    <ul><li>W 89–72 at Cluj (Wed). Held them to 72; Kennedy 16 on 7/7 twos, Scott 15, Jones 14.</li><li>W 87–83 at Cheshire (Sun). 10–0 run to end the half; Horton 17 on 4/5 threes; Scott’s FTs at 0:13.</li><li>L 76–81 v Frankfurt (Thu 15th), EuroCup.</li><li>Fourth game in ten days.</li></ul>
+  </section>
+  <section>${h('Lions to watch', ['gsLionsStats','clubReportCluj','clubReportBristol'])}
+    <ul>${lionsKey.map(k=>`<li><b>${esc(k[0])}</b>, ${esc(k[1])}. ${esc(k[2])}</li>`).join('')}</ul>
+  </section>
+  <section>${h('Bristol Flyers', ['gsBristol','gsBristolStats','bfRecap','bfNews'])}
+    <ul><li>4–2, second. Won four of five since losing here. Beat Liverpool 90–89 on Sunday; Bailey 17 pts, 6 ast, 3 stl.</li><li>Lost 106–84 at Syntainics MBC in the ENBL in between.</li><li>Take nearly 30 threes a game: Bailey 7.3, Anderson 6.3, Diggins 4.8.</li><li>Holden 6.5 reb and 4.5 ast from point guard, but 3.3 turnovers.</li></ul>
+    <ul>${bristolKey.map(k=>`<li><b>${esc(k[0])}</b>, ${esc(k[1])}. ${esc(k[2])}</li>`).join('')}</ul>
+    <div class="two">${rosterHtml(bristolRoster.slice(0,7))}${rosterHtml(bristolRoster.slice(7))}</div>
+  </section>
+  <section>${h('Keys', ['gsLionsStats','gsBristolStats'])}
+    <ul><li>Rim v arc: Kennedy and Scott inside against nearly 30 Bristol threes.</li><li>Turnovers: Holden 3.3 and Jennings 2.2 against a Lions side with five players over a steal a game.</li><li>Free throws: Jones 9/10, Evans 18/21, Phillip 5/14.</li><li>Legs: three days’ rest against six.</li></ul>
+  </section>
+  <section>${h('Head to head', ['clubSchedule','clubReportBristol'])}
+    <ul>${h2h.map(r=>`<li>${r[0]}, ${r[1]}, ${r[2]}: ${r[3]}</li>`).join('')}</ul>
+  </section>
+  <section>${h('Table', ['gsStandings'])}${tableHtml()}</section>
+  <section>${h('Club news', ['saily','angt'])}
+    <ul><li>Saily upgraded to principal partner (14 Oct).</li><li>NextGen play the ANGT pre-qualifier in Vienna.</li></ul>
+  </section>
+  <section>${h('Watch', ['yt','bfNews'])}<ul>${videos.map(v=>`<li><a href="${v[1]}">${esc(v[0])}</a></li>`).join('')}</ul></section>
+  <section>${h('Next', ['clubSchedule','elApi'])}<ul>${next.map(n=>`<li>${n[0]}, ${n[1]}: ${esc(n[2])}</li>`).join('')}</ul></section>
+  <div class="notes">Sources<ol>${refs.map(k=>`<li><a href="${S[k][1]}">${esc(S[k][0])}</a></li>`).join('')}</ol></div>
+  </main></div>`;
+  return body;
+}
+
+// ------------------------------------------------------------------ Variant C: Head to head
+function VariantC(){
+  const det = keys => `<details><summary>Sources</summary>${keys.map(k=>`<a href="${S[k][1]}">${esc(S[k][0])}</a>`).join(' · ')}</details>`;
+  const aside = [
+    ['Cover', ['clubFixture','elApi']], ['Form', ['clubReportCluj','clubReportCheshire','gsSchedule']], ['Rosters', ['gsLionsRoster','gsBristolRoster','gsLionsStats','gsBristolStats']],
+    ['Bristol', ['gsBristol','bfRecap','bfNews']], ['Head to head', ['clubSchedule','clubReportBristol']], ['Table', ['gsStandings']], ['News and video', ['saily','angt','yt']],
+  ];
+  const row = (k,l,r) => `<div class="l">${l}</div><div class="k">${k}</div><div class="r">${r}</div>`;
+  return `<div class="C">
+  <header class="hero">
+    <div class="meta">${fixture.day}, ${fixture.tip}, ${esc(fixture.venue)}. ${fixture.comp}.</div>
+    <h1>Lions <i>v</i> Flyers</h1>
+    ${venueFlag()}
+    <div class="compare">
+      <div class="hd l">London Lions</div><div class="k"></div><div class="hd r">Bristol Flyers</div>
+      ${row('Record','1st · 6–0','2nd · 4–2')}
+      ${row('Last five',formStrip(lionsResults),formStrip(bristolResults))}
+      ${row('Last game','W 89–72 at Cluj, Wed','W 90–89 v Liverpool, Sun')}
+      ${row('Top scorer','Kennedy 11.5','Bailey 18.3')}
+      ${row('Rebounds','Scott 4.8, Kennedy 4.7','Holden 6.5')}
+      ${row('Assists','Soluade 4.2','Holden 4.5')}
+      ${row('Threes made','Horton 2.0 / 4.6','Bailey 2.8 / 7.3')}
+      ${row('Steals','Williams 1.5, Evans 1.5','Anderson 1.3, Jennings 1.3')}
+      ${row('Last meeting','80','78')}
+    </div>
+  </header>
+  <div class="wrap">
+  <article>
+  <section>
+    <p class="lede">Bristol are the only side to come within two of the Lions in the league this season, and that was on their own floor with Bailey’s open jumper at the buzzer rimming out. They arrive second, rested, and shooting from everywhere.</p>
+    ${det(['clubReportBristol','gsStandings'])}
+  </section>
+  <section><h2>How the Lions got here</h2>
+    <p>Four games in ten days: a two-point loss to Frankfurt on 15 October, then Cheshire edged 87–83 with Horton 4 of 5 from three, then Cluj held to 72 on Wednesday. Kennedy went 7 of 7 inside at Cluj. Sabonis: “Our defence, 72 points is crazy.”</p>
+    ${resultsHtml(lionsResults.slice(0,5))}
+    ${det(['clubReportCluj','clubReportCheshire','gsSchedule'])}
+  </section>
+  <section><h2>The Flyers</h2>
+    <p>Kapoulas’s side won four of five since September, the latest 90–89 over Liverpool on Bailey’s lay-in with 16 seconds left and two missed free throws at the other end. They lost 106–84 in Germany in the ENBL in between. Bailey takes 7.3 threes a game and makes 38.6%; Anderson takes 6.3; Diggins blocks two shots a game. Holden leads them in rebounds and assists and turnovers.</p>
+    <div class="table-wrap">${rosterHtml(bristolRoster)}</div>
+    ${det(['gsBristol','gsBristolStats','gsBristolRoster','bfRecap','bfNews'])}
+  </section>
+  <section><h2>What decides it</h2>
+    <p>Inside against outside: Kennedy, Scott and Price against nearly 30 Bristol threes. Turnovers: Holden gives it up 3.3 times, and the Lions’ guards took it off Cluj repeatedly. Free throws: the last meeting turned on Jones at 18.8 seconds; Phillip is 5 of 14 this season. Rest: three days against six.</p>
+    ${det(['gsLionsStats','gsBristolStats','clubReportBristol'])}
+  </section>
+  <section><h2>Head to head</h2>
+    ${resultsHtml(h2h)}
+    <p>Four Lions wins in a row, three of them by seven or fewer.</p>
+    ${det(['clubSchedule'])}
+  </section>
+  <section><h2>Lions roster</h2>
+    <div class="table-wrap">${rosterHtml(lionsRoster)}</div>
+    ${det(['gsLionsRoster'])}
+  </section>
+  <section><h2>Table</h2>${tableHtml()}${det(['gsStandings'])}</section>
+  <section><h2>Around the club</h2>
+    <p>Saily became principal partner on 14 October. The NextGen team play the ANGT pre-qualifier in Vienna. Highlights: <a href="${videos[0][1]}">Cluj</a>, <a href="${videos[1][1]}">Cheshire</a>, and Bristol’s <a href="${videos[2][1]}">Liverpool</a> game.</p>
+    ${det(['saily','angt','yt','bfNews'])}
+  </section>
+  <section><h2>Next</h2>${resultsHtml(next.map(n=>[n[0],n[1],n[2],'']))}${det(['clubSchedule','elApi'])}</section>
+  </article>
+  <aside class="sources"><h3>Sources</h3>${aside.map(a=>`<p><b>${a[0]}</b><br>${a[1].map(k=>`<a href="${S[k][1]}">${esc(S[k][0])}</a>`).join('<br>')}</p>`).join('')}<p>Read 22 Oct 2026. A real programme is produced at 08:00 on game morning.</p></aside>
+  </div></div>`;
+}
+
+// ------------------------------------------------------------------ switcher
+const variants = { A: ['Programme', VariantA], B: ['Briefing', VariantB], C: ['Head to head', VariantC] };
+const keys = Object.keys(variants);
+let current = keys.includes(params.get('variant')) ? params.get('variant') : 'A';
+function render(){
+  document.getElementById('root').innerHTML = variants[current][1]();
+  document.title = `Lions v Flyers programme, ${variants[current][0]}`;
+  const bar = document.getElementById('proto-bar');
+  bar.innerHTML = `<button id="prev" aria-label="Previous variant">&larr;</button><span class="lbl">${current} (${variants[current][0]})</span><button id="next" aria-label="Next variant">&rarr;</button><button id="venue" aria-pressed="${VENUE_CHANGED}">Venue change</button>`;
+  bar.querySelector('#prev').onclick = () => go(-1);
+  bar.querySelector('#next').onclick = () => go(1);
+  bar.querySelector('#venue').onclick = () => { const p = new URLSearchParams(location.search); VENUE_CHANGED ? p.delete('venue') : p.set('venue','changed'); location.search = p.toString(); };
+  window.scrollTo(0,0);
+}
+function go(d){ current = keys[(keys.indexOf(current)+d+keys.length)%keys.length]; const p = new URLSearchParams(location.search); p.set('variant', current); history.replaceState(null,'','?'+p.toString()); render(); }
+document.addEventListener('keydown', e => { if (e.target.closest('input,textarea,[contenteditable]')) return; if (e.key==='ArrowLeft') go(-1); if (e.key==='ArrowRight') go(1); });
+render();
+</script>
+</body>
+</html>
