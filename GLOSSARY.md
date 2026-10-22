@@ -78,8 +78,27 @@ _Avoid_: Home page, schedule, fixture list
 _Avoid_: Matchday morning
 
 **Source**:
-A published page or feed a programme claim traces back to. Every claim in a programme has one; every section lists its sources.
+A published page or feed a programme claim traces back to. Every claim in a programme has one; every programme lists its sources in one grouped list.
 _Avoid_: Reference, citation
+
+**Source bundle**:
+Everything gathered for one programme: each source's text with its publisher, address and dates, plus the computed numbers (form, averages, tables, head to head, streaks). The programme is written from the bundle and nothing else.
+_Avoid_: Context, scrape, inputs
+
+**Freshness window**:
+How far back a section looks for material. Anything older is left out of the bundle. News runs from the previous fixture, no shorter than a week and no longer than three; highlights a week; form the last five fixtures.
+_Avoid_: Recency, cutoff
+
+**Opponents table**:
+The hand-kept list of clubs the Lions play: names and aliases, where the league source knows them, and where each club publishes news. A club missing from the table still gets roster and form from the league source but no news section.
+_Avoid_: Club list, teams config
+
+**Mandatory section**:
+A programme section built from structural data that is never omitted: cover, comparison table, form and results, Lions roster, the opposition, head to head, what's next. If its data is missing the programme run fails rather than printing a gap.
+
+**Omitted section**:
+A section left out of a programme because its slice of the bundle was empty after the freshness window, or because nothing in it was worth saying. Recorded with its reason; never padded.
+_Avoid_: Empty section, skipped section
 
 **Recipient**:
 A person who receives the game-morning email. Configured as a list; Joe first, then his brother.
