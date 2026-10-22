@@ -1,0 +1,41 @@
+body.season,body.install{background:var(--paper);min-height:100svh}
+.masthead{background:var(--ink);color:var(--paper);padding:calc(28px + env(safe-area-inset-top)) 16px 22px}
+.masthead h1{font-weight:300;font-variation-settings:"opsz" 144;font-size:clamp(34px,10vw,56px);line-height:.95;letter-spacing:-.02em}
+.masthead p{color:var(--gold);font-family:var(--sans);font-size:14px;font-weight:500;margin:8px 0 0}
+.masthead a{color:var(--gold);font-family:var(--sans);font-size:14px;text-decoration:none}
+
+.install-banner{background:var(--gold);color:var(--ink);font-family:var(--sans);font-size:14px;font-weight:500;padding:10px 16px;margin:0}
+.install-banner a{text-decoration-color:var(--ink);font-weight:600}
+
+.season-body,.install-body{max-width:38em;margin:0 auto;padding:0 16px calc(48px + env(safe-area-inset-bottom))}
+.season-body section{padding:22px 0 6px;border-top:1px solid var(--rule)}
+.season-body section:first-child{border-top:0}
+.season-body h2{font-size:24px;font-variation-settings:"opsz" 72;margin-bottom:8px}
+
+.next .meta{font-family:var(--sans);font-size:14px;color:var(--stone);margin:0 0 4px}
+.next .opponent{font-size:30px;font-weight:600;font-variation-settings:"opsz" 72;line-height:1.1;margin:0 0 8px}
+.next .where{font-family:var(--sans);font-size:15px;margin:0 0 12px}
+.next .where strong{font-family:var(--serif);font-size:22px;margin-right:4px}
+.next .read{display:inline-block;background:var(--ink);color:var(--gold);font-family:var(--sans);font-size:15px;font-weight:600;padding:12px 18px;text-decoration:none;margin-bottom:10px}
+
+.badge{display:inline-block;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--gold-deep);border:1px solid var(--gold);padding:1px 5px;vertical-align:1px}
+.side{font-family:var(--sans);font-size:11px;font-weight:600;color:var(--stone);text-decoration:none;border:1px solid var(--rule);padding:1px 4px;vertical-align:1px}
+.chip{display:inline-block;font-family:var(--sans);font-size:12px;font-weight:600;padding:2px 6px}
+.chip.venue{background:var(--gold);color:var(--ink);margin:0 0 10px}
+.fixtures .chip.venue{margin:4px 0 0}
+.chip.cancelled{background:var(--wash);color:var(--stone);text-decoration:line-through}
+
+.fixtures{font-family:var(--sans);font-size:15px}
+.fixture{display:grid;grid-template-columns:5.6em 1fr auto;gap:2px 10px;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--rule);color:inherit;text-decoration:none}
+a.fixture .what{text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:3px}
+.fixture .when{color:var(--stone);font-size:13px}
+.fixture .result{font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+.fixture .result .w{color:var(--gold-deep)}
+.fixture .result .l{color:var(--stone)}
+.fixture .saved{grid-column:2/4;font-size:12px;color:var(--stone)}
+.next .saved{font-weight:400;color:var(--paper)}
+
+.install-body h2{font-size:24px;font-variation-settings:"opsz" 72;margin:26px 0 8px}
+.install-body ol{margin:0 0 12px;padding-left:1.4em;font-family:var(--sans);font-size:15px}
+.install-body li{padding:4px 0}
+.install-body .note{background:var(--wash);border-left:4px solid var(--gold);padding:10px 14px;font-family:var(--sans);font-size:14px}

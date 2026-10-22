@@ -168,7 +168,7 @@ function sectionsHtml(data, prose, warnings) {
   }).join('');
 }
 
-function cover(data) {
+function cover(data, root) {
   const f = data.fixture;
   const [first, second] = f.designated_home ? [LIONS, f.opponent_name] : [f.opponent_name, LIONS];
   const tipoff = at(f.tipoff);
@@ -179,6 +179,7 @@ function cover(data) {
     ? `<p class="venue-flag">Venue change: this game is at ${esc(f.venue.name)}, ${address}.${f.venue.directions ? `<span>${esc(f.venue.directions)}</span>` : ''}</p>`
     : '';
   return `<header class="cover">
+<nav class="season-link"><a href="${esc(root)}/">Season</a></nav>
 <p class="date">${longDate.format(tipoff)}, ${esc(f.competition_name)}</p>
 <h1>${esc(first)} <i>v</i> <b>${esc(second)}</b></h1>
 <p class="where"><strong>${clock.format(tipoff)}</strong>${esc(f.venue.name)}, ${address}</p>
@@ -239,7 +240,7 @@ function sourcesHtml(data, ids) {
   return `<aside class="sources" aria-labelledby="sources-title"><h2 id="sources-title">Sources</h2>${items.join('')}<p class="gathered">Gathered ${fullDate.format(gathered)} at ${clock.format(gathered)}.</p></aside>`;
 }
 
-export function renderProgramme(data, markdown, { assets = 'assets' } = {}) {
+export function renderProgramme(data, markdown, { assets = 'assets', root = '.' } = {}) {
   const warnings = [];
   const prose = parseProse(markdown);
   const f = data.fixture;
@@ -257,10 +258,15 @@ export function renderProgramme(data, markdown, { assets = 'assets' } = {}) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(first)} v ${esc(second)}, ${longDate.format(at(f.tipoff))}</title>
+<meta name="theme-color" content="#000000">
+<link rel="manifest" href="${esc(root)}/manifest.webmanifest">
+<link rel="icon" href="${esc(assets)}/icons/icon-192.png">
+<link rel="apple-touch-icon" href="${esc(assets)}/icons/apple-touch-icon.png">
 <link rel="stylesheet" href="${esc(assets)}/programme.css">
+<script src="${esc(assets)}/app.js" defer></script>
 </head>
 <body>
-${cover(data)}
+${cover(data, root)}
 <div class="layout">
 <main class="body">
 ${body}

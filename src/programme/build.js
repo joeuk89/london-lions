@@ -4,15 +4,16 @@ import { fileURLToPath } from 'node:url';
 import { PAGE_WARNING, renderPdf } from './pdf.js';
 import { renderProgramme } from './render.js';
 
-const ASSETS = fileURLToPath(new URL('../../assets', import.meta.url));
+const ROOT = fileURLToPath(new URL('../..', import.meta.url));
+const ASSETS = join(ROOT, 'assets');
 
 export async function buildProgramme(dataPath, markdownPath, outDir) {
   const data = JSON.parse(await readFile(dataPath, 'utf8'));
   const markdown = await readFile(markdownPath, 'utf8');
   await mkdir(outDir, { recursive: true });
 
-  const assets = relative(resolve(outDir), ASSETS).split('\\').join('/');
-  const { html, warnings } = renderProgramme(data, markdown, { assets });
+  const relativeTo = (target) => relative(resolve(outDir), target).split('\\').join('/') || '.';
+  const { html, warnings } = renderProgramme(data, markdown, { assets: relativeTo(ASSETS), root: relativeTo(ROOT) });
   const htmlPath = join(outDir, 'index.html');
   await writeFile(htmlPath, html);
 

@@ -2,18 +2,21 @@
   {
     "id": "slb-championship-2026-27",
     "name": "SLB Championship",
+    "badge": "League",
     "source": { "kind": "genius", "competition_id": "49597", "team_id": "178242" },
     "club_labels": ["SLB Championship", "SLB"]
   },
   {
     "id": "slb-cup-2026-27",
     "name": "SLB Cup",
+    "badge": "Cup",
     "source": { "kind": "genius", "competition_id": "49599", "team_id": "178242" },
     "club_labels": ["SLB Cup"]
   },
   {
     "id": "eurocup-2026-27",
     "name": "EuroCup",
+    "badge": "EuroCup",
     "source": { "kind": "euroleague", "competition": "U", "season": "U2026", "club_code": "LLI" },
     "club_labels": ["EuroCup"]
   }

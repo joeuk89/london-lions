@@ -8,6 +8,8 @@ npm run programme -- <data.json> <programme.md> <out-dir>
 
 It writes `index.html` and `programme.pdf` (A5) to the output directory. The page links `assets/programme.css` and the self-hosted fonts in `assets/fonts/` by a relative path. `test/fixtures/programme/bristol.json` and `bristol.md` are a complete worked example.
 
+In the programme run the output directory is `programmePath(fixture)` from `src/app/season.js`: `programmes/<UK date>-<opponent>/` at the repo root. The service worker reads the date from that path to serve today's programme network-first and past ones from the cache, and the season index links any fixture whose directory exists. Run `npm run season` after writing a programme to regenerate the index.
+
 ## Data file (from the gather step)
 
 Every number and every structured block comes from here. Claude never writes these.

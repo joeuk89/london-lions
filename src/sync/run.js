@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { parseArgs } from 'node:util';
+import { writeSeasonIndex } from '../app/season.js';
 import { loadConfig, ROOT } from './config.js';
 import { crossCheck } from './crosscheck.js';
 import { fetchText } from './fetch.js';
@@ -60,6 +61,7 @@ if (!args['dry-run']) {
   for (const feed of Object.values(FEEDS)) {
     await writeFile(path.join(args.feeds, feed.file), renderFeed(feed, state.fixtures, config.competitions));
   }
+  await writeSeasonIndex({ fixtures: state.fixtures, competitions: config.competitions, now });
 }
 await mkdir(path.dirname(args.notice), { recursive: true });
 await writeFile(args.notice, JSON.stringify({ ...notice, subject: subject(notice), empty: isEmpty(notice) }, null, 2) + '\n');

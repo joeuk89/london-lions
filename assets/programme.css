@@ -28,6 +28,9 @@ thead th{font-weight:600;color:var(--stone)}
 .n{text-align:right;font-variant-numeric:tabular-nums}
 .muted{color:var(--stone);font-style:normal}
 
+.season-link{font-family:var(--sans);font-size:14px;font-weight:500;margin:env(safe-area-inset-top) 0 18px}
+.season-link a{color:var(--gold);text-decoration:none}
+.season-link a::before{content:"\2190  "}
 .cover{background:var(--ink);color:var(--paper);min-height:100svh;padding:28px 20px;display:flex;flex-direction:column}
 .cover .date{color:var(--gold);font-family:var(--sans);font-size:15px;font-weight:500;margin:0}
 .cover h1{font-weight:300;font-variation-settings:"opsz" 144;font-size:clamp(44px,12vw,112px);line-height:.92;letter-spacing:-.02em;margin:auto 0 .2em}
@@ -90,6 +93,7 @@ tr.us td{background:var(--wash);font-weight:600}
 
 @page{size:A5;margin:11mm 12mm}
 @media print{
+  .season-link{display:none}
   body{font-size:10.5pt}
   .cover{min-height:auto;height:calc(210mm - 22mm);break-after:page;padding:9mm 8mm;background:var(--ink)}
   .layout{padding:0}

@@ -43,10 +43,10 @@ jobs:
         if: steps.guard.outputs.run == 'true'
         run: node src/sync/run.js --notice "$RUNNER_TEMP/notice.json"
 
-      - name: Commit state and feeds
+      - name: Commit state, feeds and season index
         if: steps.guard.outputs.run == 'true'
         run: |
-          git add data feeds
+          git add data feeds index.html
           if git diff --cached --quiet; then
             echo "Nothing changed."
             exit 0

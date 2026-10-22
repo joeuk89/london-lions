@@ -9,6 +9,7 @@
   "scripts": {
     "sync": "node src/sync/run.js",
     "programme": "node src/programme/build.js",
+    "season": "node src/app/season.js",
     "test": "node --test"
   },
   "dependencies": {
