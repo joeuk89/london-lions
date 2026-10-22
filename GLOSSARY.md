@@ -58,8 +58,16 @@ A hand-written correction to one fixture that wins over every source, used when 
 _Avoid_: Patch, fix-up
 
 **Programme**:
-The matchday document for one fixture, produced as a web page and a PDF. Contains only sections that have something to say.
+The matchday document for one fixture. One web page, read in the programme app and also rendered to a PDF. Contains only sections that have something to say.
 _Avoid_: Program, preview, matchday guide
+
+**Programme app**:
+The installable web app on a recipient's phone that lists the season and keeps every programme readable offline.
+_Avoid_: PWA, site, the app
+
+**Season index**:
+The front page of the programme app: every fixture of the season with its programme, result or tip-off time, next fixture first.
+_Avoid_: Home page, schedule, fixture list
 
 **Game morning**:
 08:00 UK time on the date of a fixture. The moment the programme is produced and emailed.
