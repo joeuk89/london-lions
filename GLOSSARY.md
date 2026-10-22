@@ -46,6 +46,10 @@ _Avoid_: Cancelled, postponed (as states; both are "withdrawn")
 The daily run that reads every fixture source, updates the stored fixtures and rewrites the feeds.
 _Avoid_: Scrape, import, refresh
 
+**Programme run**:
+The game-morning job that gathers sources, writes the programme, renders the PDF and emails the recipients.
+_Avoid_: Programme job, matchday job
+
 **Change notice**:
 The list of fixture changes and warnings one sync produced. Empty when nothing changed. Every notification channel renders from it.
 _Avoid_: Diff, report
