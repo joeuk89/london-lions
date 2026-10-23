@@ -296,7 +296,6 @@ export async function gather({ fixture, state, config, programme, now = new Date
     feed: programme.club_news, prefix: 'club', publisher: LIONS, label: 'Lions club news',
     keep: (item) => (since(item, windows.lions_news_since) ? 'lions' : null),
   });
-  await addArticles({ feed: programme.league_news, prefix: 'slb', publisher: 'Super League Basketball', label: 'League news', keep: byMention });
   await addArticles({ feed: programme.hoopsfix, prefix: 'hf', publisher: 'Hoopsfix', label: 'Hoopsfix news', keep: byMention });
   if (opponentEntry?.news) {
     await addArticles({

@@ -50,7 +50,7 @@ The render fails when a mandatory section (form, Lions roster, the opposition, h
 
 ### Hand-kept tables
 
-- `config/programme.json`: the site URL and the Lions' own sources (club news page, SLB news feed, Hoopsfix feed, YouTube channel id).
+- `config/programme.json`: the site URL and the Lions' own sources (club news page, Hoopsfix feed, YouTube channel id).
 - `config/opponents.json`: per opponent, `news` (`rss` with a feed URL, or `html` with a listing URL and the path prefix its article links share), `hoopsfix: true` for SLB clubs, and an optional `youtube_channel_id`. A club without `news` gets no club news; the bundle notes the gap.
 - `config/competitions.json`: `short_name` labels results, and `stats_from` points a competition (the SLB Cup) at the one whose rosters, averages and form it borrows.
 - `config/venues.json`: an optional `directions` line shown with a venue change.

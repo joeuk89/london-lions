@@ -1,7 +1,6 @@
 {
   "site_url": "https://joeuk89.github.io/london-lions/",
   "club_news": { "kind": "html", "url": "https://www.thelondonlions.com/news", "links": "/news/" },
-  "league_news": { "kind": "rss", "url": "https://www.superleaguebasketballm.co.uk/category/all-news/feed/" },
   "hoopsfix": { "kind": "rss", "url": "https://www.hoopsfix.com/feed/" },
   "youtube_channel_id": "UCBKv-7gkxC6kA-_yOB1JMiw"
 }

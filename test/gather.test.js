@@ -10,7 +10,6 @@ const fixture = (name) => readFile(new URL(`./fixtures/gather/${name}`, import.m
 const programme = {
   site_url: 'https://example.github.io/london-lions/',
   club_news: { kind: 'html', url: 'https://club.example/news', links: '/news/' },
-  league_news: { kind: 'rss', url: 'https://league.example/feed/' },
   hoopsfix: { kind: 'rss', url: 'https://hoopsfix.example/feed/' },
   youtube_channel_id: 'UC123',
 };
@@ -59,11 +58,10 @@ async function run(extraPages = []) {
     ['/team/178237', await fixture('genius-summary.html')],
     ['club.example/news/', ARTICLE],
     ['club.example/news', CLUB_LISTING],
-    ['league.example', rss([
+    ['hoopsfix.example', rss([
       ['Lions roll on in week four', 'Mon, 19 Oct 2026 18:00:00 +0000', 'London Lions beat Cheshire. '.repeat(20)],
       ['Surrey get first win', 'Mon, 19 Oct 2026 18:00:00 +0000', 'Surrey 89ers beat Leicester. '.repeat(20)],
     ])],
-    ['hoopsfix.example', new Error('hoopsfix.example responded 503')],
     ['bristolflyers.co.uk', rss([['Flyers edge Liverpool', 'Sun, 18 Oct 2026 21:00:00 +0000', 'Bristol Flyers won 90-89. '.repeat(20)]])],
     ['youtube.com', `<feed><entry><title>LIONS EDGE CHESHIRE 87-83 | 18.10.26| London Lions</title><link href="https://www.youtube.com/watch?v=abc"/><published>2026-10-18T19:00:00+00:00</published></entry></feed>`],
   ];
@@ -92,16 +90,22 @@ test('the data file carries every block the template renders', async () => {
   for (const id of data.data_sources) assert.ok(data.sources[id], `data source ${id} is listed`);
 });
 
-test('the bundle keeps articles inside their window and records failed sources', async () => {
+test('the bundle keeps articles inside their window', async () => {
   const { bundle, data } = await run();
   assert.deepEqual(bundle.articles.map((a) => [a.id, a.scope, a.title]), [
     ['club-1', 'lions', 'Lions edge Cheshire to stay unbeaten'],
-    ['slb-1', 'lions', 'Lions roll on in week four'],
+    ['hf-1', 'lions', 'Lions roll on in week four'],
     ['opp-1', 'opponent', 'Flyers edge Liverpool'],
   ]);
   assert.match(bundle.articles[0].text, /^Joel Scott hit both free throws/);
-  assert.deepEqual(bundle.failed.map((f) => f.label), ['Hoopsfix news']);
+  assert.deepEqual(bundle.failed, []);
   assert.equal(data.sources['opp-1'].publisher, 'Bristol Flyers');
+});
+
+test('a failed news source is recorded and its articles left out', async () => {
+  const { bundle } = await run([['hoopsfix.example', new Error('hoopsfix.example responded 503')]]);
+  assert.deepEqual(bundle.failed.map((f) => f.label), ['Hoopsfix news']);
+  assert.ok(!bundle.articles.some((a) => a.id.startsWith('hf-')));
 });
 
 test('a failed highlights feed leaves the programme without highlights', async () => {
