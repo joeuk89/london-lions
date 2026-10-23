@@ -1,0 +1,136 @@
+name: Programme run
+
+on:
+  schedule:
+    # 08:00 Europe/London is 07:00 UTC in summer and 08:00 UTC in winter; the guard step picks the right one.
+    - cron: '7 7,8 * * *'
+  workflow_dispatch:
+    inputs:
+      fixture:
+        description: Fixture id from data/fixtures.json (leave empty for today's fixture)
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generated-output
+  cancel-in-progress: false
+
+jobs:
+  programme:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      RUN_DIR: out/run
+    steps:
+      - name: Only run at 08:00 UK
+        id: guard
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "$(TZ=Europe/London date +%H)" = "08" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Not 08:00 in Europe/London; nothing to do."
+          fi
+
+      - uses: actions/checkout@v4
+        id: checkout
+        if: steps.guard.outputs.run == 'true'
+
+      - uses: actions/setup-node@v4
+        if: steps.guard.outputs.run == 'true'
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        id: install
+        if: steps.guard.outputs.run == 'true'
+        run: npm ci
+
+      - name: Pick the fixture
+        id: pick
+        if: steps.guard.outputs.run == 'true'
+        run: node src/programme/today.js --fixture "${{ github.event.inputs.fixture }}"
+
+      - name: Gather sources
+        id: gather
+        if: steps.pick.outputs.found == 'true'
+        run: |
+          node src/programme/gather.js --fixture "${{ steps.pick.outputs.id }}" --out "$RUN_DIR"
+          mkdir -p "${{ steps.pick.outputs.dir }}"
+          cp "$RUN_DIR/data.json" "${{ steps.pick.outputs.dir }}data.json"
+
+      - name: Write the programme
+        id: write
+        if: steps.pick.outputs.found == 'true'
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: |
+            Read src/programme/prompt.md and follow it exactly, with:
+            DATA = ${{ steps.pick.outputs.dir }}data.json
+            BUNDLE = ${{ env.RUN_DIR }}/bundle.json
+            OUTPUT = ${{ steps.pick.outputs.dir }}programme.md
+          claude_args: >-
+            --max-turns 40
+            --allowedTools "Read,Write,Edit,Glob,Grep,Bash(node src/programme/check.js:*)"
+            --disallowedTools "WebFetch,WebSearch"
+
+      - name: Render page and PDF
+        id: render
+        if: steps.pick.outputs.found == 'true'
+        run: |
+          dir="${{ steps.pick.outputs.dir }}"
+          node src/programme/build.js "${dir}data.json" "${dir}programme.md" "$dir"
+          npm run season
+
+      - name: Commit and push
+        id: commit
+        if: steps.pick.outputs.found == 'true'
+        run: |
+          git add programmes index.html
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Programme: ${{ steps.pick.outputs.title }}"
+          git pull --rebase
+          git push
+
+      - name: Wait for the page to go live
+        if: steps.pick.outputs.found == 'true'
+        run: |
+          for attempt in $(seq 1 40); do
+            curl -sfo /dev/null "${{ steps.pick.outputs.url }}" && exit 0
+            sleep 15
+          done
+          echo "::warning::Programme page not live after 10 minutes; emailing anyway."
+
+      - name: Email the programme
+        id: email
+        if: steps.pick.outputs.found == 'true'
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        run: node src/programme/email.js programme --dir "${{ steps.pick.outputs.dir }}" --bundle "$RUN_DIR/bundle.json"
+
+      - name: Keep the source bundle
+        if: always() && steps.pick.outputs.found == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: bundle-${{ steps.pick.outputs.id }}
+          path: ${{ env.RUN_DIR }}
+          retention-days: 30
+          if-no-files-found: ignore
+
+      - name: Email "no programme today"
+        if: failure() && steps.guard.outputs.run == 'true'
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          OUTCOMES: >-
+            Check out=${{ steps.checkout.outcome }};Install=${{ steps.install.outcome }};Pick the fixture=${{ steps.pick.outcome }};Gather sources=${{ steps.gather.outcome }};Write the programme=${{ steps.write.outcome }};Render page and PDF=${{ steps.render.outcome }};Commit and push=${{ steps.commit.outcome }};Email the programme=${{ steps.email.outcome }}
+        run: node src/programme/email.js failure --fixture "${{ steps.pick.outputs.id }}"

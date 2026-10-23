@@ -37,3 +37,30 @@ Every number and every structured block comes from here. Claude never writes the
 ## Rules the renderer enforces
 
 The render fails when a mandatory section (form, Lions roster, the opposition, head to head, what's next) has no data, a section is unknown, repeated or out of order, a marker is missing or unresolved, a player card names someone off the roster, or a mandatory section is listed as omitted. The build warns when the PDF runs past 12 pages.
+
+## The programme run
+
+`.github/workflows/programme.yml` runs at 08:00 UK and on manual dispatch (with an optional fixture id, for testing on a non-game day):
+
+1. `node src/programme/today.js` picks today's fixture from `data/fixtures.json`, skipping withdrawn ones. No fixture ends the run quietly.
+2. `node src/programme/gather.js --fixture <id> --out out/run` writes the data file above and `bundle.json`: every article in its freshness window with its text, the windows used, failed sources and known gaps. A failed league page fails the run; a failed news or highlights feed is recorded and the run goes on.
+3. Claude reads `src/programme/prompt.md`, the data file and the bundle, writes `programme.md` beside the data file, and runs `node src/programme/check.js <data.json> <programme.md>` until it passes. It has no web tools.
+4. The build renders the page and PDF, `npm run season` regenerates the season index, and the bot commits `programmes/` and `index.html`.
+5. `node src/programme/email.js programme` sends the game-morning email once the page is live. Any failed step sends "no programme today" instead, naming the step. The bundle is kept as a 30-day workflow artifact.
+
+### Hand-kept tables
+
+- `config/programme.json`: the site URL and the Lions' own sources (club news page, SLB news feed, Hoopsfix feed, YouTube channel id).
+- `config/opponents.json`: per opponent, `news` (`rss` with a feed URL, or `html` with a listing URL and the path prefix its article links share), `hoopsfix: true` for SLB clubs, and an optional `youtube_channel_id`. A club without `news` gets no club news; the bundle notes the gap.
+- `config/competitions.json`: `short_name` labels results, and `stats_from` points a competition (the SLB Cup) at the one whose rosters, averages and form it borrows.
+- `config/venues.json`: an optional `directions` line shown with a venue change.
+
+### Running it locally
+
+```
+node src/programme/gather.js --fixture <id> --out out/run
+# write out/run/programme.md, or let Claude do it with the prompt
+node src/programme/check.js out/run/data.json out/run/programme.md
+node src/programme/build.js out/run/data.json out/run/programme.md out/run
+node src/programme/email.js programme --dir out/run --bundle out/run/bundle.json --preview out/run/email.html
+```

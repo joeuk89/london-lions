@@ -69,7 +69,8 @@ function leagueTable(data) {
   const table = data.table;
   if (!table) return '';
   const ours = new Set([LIONS, data.opponent.name]);
-  return `<table><thead><tr><th class="n">#</th><th>Team</th><th class="n">P</th><th class="n">W</th><th class="n">L</th><th class="n">Pts</th></tr></thead><tbody>${table.rows.map((r, i) => `<tr${ours.has(r.team) ? ' class="us"' : ''}><td class="n">${i + 1}</td><td>${esc(r.team)}</td><td class="n">${r.played}</td><td class="n">${r.won}</td><td class="n">${r.lost}</td><td class="n">${r.points}</td></tr>`).join('')}</tbody></table>`;
+  const points = table.rows.every((r) => r.points != null);
+  return `<table><thead><tr><th class="n">#</th><th>Team</th><th class="n">P</th><th class="n">W</th><th class="n">L</th>${points ? '<th class="n">Pts</th>' : ''}</tr></thead><tbody>${table.rows.map((r, i) => `<tr${ours.has(r.team) ? ' class="us"' : ''}><td class="n">${i + 1}</td><td>${esc(r.team)}</td><td class="n">${r.played}</td><td class="n">${r.won}</td><td class="n">${r.lost}</td>${points ? `<td class="n">${r.points}</td>` : ''}</tr>`).join('')}</tbody></table>`;
 }
 
 function next(list) {

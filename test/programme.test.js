@@ -50,6 +50,14 @@ test('an away fixture puts the opponent first and a venue change gets the flag a
   assert.match(html, /<span>Hoxton Overground, 5 minutes<\/span>/);
 });
 
+test('a league table without points drops the Pts column', () => {
+  const data = bristol();
+  data.table.rows = data.table.rows.map(({ points, ...row }) => row);
+  const { html } = renderProgramme(data, bristolMd);
+  assert.doesNotMatch(html, /<th class="n">Pts<\/th>/);
+  assert.doesNotMatch(html, /undefined/);
+});
+
 test('a paragraph without a source marker fails', () => {
   assert.throws(() => parseProse(minimal('## Club news\n\nUnsourced claim.\n')), /Club news: paragraph has no \[src:…\] marker/);
   assert.throws(() => parseProse(minimal('## Things to watch\n\n- Sourced [src:a]\n- Not sourced\n')), /Things to watch: paragraph has no/);

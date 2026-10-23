@@ -1,0 +1,37 @@
+{
+ "teams": [
+  {
+   "position": 1,
+   "gamesPlayed": 4,
+   "gamesWon": 4,
+   "gamesLost": 0,
+   "groupName": "C",
+   "club": {
+    "code": "NAP",
+    "name": "Napoli Basketball"
+   }
+  },
+  {
+   "position": 3,
+   "gamesPlayed": 4,
+   "gamesWon": 2,
+   "gamesLost": 2,
+   "groupName": "B",
+   "club": {
+    "code": "LLI",
+    "name": "London Lions"
+   }
+  },
+  {
+   "position": 8,
+   "gamesPlayed": 4,
+   "gamesWon": 1,
+   "gamesLost": 3,
+   "groupName": "B",
+   "club": {
+    "code": "TTK",
+    "name": "Turk Telekom Ankara"
+   }
+  }
+ ]
+}

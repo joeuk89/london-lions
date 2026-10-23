@@ -1,0 +1,55 @@
+{
+ "players": [
+  {
+   "player": {
+    "code": "015122",
+    "name": "HORTON, LANDRIUS",
+    "team": {
+     "code": "LLI"
+    }
+   },
+   "gamesPlayed": 4,
+   "minutesPlayed": 20.345833333333335,
+   "pointsScored": 5,
+   "totalRebounds": 3,
+   "assists": 1,
+   "steals": 0.8,
+   "threePointersMade": 0.5,
+   "threePointersAttempted": 3.8
+  },
+  {
+   "player": {
+    "code": "015120",
+    "name": "LEWIS III, MAXWELL",
+    "team": {
+     "code": "LLI"
+    }
+   },
+   "gamesPlayed": 4,
+   "minutesPlayed": 8.083333333333334,
+   "pointsScored": 3.2,
+   "totalRebounds": 2,
+   "assists": 0.2,
+   "steals": 0.5,
+   "threePointersMade": 0.5,
+   "threePointersAttempted": 1.2
+  },
+  {
+   "player": {
+    "code": "015043",
+    "name": "WRZESZCZ, ANTHONY",
+    "team": {
+     "code": "WRO"
+    }
+   },
+   "gamesPlayed": 3,
+   "minutesPlayed": 4.683333333333334,
+   "pointsScored": 0,
+   "totalRebounds": 0,
+   "assists": 0,
+   "steals": 0,
+   "threePointersMade": 0,
+   "threePointersAttempted": 0.7
+  }
+ ]
+}

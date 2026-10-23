@@ -1,0 +1,42 @@
+[
+ {
+  "type": "A",
+  "active": true,
+  "dorsal": "",
+  "positionName": null,
+  "person": {
+   "code": "009316",
+   "name": "PLIAUGA, VYTAUTAS"
+  }
+ },
+ {
+  "type": "J",
+  "active": true,
+  "dorsal": "23",
+  "positionName": "Guard",
+  "person": {
+   "code": "015122",
+   "name": "HORTON, LANDRIUS"
+  }
+ },
+ {
+  "type": "J",
+  "active": true,
+  "dorsal": "7",
+  "positionName": "Forward",
+  "person": {
+   "code": "015121",
+   "name": "O'GARRO, JOSHUA"
+  }
+ },
+ {
+  "type": "J",
+  "active": true,
+  "dorsal": "2",
+  "positionName": "Forward",
+  "person": {
+   "code": "015120",
+   "name": "LEWIS III, MAXWELL"
+  }
+ }
+]
