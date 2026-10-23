@@ -73,6 +73,10 @@ _Avoid_: PWA, site, the app
 The front page of the programme app: every fixture of the season with its programme, result or tip-off time, next fixture first.
 _Avoid_: Home page, schedule, fixture list
 
+**Season opener**:
+The Lions' first fixture of a season, in any competition. Its programme is an extended welcome: a recap of last season and the summer's team news in place of form.
+_Avoid_: Opening night, first game, season debut
+
 **Game morning**:
 08:00 UK time on the date of a fixture. The moment the programme is produced and emailed.
 _Avoid_: Matchday morning
@@ -86,7 +90,7 @@ Everything gathered for one programme: each source's text with its publisher, ad
 _Avoid_: Context, scrape, inputs
 
 **Freshness window**:
-How far back a section looks for material. Anything older is left out of the bundle. News runs from the previous fixture, no shorter than a week and no longer than three; highlights a week; form the last five fixtures.
+How far back a section looks for material. Anything older is left out of the bundle. News runs from the previous fixture, no shorter than a week and no longer than three, except at the season opener, where it runs from the Lions' last game of the previous season; highlights a week; form the last five fixtures.
 _Avoid_: Recency, cutoff
 
 **Opponents table**:
@@ -94,7 +98,7 @@ The hand-kept list of clubs the Lions play: names and aliases, where the league 
 _Avoid_: Club list, teams config
 
 **Mandatory section**:
-A programme section built from structural data that is never omitted: cover, comparison table, form and results, Lions roster, the opposition, head to head, what's next. If its data is missing the programme run fails rather than printing a gap.
+A programme section built from structural data that is never omitted: cover, comparison table, form and results, Lions roster, the opposition, head to head, what's next. At the season opener, last season replaces form and results. If its data is missing the programme run fails rather than printing a gap.
 
 **Omitted section**:
 A section left out of a programme because its slice of the bundle was empty after the freshness window, or because nothing in it was worth saying. Recorded with its reason; never padded.
