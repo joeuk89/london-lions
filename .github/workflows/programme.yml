@@ -79,6 +79,11 @@ jobs:
             --allowedTools "Read,Write,Edit,Glob,Grep,Bash(node src/programme/check.js:*)"
             --disallowedTools "WebFetch,WebSearch"
 
+      # The action hides Claude's output; print only its final message so a failure can be diagnosed.
+      - name: Show why Claude stopped
+        if: failure() && steps.write.outcome == 'failure'
+        run: jq -r '.[] | select(.type == "result") | .result // "no result message"' "${{ steps.write.outputs.execution_file }}"
+
       - name: Render page and PDF
         id: render
         if: steps.pick.outputs.found == 'true'
