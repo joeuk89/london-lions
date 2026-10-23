@@ -85,6 +85,10 @@ _Avoid_: Matchday morning
 A published page or feed a programme claim traces back to. Every claim in a programme has one; every programme lists its sources in one grouped list.
 _Avoid_: Reference, citation
 
+**Headline**:
+A Source known only by its headline, publisher and date, with no text read. It supports a one-line attributed mention, never a quote.
+_Avoid_: Snippet, teaser
+
 **Source bundle**:
 Everything gathered for one programme: each source's text with its publisher, address and dates, plus the computed numbers (form, averages, tables, head to head, streaks). The programme is written from the bundle and nothing else.
 _Avoid_: Context, scrape, inputs
