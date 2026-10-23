@@ -2,6 +2,8 @@ import { load } from 'cheerio';
 
 const GENIUS = 'https://hosted.dcd.shared.geniussports.com/SLB/en';
 const EUROLEAGUE = 'https://api-live.euroleague.net';
+export const GENIUS_PUBLISHER = 'Genius Sports (SLB)';
+export const EUROLEAGUE_PUBLISHER = 'EuroLeague';
 
 export const geniusUrls = (competitionId, teamId) => ({
   standings: `${GENIUS}/competition/${competitionId}/standings`,
@@ -189,4 +191,31 @@ export function leaders(roster, stats) {
     steals: line('stl'),
     threes: top((s) => s.tpm).map((s) => ({ name: names.get(s.id), made: round1(s.tpm), attempted: round1(s.tpa ?? 0) })),
   };
+}
+
+export const geniusPhaseUrl = (competitionId, phase) => `${GENIUS}/competition/${competitionId}/schedule?phaseName=${encodeURIComponent(phase)}`;
+
+// The competition-wide schedule has no title attribute on team links, so the sync's
+// team-page parser (src/sync/sources/genius.js) reads both sides as the opponent here.
+export function parseGeniusCompetitionSchedule(html) {
+  const $ = load(html);
+  const side = (row, which) => {
+    const link = row.find(`.${which}-team a.teamnames`).first();
+    const score = text(row.find(`.${which}score .fake-cell`).first());
+    return { team_id: teamId(link.attr('href')), name: text(link.find('.team-name-full')) || text(link), score: number(score) };
+  };
+  const games = $('.match-wrap').map((_, el) => {
+    const row = $(el);
+    const id = /extfix_(\d+)/.exec(row.attr('id') ?? '')?.[1];
+    if (!id) return null;
+    return { id, home: side(row, 'home'), away: side(row, 'away'), venue_name: text(row.find('a.venuename').first()) };
+  }).get().filter(Boolean);
+  const phases = [...new Set($('a[href*="phaseName="]').map((_, a) => new URL($(a).attr('href'), GENIUS).searchParams.get('phaseName')).get())];
+  return { games, phases };
+}
+
+// Genius serves a bare "Error" page, with a 200, for some team pages.
+export function assertGeniusPage(html, url) {
+  if (/<title>\s*Error\s*<\/title>/i.test(html)) throw new Error(`${url} returned the Genius error page`);
+  return html;
 }

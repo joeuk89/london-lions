@@ -16,18 +16,22 @@ Every number and every structured block comes from here. Claude never writes the
 
 | Key | Holds | Renders as |
 | --- | --- | --- |
+| `season_opener` | True for the Lions' first fixture of the season | Last season and The summer in place of Form; 14-page PDF warning |
 | `fixture` | The stored fixture (as in `data/fixtures.json`) plus `competition_name`, and an optional `venue.directions` from the venue table | Cover; venue-change flag with a Google Maps link when `venue_change` is true |
 | `lions`, `opponent` | `name`, `record` (`position` optional, `won`, `lost`), `leaders` (`points`, `rebounds`, `assists`, `steals` as `{name, value}`; `threes` as `{name, made, attempted}`), `results` newest first, `highlights`, `roster` (each player may carry `season`: `pts`, `reb`, `ast`, `min`) | Comparison table, form, highlights, rosters, player-card stat lines |
+| `last_season` | Opener only. `competitions`, one per competition the Lions entered last season, in config order: `competition_name`, `league`, `standing` (`position`, `won`, `lost`, optional `group`) and `last_game` (`date`, `round`, `final`, `opponent_name`, `home`, `venue_name`, `for`, `against`); `ended` is the date of the last game | Last season: each competition's final standing, then its final or last game (the league's last game is left out) |
+| `summer` | Opener only. `joined` and `left`: player names from a diff of last season's and this season's Genius league rosters by person id | The summer: In and Not in this season's squad lists |
+| `opponent.last_season` | Only when the opponent has no results this season; same shape as `last_season` | A Last season list in The opposition in place of their last five, or "First season in this competition" when they did not play in this fixture's competition |
 | `head_to_head` | `scope` (`this-season` or `last-season`), `meetings` newest first, optional `overall` | Head to head and the comparison table's last meeting |
 | `table` | `rows` of `team`, `played`, `won`, `lost`, `points`, or `null` when the competition has no table | League table |
-| `next` | Upcoming fixtures with `tipoff`, `competition_name`, `opponent_name`, `home`, `venue_name`, `venue_change` | What's next |
+| `next` | Upcoming fixtures with `tipoff`, `competition_name`, `opponent_name`, `home`, `venue_name`, `venue_change`; may be empty | What's next, or "No further fixtures scheduled yet" |
 | `sources` | Every bundle source by id: `publisher`, `title`, `url`, optional `published` | Sources list, grouped by publisher |
 | `data_sources` | Ids of the sources the structured blocks came from | Added to the sources list |
 | `gathered_at` | When the gather step ran | Last line of the sources list |
 
 ## Markdown file (from Claude)
 
-- YAML front-matter, then an optional intro (the first paragraph is the lede), then `##` sections in the settled order: Form, Lions roster, Injury and availability, The opposition, Things to watch, Head to head, League table, Notable stats, Club news, What's next.
+- YAML front-matter, then an optional intro (the first paragraph is the lede), then `##` sections in the settled order: Form, Lions roster, Injury and availability, The opposition, Things to watch, Head to head, League table, Notable stats, Club news, What's next. At the season opener Form is replaced by Last season then The summer; elsewhere those two are unknown sections.
 - `## Heading: subtitle` puts the subtitle in gold italic beside the heading. "The opposition" displays as the opponent's name.
 - In Lions roster and The opposition, `### Player Name` starts a player card. The name must match that team's roster; the stat line comes from the player's `season`.
 - Only paragraphs, bullet lists, bold, italic and links. Anything else fails the render.
@@ -36,7 +40,14 @@ Every number and every structured block comes from here. Claude never writes the
 
 ## Rules the renderer enforces
 
-The render fails when a mandatory section (form, Lions roster, the opposition, head to head, what's next) has no data, a section is unknown, repeated or out of order, a marker is missing or unresolved, a player card names someone off the roster, or a mandatory section is listed as omitted. The build warns when the PDF runs past 12 pages.
+The render fails when a mandatory section (form, or last season at the opener; Lions roster, the opposition, head to head, what's next) has no data, a section is unknown, repeated or out of order, a marker is missing or unresolved, a player card names someone off the roster, or a mandatory section is listed as omitted. The build warns when the PDF runs past 12 pages, or 14 at the season opener.
+
+## The season's edges
+
+- **Before a side has played** in the competition its stats come from, the gather step skips its statistics page: its record is 0–0 with no position, its leaders are empty, and its players carry no `season`. The comparison table shows a dash for each leader, the form strip and last game; player cards show no stat line.
+- **At the season opener** the league table is left out (`table` is null), the Lions' news window runs from the day after their last game of the previous season, and each news source gives up to 40 articles instead of 10. Items naming the women's team (London Lions Women, SLBW, WSLB, WNBL) are dropped from every source.
+- **An opponent with no results this season** gets `opponent.last_season`, and its news window starts the day after its last game of the previous season.
+- **Head to head with no meeting this season** reads last season's meetings in every competition from the opponent's Genius team pages and the EuroLeague games feed.
 
 ## The programme run
 
@@ -52,13 +63,13 @@ The render fails when a mandatory section (form, Lions roster, the opposition, h
 
 - `config/programme.json`: the site URL and the Lions' own sources (club news page, Hoopsfix feed, YouTube channel id).
 - `config/opponents.json`: per opponent, `news` (`rss` with a feed URL, or `html` with a listing URL and the path prefix its article links share), `hoopsfix: true` for SLB clubs, and an optional `youtube_channel_id`. A club without `news` gets no club news; the bundle notes the gap.
-- `config/competitions.json`: `short_name` labels results, and `stats_from` points a competition (the SLB Cup) at the one whose rosters, averages and form it borrows.
+- `config/competitions.json`: `short_name` labels results, and `stats_from` points a competition (the SLB Cup) at the one whose rosters, averages and form it borrows. Each competition's `previous` block names last season's edition: `{ "kind": "genius", "competition_id": "<id>" }`, with `"league": true` on the Championship, or `{ "kind": "euroleague", "season": "U2025" }`. Fill these in pre-season. A competition with `previous` but no `source` (the Trophy and Play-offs until their ids are published) is read for last season only; the sync skips it.
 - `config/venues.json`: an optional `directions` line shown with a venue change.
 
 ### Running it locally
 
 ```
-node src/programme/gather.js --fixture <id> --out out/run
+node src/programme/gather.js --fixture <id> --out out/run   # add --now <ISO time> to replay a past game morning
 # write out/run/programme.md, or let Claude do it with the prompt
 node src/programme/check.js out/run/data.json out/run/programme.md
 node src/programme/build.js out/run/data.json out/run/programme.md out/run

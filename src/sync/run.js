@@ -28,7 +28,7 @@ const state = await loadState(args.state);
 const { notice, change, warn, info } = createNotice(now);
 const recorder = { change, warn, info };
 
-for (const competition of config.competitions) {
+for (const competition of config.competitions.filter((c) => c.source)) {
   let sourceFixtures;
   try {
     sourceFixtures = await readCompetition(competition);

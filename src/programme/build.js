@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { PAGE_WARNING, renderPdf } from './pdf.js';
+import { OPENER_PAGE_WARNING, PAGE_WARNING, renderPdf } from './pdf.js';
 import { renderProgramme } from './render.js';
 
 const ROOT = fileURLToPath(new URL('../..', import.meta.url));
@@ -18,7 +18,8 @@ export async function buildProgramme(dataPath, markdownPath, outDir) {
   await writeFile(htmlPath, html);
 
   const pages = await renderPdf(htmlPath, join(outDir, 'programme.pdf'));
-  if (pages > PAGE_WARNING) warnings.push(`PDF runs to ${pages} A5 pages, more than ${PAGE_WARNING}`);
+  const limit = data.season_opener ? OPENER_PAGE_WARNING : PAGE_WARNING;
+  if (pages > limit) warnings.push(`PDF runs to ${pages} A5 pages, more than ${limit}`);
   return { pages, warnings };
 }
 

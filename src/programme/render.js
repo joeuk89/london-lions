@@ -74,14 +74,59 @@ function leagueTable(data) {
 }
 
 function next(list) {
+  if (list.length === 0) return '<p class="muted">No further fixtures scheduled yet.</p>';
   return `<ul class="scores">${list.map((f) => `<li><span><time datetime="${esc(f.tipoff)}">${shortDate.format(at(f.tipoff))}, ${clock.format(at(f.tipoff))}</time> <em class="muted">${esc(f.competition_name)}</em> ${versus(f)}${f.venue_change ? ` (at ${esc(f.venue_name)})` : ''}</span></li>`).join('')}</ul>`;
 }
 
 const has = (list) => Array.isArray(list) && list.length > 0;
 
+function standingLine(s) {
+  return `${s.group ? `Group ${esc(s.group)}, ` : ''}${ordinal(s.position)}, ${s.won}–${s.lost}`;
+}
+
+function gameLine(g) {
+  const where = g.venue_name ? ` at ${esc(g.venue_name)}` : '';
+  const what = g.final ? `Final v ${esc(g.opponent_name)}${where}` : `${g.round ? `${esc(g.round)}, ` : 'Last game, '}${versus(g)}`;
+  return `<li><span><time datetime="${esc(g.date)}">${fullDate.format(at(g.date))}</time> ${what}</span><span>${score(g)}</span></li>`;
+}
+
+// One heading per competition: final standing, then the final or the last game played.
+function lastSeasonList(entries, { leagueGames }) {
+  return entries.map((e) => {
+    const rows = [];
+    if (e.standing) rows.push(`<li><span>Final standing</span><span>${standingLine(e.standing)}</span></li>`);
+    if (e.last_game && (leagueGames || !e.league)) rows.push(gameLine(e.last_game));
+    return rows.length > 0 ? `<h3>${esc(e.competition_name)}</h3><ul class="scores">${rows.join('')}</ul>` : '';
+  }).join('');
+}
+
+function lastSeason(data) {
+  const entries = data.last_season?.competitions ?? [];
+  if (!entries.some((e) => e.league && e.standing)) return '';
+  return lastSeasonList(entries, { leagueGames: false });
+}
+
+function summer(data) {
+  const { joined = [], left = [] } = data.summer ?? {};
+  const names = (heading, list) => (list.length > 0 ? `<h3>${heading}</h3><ul class="links">${list.map((n) => `<li>${esc(n)}</li>`).join('')}</ul>` : '');
+  return names('In', joined) + names('Not in this season’s squad', left);
+}
+
+function opponentRecap(data) {
+  const recap = data.opponent.last_season;
+  if (!recap) return '';
+  const entered = recap.competitions.some((e) => e.competition_name === data.fixture.competition_name);
+  const first = entered ? '' : '<p class="muted">First season in this competition.</p>';
+  return `<h3>Last season</h3>${first}${lastSeasonList(recap.competitions, { leagueGames: true })}`;
+}
+
+// `opener: true` sections exist only at the season opener, `opener: false` ones everywhere else.
 const SECTIONS = [
+  { heading: 'Last season', opener: true, mandatory: true, data: lastSeason },
+  { heading: 'The summer', opener: true, data: (d) => summer(d) },
   {
     heading: 'Form',
+    opener: false,
     mandatory: true,
     data: (d) => has(d.lions.results) && results(d.lions.results) + highlights(d.lions.highlights),
   },
@@ -97,18 +142,20 @@ const SECTIONS = [
     title: (d) => esc(d.opponent.name),
     mandatory: true,
     team: (d) => d.opponent,
-    data: (d) => has(d.opponent.results) && has(d.opponent.roster)
-      && `<h3>Last five</h3>${results(d.opponent.results.slice(0, 5))}${highlights(d.opponent.highlights)}${roster(d.opponent.roster)}`,
+    data: (d) => has(d.opponent.roster) && (has(d.opponent.results) || d.opponent.last_season)
+      && `${has(d.opponent.results) ? `<h3>Last five</h3>${results(d.opponent.results.slice(0, 5))}` : opponentRecap(d)}${highlights(d.opponent.highlights)}${roster(d.opponent.roster)}`,
   },
   { heading: 'Things to watch' },
   { heading: 'Head to head', mandatory: true, dataFirst: true, data: headToHead },
   { heading: 'League table', data: leagueTable },
   { heading: 'Notable stats' },
   { heading: 'Club news' },
-  { heading: "What's next", mandatory: true, data: (d) => has(d.next) && next(d.next) },
+  { heading: "What's next", mandatory: true, data: (d) => Array.isArray(d.next) && next(d.next) },
 ];
 
-const sectionIndex = (heading) => SECTIONS.findIndex((s) => s.heading.toLowerCase() === normaliseHeading(heading).toLowerCase());
+const sectionsFor = (data) => SECTIONS.filter((s) => s.opener === undefined || s.opener === Boolean(data.season_opener));
+
+const unplayed = (team) => team && team.record.won + team.record.lost === 0;
 
 function blocksHtml(blocks, team) {
   const out = [];
@@ -121,7 +168,8 @@ function blocksHtml(blocks, team) {
     if (block.type === 'card') {
       const player = team?.roster.find((p) => p.name.toLowerCase() === block.name.toLowerCase());
       if (!player) throw new Error(`Player card ${block.name} is not on the ${team ? `${team.name} ` : ''}roster`);
-      cards.push(`<div><h3>${esc(player.name)}</h3><small class="season">${seasonLine(player)}</small>${block.paragraphs.map((p) => `<p>${p.html}</p>`).join('')}</div>`);
+      const line = !player.season && unplayed(team) ? '' : `<small class="season">${seasonLine(player)}</small>`;
+      cards.push(`<div><h3>${esc(player.name)}</h3>${line}${block.paragraphs.map((p) => `<p>${p.html}</p>`).join('')}</div>`);
       continue;
     }
     flushCards();
@@ -133,6 +181,8 @@ function blocksHtml(blocks, team) {
 }
 
 function sectionsHtml(data, prose, warnings) {
+  const sections = sectionsFor(data);
+  const sectionIndex = (heading) => sections.findIndex((s) => s.heading.toLowerCase() === normaliseHeading(heading).toLowerCase());
   const written = new Map();
   let last = -1;
   for (const section of prose.sections) {
@@ -147,11 +197,11 @@ function sectionsHtml(data, prose, warnings) {
   const omitted = new Map((prose.meta.omitted ?? []).map((o) => [sectionIndex(o.section), o]));
   for (const [index, o] of omitted) {
     if (index === -1) throw new Error(`Front-matter omits unknown section "${o.section}"`);
-    if (SECTIONS[index].mandatory) throw new Error(`Mandatory section "${o.section}" cannot be omitted`);
+    if (sections[index].mandatory) throw new Error(`Mandatory section "${o.section}" cannot be omitted`);
     if (written.has(index)) throw new Error(`Section "${o.section}" is both written and omitted`);
   }
 
-  return SECTIONS.map((def, index) => {
+  return sections.map((def, index) => {
     const prosed = written.get(index);
     const team = def.team?.(data);
     const dataHtml = def.data?.(data) || '';
@@ -189,21 +239,23 @@ ${flag}
 }
 
 function formStrip(list) {
+  if (list.length === 0) return DASH;
   return `<span class="form">${list.slice(0, 5).reverse().map((r) => {
     const won = r.for > r.against;
     return `<span class="${won ? 'w' : 'l'}">${won ? 'W' : 'L'}</span>`;
   }).join(' ')}</span>`;
 }
 
-const leaders = (list = []) => list.map((l) => `${esc(surname(l.name))} ${one(l.value)}`).join(', ');
-const threes = (list = []) => list.map((l) => `${esc(surname(l.name))} ${one(l.made)} of ${one(l.attempted)}`).join(', ');
+const DASH = '–';
+const leaders = (list = []) => list.map((l) => `${esc(surname(l.name))} ${one(l.value)}`).join(', ') || DASH;
+const threes = (list = []) => list.map((l) => `${esc(surname(l.name))} ${one(l.made)} of ${one(l.attempted)}`).join(', ') || DASH;
 const record = (r) => `${r.position ? `${ordinal(r.position)}, ` : ''}${r.won}–${r.lost}`;
 function ordinal(n) {
   const s = ['th', 'st', 'nd', 'rd'];
   const v = n % 100;
   return `${n}${s[(v - 20) % 10] || s[v] || s[0]}`;
 }
-const lastGame = (r) => `${score(r)} ${versus(r)}, ${shortDate.format(at(r.date))}`;
+const lastGame = (r) => (r ? `${score(r)} ${versus(r)}, ${shortDate.format(at(r.date))}` : DASH);
 
 function comparison(data) {
   const { lions, opponent } = data;

@@ -124,3 +124,52 @@ test('gathered data renders with a minimal programme', async () => {
   const { html } = renderProgramme(data, md);
   assert.match(html, /Lions edge Cheshire to stay unbeaten/);
 });
+
+test('the season opener gathers last season, the summer and a season-long news window', async () => {
+  const config = await loadConfig();
+  config.competitions = config.competitions.filter((c) => c.source?.kind !== 'euroleague' && c.previous?.kind !== 'euroleague');
+  const empty = '<html><body></body></html>';
+  const listing = `${CLUB_LISTING}
+<a href="/news/lions-women-sign-a-centre-for-slbw"><h3>Lions sign a centre for the new season</h3><div>August 1, 2026</div></a>`;
+  const pages = [
+    ['/competition/41897/team/178242/roster', (await fixture('genius-roster.html')).replaceAll('Joel Scott', 'Ovie Soko').replaceAll('2503980', '999')],
+    ['/competition/41897/team/178242/schedule', new Error('should not be read')],
+    ['/competition/42212/team/178242/schedule', await fixture('genius-team-schedule.html')],
+    ['/competition/42212/schedule?phaseName=Final', await fixture('genius-final.html')],
+    ['/schedule', empty],
+    ['/competition/41897/team/178242', empty],
+    ['/competition/41897/team/178237', empty],
+    ['/standings', await fixture('genius-standings.html')],
+    ['/team/178242/roster', await fixture('genius-roster.html')],
+    ['/team/178237/roster', await fixture('genius-roster.html')],
+    ['/team/178237', await fixture('genius-summary.html')],
+    ['/statistics', new Error('statistics are not read before anyone has played')],
+    ['club.example/news/lions-women', `<div class="news-richtext"><p>${'She joins the SLBW squad. '.repeat(20)}</p></div>`],
+    ['club.example/news/', ARTICLE],
+    ['club.example/news', listing],
+    ['hoopsfix.example', rss([])],
+    ['bristolflyers.co.uk', rss([])],
+    ['youtube.com', '<feed></feed>'],
+  ];
+  const { data, bundle } = await gather({
+    fixture: state.fixtures[0], state, config, programme,
+    now: new Date('2026-09-18T07:05:00Z'), fetch: fakeFetch(pages), pause: 0,
+  });
+
+  assert.equal(data.season_opener, true);
+  assert.deepEqual(data.lions.record, { won: 0, lost: 0 });
+  assert.deepEqual(data.lions.leaders.points, []);
+  assert.equal(data.lions.roster[0].season, undefined);
+  assert.equal(data.table, null);
+  const [championship, trophy] = data.last_season.competitions;
+  assert.deepEqual([championship.competition_name, championship.standing], ['SLB Championship', { position: 1, won: 6, lost: 0 }]);
+  assert.deepEqual(trophy.last_game, {
+    round: 'Final', final: true, date: '2026-02-01T15:30:00.000Z', opponent_name: 'Newcastle Eagles',
+    home: true, venue_name: 'Utilita Arena Birmingham', for: 74, against: 68,
+  });
+  assert.deepEqual(data.summer, { joined: ['Joel Scott'], left: ['Ovie Soko'] });
+  assert.equal(bundle.windows.lions_news_since, '2026-02-02T00:00:00.000Z');
+  assert.deepEqual(bundle.articles.map((a) => a.title), ['Lions sign a new guard in September'], 'later and women\'s team items are left out');
+  assert.ok(data.opponent.last_season, 'an opponent with no results this season gets a recap');
+  assert.deepEqual(data.head_to_head.meetings.map((m) => m.competition_name), []);
+});

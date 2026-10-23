@@ -1,0 +1,475 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://hosted.dcd.shared.geniussports.com/css/hs-style.css?v=4.0">
+        <link rel="stylesheet" type="text/css" href="https://hosted.dcd.shared.geniussports.com/css/footable.bootstrap.min.css" media="screen">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://hosted.dcd.shared.geniussports.com/css/print.css" media="print">
+        <!-- <link rel="stylesheet" type="text/css" href="https://hosted.dcd.shared.geniussports.com/css/theme.css" media="screen"> -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://hosted.dcd.shared.geniussports.com/js/footable.min.js"></script>
+
+        <!-- footable decimal number formatter -->
+        <script>
+            function formatter(valueOrElement){
+                if (FooTable.is.jq(valueOrElement)) {
+                    return valueOrElement.data('value') || valueOrElement.text();
+                }
+
+                if (FooTable.is.defined(valueOrElement) && valueOrElement != null){
+                    return valueOrElement+'';
+                }
+
+                return null;
+            }
+        </script>
+
+        <script type="text/javascript">
+            var mobileScreen = 0;
+            if(jQuery(window).width() < 991)  {
+                mobileScreen = 1;
+            }
+        </script>
+
+        <script src="https://hosted.dcd.shared.geniussports.com/js/hosted.js?v=4.0"></script>
+        <script src="https://hosted.dcd.shared.geniussports.com/js/toggleclasses.js"></script>
+        <!-- Language en -->
+        <style>
+            .page-nav, .table-wrap th, .template-wrap th,.leader-first .ld-info{background:#D23C24;}
+            .match-details-wrap, .table-wrap th, .template-wrap th,.leader-first .ld-info, .match-venue a{color:#FFFFFF}
+            .match-header .name a,
+            .match-wrap .sched-teams .team-name span,
+            .playerblock a,
+            .teams-list-page .team-link a,
+            .template-wrap a,
+            .table-wrap a,
+            .template-wrap a.teamnames,
+            .template-wrap table a, 
+            .alphabet li a {
+                color:#212121}
+            body {
+margin: 0;
+background-color: #000000;
+background-size: 100%
+}
+.hs-container {
+padding-right: 15px;
+padding-left: 15px;
+padding-top: 15px;
+margin-right: auto;
+margin-left: auto;
+width: 100%;
+position: relative;
+}
+.hs-container h3 {
+font-family: BebasNeue,Helvetica,Arial,sans-serif;
+color: #000000;
+font-size: 3.5em;
+margin: 0.1em 0 0.1em;
+overflow: hidden;
+-o-text-overflow: ellipsis;
+text-overflow: ellipsis;
+white-space: nowrap;
+letter-spacing: 1px;
+font-weight: 400;
+}
+.generic-list-menu {
+background: #000000;
+padding: 5px;
+white-space: nowrap;
+overflow-x: scroll;
+width: 100%;
+padding-bottom: 30px;
+}
+.matchDisplaySelector {
+background: #000000;
+height: 45px;
+line-height: 45px;
+position: relative;
+}
+.matchDisplaySelector h4 {
+color: White;
+}
+.hs-nav li a.activeitem {
+background: white;
+}
+.hs-nav li a {
+color: black;
+border-left: 4px solid black;
+text-decoration: none;
+text-align: center;
+font-family: BebasNeue,Helvetica,Arial,sans-serif;
+display: block;
+font-size: 1.5em;
+padding-left: 10%;
+padding-right: 10%;
+line-height: 55px;
+cursor: pointer;
+overflow: hidden;
+-o-text-overflow: ellipsis;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+.print-link img {
+display:none;
+}
+.print-link {
+display:none;
+}
+.language-chooser {
+display:none;
+}
+.selector-wrap {
+background: #fff;
+padding: 15px 15px 15px 0;
+text-align: right;
+height: 0px;
+margin-bottom: -105px;
+padding-left: 29%;
+}
+        </style>
+        <title></title>
+        <link rel="canonical" href="https://geniussports.com"/>
+        <meta name="robots" content="noindex" />
+    </head>
+    <body dir="ltr" class = "_user_727 _comp_42212 ltr  ">
+        <div class="hs-page hs-container" id="hs-container">
+                                    <div class="language-chooser hs-container">
+                <div class="lang-select">
+<select name = "chooselanguage" id = "languageChooser">
+    <option value = "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/42212/schedule"  SELECTED  >English</option>
+</select>
+</div>
+            </div> 
+            <a href="#" onClick="printElem('hs-container','https://hosted.dcd.shared.geniussports.com'); return false" class="print-link"><img src="https://hosted.dcd.shared.geniussports.com/images/print-icon.png" alt="Print" id="print-button" /></a>
+            
+            
+                            <div class="hs-page-nav hs-navbar">
+                                    </div>
+            
+            <div class="selector-wrap">
+                <div class="hs-container noresize">
+                    <div class="comp-selector">
+                                                                    <select name = "compId" id = "competitionChooser">
+                                     <option value = "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/schedule"  >Championship 26-27</option>
+                                <option value = "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/39625/schedule"  >Championship 2024-25</option>
+                                <option value = "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/41897/schedule"  >Championship 2025-26</option>
+                                <option value = "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49599/schedule"  >Cup 26-27</option>
+                                <option value = "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/39732/schedule"  >Cup 2024-25</option>
+                                <option value = "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/47714/schedule"  >Cup 2025-26</option>
+                                <option value = "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/39733/schedule"  >Play-offs 2024-25</option>
+                                <option value = "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/48758/schedule"  >Play-offs 2025-26</option>
+                                <option value = "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/39626/schedule"  >Trophy 2024-25</option>
+                                <option value = "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/42212/schedule"  SELECTED  >Trophy 2025-26</option>
+                </select>
+                <select name = "year" id = "yearChooser">
+                    <option value = "2026" >2026</option>
+                    <option value = "2025" >2025</option>
+                    <option value = "2024" >2024</option>
+                </select>
+    
+<script>
+    jQuery(document).ready(function() {
+        var compdata = [];
+                var compId = '49597';
+        var compPathPart = '';
+        if (compId == 0){
+            compdata.push(['','','','','']);
+            compdata.push(['https://hosted.dcd.shared.geniussports.com/SLB/en/competition/all/schedule','Championship 26-27', 610, '2026', 49597]);
+        } else {
+            compdata.push(['https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/schedule','Championship 26-27', 610, '2026', 49597]);
+        }
+                var compId = '39625';
+        var compPathPart = '';
+        if (compId == 0){
+            compdata.push(['','','','','']);
+            compdata.push(['https://hosted.dcd.shared.geniussports.com/SLB/en/competition/all/schedule','Championship 2024-25', 610, '2024', 39625]);
+        } else {
+            compdata.push(['https://hosted.dcd.shared.geniussports.com/SLB/en/competition/39625/schedule','Championship 2024-25', 610, '2024', 39625]);
+        }
+                var compId = '41897';
+        var compPathPart = '';
+        if (compId == 0){
+            compdata.push(['','','','','']);
+            compdata.push(['https://hosted.dcd.shared.geniussports.com/SLB/en/competition/all/schedule','Championship 2025-26', 610, '2025', 41897]);
+        } else {
+            compdata.push(['https://hosted.dcd.shared.geniussports.com/SLB/en/competition/41897/schedule','Championship 2025-26', 610, '2025', 41897]);
+        }
+                var compId = '49599';
+        var compPathPart = '';
+        if (compId == 0){
+            compdata.push(['','','','','']);
+            compdata.push(['https://hosted.dcd.shared.geniussports.com/SLB/en/competition/all/schedule','Cup 26-27', 610, '2026', 49599]);
+        } else {
+            compdata.push(['https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49599/schedule','Cup 26-27', 610, '2026', 49599]);
+        }
+                var compId = '39732';
+        var compPathPart = '';
+        if (compId == 0){
+            compdata.push(['','','','','']);
+            compdata.push(['https://hosted.dcd.shared.geniussports.com/SLB/en/competition/all/schedule','Cup 2024-25', 610, '2024', 39732]);
+        } else {
+            compdata.push(['https://hosted.dcd.shared.geniussports.com/SLB/en/competition/39732/schedule','Cup 2024-25', 610, '2024', 39732]);
+        }
+                var compId = '47714';
+        var compPathPart = '';
+        if (compId == 0){
+            compdata.push(['','','','','']);
+            compdata.push(['https://hosted.dcd.shared.geniussports.com/SLB/en/competition/all/schedule','Cup 2025-26', 610, '2025', 47714]);
+        } else {
+            compdata.push(['https://hosted.dcd.shared.geniussports.com/SLB/en/competition/47714/schedule','Cup 2025-26', 610, '2025', 47714]);
+        }
+                var compId = '39733';
+        var compPathPart = '';
+        if (compId == 0){
+            compdata.push(['','','','','']);
+            compdata.push(['https://hosted.dcd.shared.geniussports.com/SLB/en/competition/all/schedule','Play-offs 2024-25', 610, '2024', 39733]);
+        } else {
+            compdata.push(['https://hosted.dcd.shared.geniussports.com/SLB/en/competition/39733/schedule','Play-offs 2024-25', 610, '2024', 39733]);
+        }
+                var compId = '48758';
+        var compPathPart = '';
+        if (compId == 0){
+            compdata.push(['','','','','']);
+            compdata.push(['https://hosted.dcd.shared.geniussports.com/SLB/en/competition/all/schedule','Play-offs 2025-26', 610, '2025', 48758]);
+        } else {
+            compdata.push(['https://hosted.dcd.shared.geniussports.com/SLB/en/competition/48758/schedule','Play-offs 2025-26', 610, '2025', 48758]);
+        }
+                var compId = '39626';
+        var compPathPart = '';
+        if (compId == 0){
+            compdata.push(['','','','','']);
+            compdata.push(['https://hosted.dcd.shared.geniussports.com/SLB/en/competition/all/schedule','Trophy 2024-25', 610, '2024', 39626]);
+        } else {
+            compdata.push(['https://hosted.dcd.shared.geniussports.com/SLB/en/competition/39626/schedule','Trophy 2024-25', 610, '2024', 39626]);
+        }
+                var compId = '42212';
+        var compPathPart = '';
+        if (compId == 0){
+            compdata.push(['','','','','']);
+            compdata.push(['https://hosted.dcd.shared.geniussports.com/SLB/en/competition/all/schedule','Trophy 2025-26', 610, '2025', 42212]);
+        } else {
+            compdata.push(['https://hosted.dcd.shared.geniussports.com/SLB/en/competition/42212/schedule','Trophy 2025-26', 610, '2025', 42212]);
+        }
+        
+        function resetFilters() {
+            compId = 42212;
+            for(i = 0; i< compdata.length; i++) {
+                var cId = compdata[i][4];
+                if(compId == cId)   {
+                    jQuery('#yearChooser').val(compdata[i][3]);
+                    jQuery('#leagueChooser').val(compdata[i][2]);
+                }
+            }
+        }
+
+        function updateComps()  {
+            var year = jQuery('#yearChooser').val();
+            var league = jQuery('#leagueChooser').val();
+            var str = '<option value = ""></option>';
+            compId = jQuery('#competitionChooser').val() || '';
+            for(i = 0; i< compdata.length; i++) {
+                if(
+                    (!league || compdata[i][2] == league)
+                    && (!year || compdata[i][3] == year)
+                )   {
+                    selected = '';
+                    if(42212 == compdata[i][4]) {
+                        selected = 'SELECTED';
+                    }
+                    str = str + '<option value = "' + compdata[i][0] + '" ' + selected + '>' + compdata[i][1] + '</option>';
+                } else if (compdata[i][3] == 0){
+                    str = str + '<option value = "' + compdata[i][0] + '">' + compdata[i][1] + '</option>';
+                }
+            }
+            jQuery('#competitionChooser').html(str);
+        }
+        jQuery('#leagueChooser').change(function()    {
+            updateComps();
+        });
+        jQuery('#yearChooser').change(function()    {
+            updateComps();
+        });
+        jQuery('#competitionChooser').change(function()    {
+          var url = jQuery(this).val();
+          if (url) {
+                          window.location = url;
+                      }
+          return false;
+        });
+        resetFilters();
+        updateComps();
+    });
+
+</script>                                            </div>
+                </div>
+            </div>
+            <div class="hs-container noresize main-container">
+                <div class="hs-row">
+                    <div class="hs-col-full">
+                                <div class="schedule-wrap template-wrap">
+                                <h3>Fixtures</h3>
+                <div id = "subcompselections" >
+        <div class = "selection-scroll" >
+        <div class = "generic-list-menu">
+                    <a href="https://hosted.dcd.shared.geniussports.com/SLB/en/competition/42212/schedule?phaseName=Final&amp;" class = "menuoption  currentoption ">Final</a>
+                    <a href="https://hosted.dcd.shared.geniussports.com/SLB/en/competition/42212/schedule?phaseName=Group 1&amp;" class = "menuoption ">Group 1</a>
+                    <a href="https://hosted.dcd.shared.geniussports.com/SLB/en/competition/42212/schedule?phaseName=Group 2&amp;" class = "menuoption ">Group 2</a>
+                    <a href="https://hosted.dcd.shared.geniussports.com/SLB/en/competition/42212/schedule?phaseName=Group 3&amp;" class = "menuoption ">Group 3</a>
+                    <a href="https://hosted.dcd.shared.geniussports.com/SLB/en/competition/42212/schedule?phaseName=Semi-Finals&amp;" class = "menuoption ">Semi-Finals</a>
+                </div>
+    </div>
+        
+                        
+                        
+                                                                                                    <div class = "selectionblock-rounds matchDisplaySelector">
+            <h4>Trophy 2025-26 - 
+                                    Round 1
+                            </h4>
+        </div>        
+    </div>
+<script>
+jQuery(document).ready(function() {
+    jQuery("#round-wrap, .roundlist").hover(
+        function () {
+            jQuery(".roundlist").show();
+        },
+        function () {
+            jQuery(".roundlist").hide();
+        }
+    );
+});
+</script>
+        <div class = "fixture-wrap">
+                            
+                                                                                                                                                                                                                                                                <div class="match-wrap STATUS_COMPLETE" id = "extfix_2798637">
+                                            <div class="match-details-wrap">
+                            <div class="match-details">
+                                <div class="match-time"><h6>Date / Time: </h6><span>Feb 1, 2026, 3:30 PM</span></div>
+                                <div class="match-venue"><h6>Venue: </h6><a href="https://hosted.dcd.shared.geniussports.com/SLB/en/competition/42212/venue/35265?" class="venuename">Utilita Arena Birmingham</a></div>
+                                                              
+                            </div>
+                        </div>
+                                                <div class="sched-teams">
+                            <div class="home-team">
+                                                                    <div class="home-team-logo team-logo">
+                                        <a href="https://hosted.dcd.shared.geniussports.com/SLB/en/competition/42212/team/178242?"><img src = "https://images.statsengine.playbyplay.api.geniussports.com/960b03394e5f41e8492bb1b561f2c843T1.png" alt="London Lions"></a>
+                                    </div>
+                                                                <div class="team-name">
+                                                                            <a href="https://hosted.dcd.shared.geniussports.com/SLB/en/competition/42212/team/178242?" class="teamnames">
+                                            <span class="team-name-full">London Lions</span><span class="team-name-code"></span>
+                                        </a>
+                                                                    </div>
+                                <div class="team-score homescore">
+                                    <div class="fake-cell">74</div>
+                                </div>
+                            </div>
+                            <div class="team-divide">
+                                <div class="match-result">
+                                    <div class="livenow livedetails" style = "">
+                                        <span class="matchStatus">Live now</span>
+                                        <span class="periodBreak">HALF-TIME</span>
+                                        <span class="liveperiodlabel">Period</span><span class = "liveperiod"></span>
+                                        <span class = "liveclock"></span>
+                                    </div>
+                                    <div class="notlive">
+                                                                                                                                    <span class="complete matchStatus"> Final </span>
+                                                                                                                        </div>
+                                </div>
+                            </div>
+                            <div class="away-team">
+                                                                    <div class="away-team-logo team-logo">
+                                        <a href="https://hosted.dcd.shared.geniussports.com/SLB/en/competition/42212/team/178236?"><img src = "https://images.statsengine.playbyplay.api.geniussports.com/3d8d959f9d76b9c699e7828a40dc2530T1.png" alt="Newcastle Eagles"></a>
+                                    </div>
+                                                                <div class="team-name">
+                                                                            <a href="https://hosted.dcd.shared.geniussports.com/SLB/en/competition/42212/team/178236?"  class="teamnames"><span class="team-name-full">Newcastle Eagles</span><span class="team-name-code"></span></a>
+                                                                    </div>
+                                <div class="team-score awayscore">
+                                    <div class="fake-cell">68</div>
+                                </div>
+                            </div>
+                                                    </div>
+                        <div class="sched-link">
+                                                                                        <div class="match-center-link">
+                                    <a href="https://hosted.dcd.shared.geniussports.com/SLB/en/competition/42212/match/2798637/boxscore?" class="detail-r-link livenow">
+                                        <span class="livenow matchLink">
+                                            Live now                                        </span>
+                                    </a>
+                                    <a href="https://hosted.dcd.shared.geniussports.com/SLB/en/competition/42212/match/2798637/boxscore?" class="detail-r-link notlive">
+                                                                                    <span class="complete matchLink"> Box Score </span>
+                                                                            </a>
+                                </div>
+                                                    </div>
+                    </div>
+                            </div>
+</div>
+<input type = "hidden" id = "completedMatchString" value = "Project-Id-Version: Warehouse Hosted Website
+Report-Msgid-Bugs-To: warren.rodie@geniussports.com
+POT-Creation-Date: 2017-11-29 12:28+1100
+PO-Revision-Date: 2020-04-23 08:30+0000
+Last-Translator: Tomas Bajoras <tomas.bajoras@geniussports.com>
+Language-Team: 
+Language: en
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Plural-Forms: nplurals=2; plural=n != 1;
+X-Generator: Weblate 2.11
+X-Poedit-KeywordsList: _;gettext;gettext_noop
+X-Poedit-Basepath: .
+X-Poedit-SourceCharset: UTF-8
+X-Poedit-SearchPath-0: /home/warren/src/spil/warehouseWebsiteHosted/templates
+">
+<input type = "hidden" id = "_livematches" value = "">
+<input type = "hidden" id = "competitionId" value = "42212">
+<input type = "hidden" id = "_baseURL" value = "https://hosted.dcd.shared.geniussports.com">
+<input type = "hidden" id = "sport" value = "basketball">
+<input type = "hidden" id = "summaryPageActive" value = "">
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                jQuery('table.footable').each(function (index, value) {
+                    if(!jQuery(this).is('[class*="footable-done"]')) {
+                        jQuery(this).addClass('footable-done');
+                        var table = jQuery(this);
+                        jQuery(this).footable({
+                           "sorting": {
+                               "enabled": true
+                           },
+                           'on': {
+                               'postinit.ft.table': function (e, ft) {
+                                   jQuery(this).show();
+                               }
+                           },
+                       });
+                    }
+                });
+
+                var popupMessage = "Popup Blocker is enabled - Please add this site to your exception list in order to print";
+            </script>
+            
+                <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-42351184-3', {'name' : 'client'});
+      ga('client.send', 'pageview');
+    </script>  
+                                        <script>
+                    jQuery(document).ready(function() {
+                        validateSetup(1,['hosted.dcd.shared.geniussports.com','superleaguebasketballm.co.uk'],'/SLB/en/invalidreferrer');
+                    });
+                </script>
+            
+            
+            <script src="https://zz.connextra.com/dcs/tagController/tag/4cd48cd7dd8d/Hosted_Solutions" async defer></script>
+        </div>
+    </body>
+</html>
+

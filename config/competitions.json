@@ -5,6 +5,7 @@
     "short_name": "SLB",
     "badge": "League",
     "source": { "kind": "genius", "competition_id": "49597", "team_id": "178242" },
+    "previous": { "kind": "genius", "competition_id": "41897", "league": true },
     "club_labels": ["SLB Championship", "SLB"]
   },
   {
@@ -14,7 +15,15 @@
     "badge": "Cup",
     "stats_from": "slb-championship-2026-27",
     "source": { "kind": "genius", "competition_id": "49599", "team_id": "178242" },
+    "previous": { "kind": "genius", "competition_id": "47714" },
     "club_labels": ["SLB Cup"]
+  },
+  {
+    "id": "slb-trophy-2026-27",
+    "name": "SLB Trophy",
+    "short_name": "SLB Trophy",
+    "badge": "Trophy",
+    "previous": { "kind": "genius", "competition_id": "42212" }
   },
   {
     "id": "eurocup-2026-27",
@@ -22,6 +31,14 @@
     "short_name": "EuroCup",
     "badge": "EuroCup",
     "source": { "kind": "euroleague", "competition": "U", "season": "U2026", "club_code": "LLI" },
+    "previous": { "kind": "euroleague", "season": "U2025" },
     "club_labels": ["EuroCup"]
+  },
+  {
+    "id": "slb-play-offs-2026-27",
+    "name": "SLB Play-offs",
+    "short_name": "Play-offs",
+    "badge": "Play-offs",
+    "previous": { "kind": "genius", "competition_id": "48758" }
   }
 ]

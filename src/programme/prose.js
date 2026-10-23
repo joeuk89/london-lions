@@ -27,7 +27,9 @@ function marked(text, where) {
   if (sources.length === 0) {
     throw new Error(`${where}: paragraph has no [src:…] marker: "${text.slice(0, 60)}…"`);
   }
-  return { html: markdown.parseInline(text.replace(MARKER, '').trim()), sources };
+  const rest = text.replace(MARKER, '');
+  if (rest.includes('[src:')) throw new Error(`${where}: malformed source marker (ids are lowercase letters, digits and hyphens): "${text.slice(0, 60)}…"`);
+  return { html: markdown.parseInline(rest.trim()), sources };
 }
 
 // Splits Claude's Markdown into an intro and `##` sections. Every paragraph,

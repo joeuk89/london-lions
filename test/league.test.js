@@ -59,3 +59,18 @@ test('EuroLeague standings carry the group', async () => {
   const standings = league.parseEuroleagueStandings(await fixture('euroleague-standings.json'));
   assert.deepEqual(standings.find((r) => r.code === 'TTK'), { position: 8, code: 'TTK', team: 'Turk Telekom Ankara', group: 'B', played: 4, won: 1, lost: 3 });
 });
+
+test('the competition-wide schedule reads both sides and lists its phases', async () => {
+  const { games, phases } = league.parseGeniusCompetitionSchedule(await fixture('genius-final.html'));
+  assert.deepEqual(games, [{
+    id: '2798637',
+    home: { team_id: '178242', name: 'London Lions', score: 74 },
+    away: { team_id: '178236', name: 'Newcastle Eagles', score: 68 },
+    venue_name: 'Utilita Arena Birmingham',
+  }]);
+  assert.deepEqual(phases, ['Final', 'Group 1', 'Group 2', 'Group 3', 'Semi-Finals']);
+});
+
+test('the Genius error page is refused rather than read as an empty schedule', () => {
+  assert.throws(() => league.assertGeniusPage('<html><head><title>Error</title></head></html>', 'u'), /u returned the Genius error page/);
+});

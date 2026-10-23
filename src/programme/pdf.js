@@ -3,6 +3,7 @@ import { pathToFileURL } from 'node:url';
 import { chromium } from 'playwright-core';
 
 export const PAGE_WARNING = 12;
+export const OPENER_PAGE_WARNING = 14;
 
 export async function renderPdf(htmlPath, pdfPath) {
   const browser = await chromium.launch({ channel: 'chrome' });
