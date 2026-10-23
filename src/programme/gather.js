@@ -8,6 +8,7 @@ import { loadConfig, resolveOpponent, ROOT } from '../sync/config.js';
 import { fetchText } from '../sync/fetch.js';
 import * as euroleague from '../sync/sources/euroleague.js';
 import * as genius from '../sync/sources/genius.js';
+import * as googleNews from './google-news.js';
 import * as league from './league.js';
 import { EUROLEAGUE_PUBLISHER, GENIUS_PUBLISHER } from './league.js';
 import * as news from './news.js';
@@ -314,7 +315,8 @@ export async function gather({ fixture, state, config, programme, now = new Date
     return news.parseListing(listing, feed);
   }
 
-  async function addArticles({ feed, prefix, publisher, label, keep }) {
+  // A paper that reports both Lions teams in one article is screened on the title only; the prompt drops the women's paragraphs.
+  async function addArticles({ feed, prefix, publisher, label, keep, screenTitleOnly = false }) {
     let items;
     try {
       items = await readItems(feed);
@@ -335,7 +337,7 @@ export async function gather({ fixture, state, config, programme, now = new Date
           continue;
         }
       }
-      if (WOMENS_TEAM.test(`${item.title}\n${text}`)) continue;
+      if (WOMENS_TEAM.test(screenTitleOnly ? item.title : `${item.title}\n${text}`)) continue;
       added += 1;
       const id = nextId(prefix);
       sources[id] = { publisher, title: item.title, url: item.url, published: item.published };
@@ -363,6 +365,72 @@ export async function gather({ fixture, state, config, programme, now = new Date
     });
   } else if (opponentEntry) {
     notes.push(`${fixture.opponent_name} has no club news source in the opponents table.`);
+  }
+  if (programme.newham_recorder) {
+    await addArticles({
+      feed: programme.newham_recorder, prefix: 'nr', publisher: 'Newham Recorder', label: 'Newham Recorder news',
+      keep: byMention, screenTitleOnly: true,
+    });
+  }
+
+  const headlines = [];
+  if (programme.google_news) await addGoogleNews(programme.google_news);
+
+  // Runs after the direct feeds, so a story they already carry keeps its direct copy.
+  async function addGoogleNews(feed) {
+    const earliest = Math.min(Date.parse(windows.lions_news_since), Date.parse(windows.opponent_news_since));
+    const days = Math.ceil((now.getTime() - earliest) / DAY);
+    const headlineKey = (title) => news.normalise(title).trim();
+    const seen = new Set(articles.map((a) => headlineKey(a.title)));
+    const excluded = new Set(feed.exclude_publishers ?? []);
+    for (const query of feed.queries) {
+      const q = query.replaceAll('{opponent}', fixture.opponent_name);
+      const url = googleNews.searchUrl(q, days);
+      let items;
+      try {
+        items = googleNews.parseSearch(await get(url));
+      } catch (error) {
+        failed.push({ label: `Google News: ${q}`, url, error: error.message });
+        continue;
+      }
+      let added = 0;
+      for (const item of items) {
+        if (added >= perSource) break;
+        const scope = byMention(item);
+        const key = headlineKey(item.title);
+        if (!scope || excluded.has(item.publisher) || seen.has(key) || WOMENS_TEAM.test(item.title)) continue;
+        seen.add(key);
+        added += 1;
+        const id = nextId('gn');
+        const { url: link, text } = await readThrough(item, feed);
+        const entry = { publisher: item.publisher, title: item.title, url: link, published: item.published };
+        sources[id] = entry;
+        if (text) articles.push({ id, scope, ...entry, text });
+        else headlines.push({ id, scope, ...entry });
+      }
+    }
+  }
+
+  // A Google item becomes an article only when its link decodes and the publisher's page reads.
+  async function readThrough(item, feed) {
+    if (!feed.decode_links) return { url: item.url };
+    let url;
+    try {
+      url = await googleNews.decodeLink(item.url, fetch);
+    } catch (error) {
+      notes.push(`Could not decode the Google News link for "${item.title}": ${error.message}`);
+      return { url: item.url };
+    }
+    const host = new URL(url).hostname;
+    if ((feed.no_fetch_hosts ?? []).some((h) => host === h || host.endsWith(`.${h}`))) return { url };
+    try {
+      const text = news.articleText(await get(url));
+      if (text.length >= FULL_TEXT) return { url, text };
+      notes.push(`${url} has too little text to read, so it stays a headline.`);
+    } catch (error) {
+      notes.push(`Could not read ${url}: ${error.message}`);
+    }
+    return { url };
   }
 
   async function highlights(channelId, id, title) {
@@ -413,7 +481,7 @@ export async function gather({ fixture, state, config, programme, now = new Date
     data_sources: [...dataSources],
     sources,
   };
-  const bundle = { fixture_id: fixture.id, gathered_at: now.toISOString(), windows, failed, notes, articles };
+  const bundle = { fixture_id: fixture.id, gathered_at: now.toISOString(), windows, failed, notes, articles, headlines };
   return { data, bundle };
 }
 
@@ -442,5 +510,5 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   await writeFile(path.join(args.out, 'bundle.json'), `${JSON.stringify(bundle, null, 2)}\n`);
   for (const f of bundle.failed) console.warn(`warning: ${f.label} failed: ${f.error}`);
   for (const n of bundle.notes) console.warn(`note: ${n}`);
-  console.log(`Wrote ${args.out}/data.json and bundle.json: ${bundle.articles.length} articles, ${data.data_sources.length} data sources`);
+  console.log(`Wrote ${args.out}/data.json and bundle.json: ${bundle.articles.length} articles, ${bundle.headlines.length} headlines, ${data.data_sources.length} data sources`);
 }

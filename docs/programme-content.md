@@ -45,7 +45,7 @@ The render fails when a mandatory section (form, or last season at the opener; L
 ## The season's edges
 
 - **Before a side has played** in the competition its stats come from, the gather step skips its statistics page: its record is 0–0 with no position, its leaders are empty, and its players carry no `season`. The comparison table shows a dash for each leader, the form strip and last game; player cards show no stat line.
-- **At the season opener** the league table is left out (`table` is null), the Lions' news window runs from the day after their last game of the previous season, and each news source gives up to 40 articles instead of 10. Items naming the women's team (London Lions Women, SLBW, WSLB, WNBL) are dropped from every source.
+- **At the season opener** the league table is left out (`table` is null), the Lions' news window runs from the day after their last game of the previous season, and each news source gives up to 40 articles instead of 10. Items naming the women's team (London Lions Women, SLBW, WSLB, WNBL) are dropped from every source; Newham Recorder and Google News items are screened on the title only.
 - **An opponent with no results this season** gets `opponent.last_season`, and its news window starts the day after its last game of the previous season.
 - **Head to head with no meeting this season** reads last season's meetings in every competition from the opponent's Genius team pages and the EuroLeague games feed.
 
@@ -54,14 +54,14 @@ The render fails when a mandatory section (form, or last season at the opener; L
 `.github/workflows/programme.yml` runs at 08:00 UK and on manual dispatch (with an optional fixture id, for testing on a non-game day):
 
 1. `node src/programme/today.js` picks today's fixture from `data/fixtures.json`, skipping withdrawn ones. No fixture ends the run quietly.
-2. `node src/programme/gather.js --fixture <id> --out out/run` writes the data file above and `bundle.json`: every article in its freshness window with its text, the windows used, failed sources and known gaps. A failed league page fails the run; a failed news or highlights feed is recorded and the run goes on.
+2. `node src/programme/gather.js --fixture <id> --out out/run` writes the data file above and `bundle.json`: every article in its freshness window with its text, `headlines` (Google News items whose text could not be read: `id`, `scope`, `publisher`, `title`, `url`, `published`), the windows used, failed sources and known gaps. A failed league page fails the run; a failed news or highlights feed is recorded and the run goes on.
 3. Claude reads `src/programme/prompt.md`, the data file and the bundle, writes `programme.md` beside the data file, and runs `node src/programme/check.js <data.json> <programme.md>` until it passes. It has no web tools.
 4. The build renders the page and PDF, `npm run season` regenerates the season index, and the bot commits `programmes/` and `index.html`.
 5. `node src/programme/email.js programme` sends the game-morning email once the page is live. Any failed step sends "no programme today" instead, naming the step. The bundle is kept as a 30-day workflow artifact.
 
 ### Hand-kept tables
 
-- `config/programme.json`: the site URL and the Lions' own sources (club news page, Hoopsfix feed, YouTube channel id).
+- `config/programme.json`: the site URL and the Lions' own sources: club news page, Hoopsfix feed, `newham_recorder` (an RSS feed; its articles are screened for the women's team on the title only, since it reports both teams in one piece) and YouTube channel id. `google_news` runs each of its `queries` (`{opponent}` becomes the fixture's opponent name) over the news window, drops items from `exclude_publishers` and stories a direct feed already carries, and, with `decode_links`, follows each link to the publisher's page. An item whose page reads becomes an article; any other, and any from `no_fetch_hosts`, stays a headline. A query that fails is a failed source labelled "Google News: <query>".
 - `config/opponents.json`: per opponent, `news` (`rss` with a feed URL, or `html` with a listing URL and the path prefix its article links share), `hoopsfix: true` for SLB clubs, and an optional `youtube_channel_id`. A club without `news` gets no club news; the bundle notes the gap.
 - `config/competitions.json`: `short_name` labels results, and `stats_from` points a competition (the SLB Cup) at the one whose rosters, averages and form it borrows. Each competition's `previous` block names last season's edition: `{ "kind": "genius", "competition_id": "<id>" }`, with `"league": true` on the Championship, or `{ "kind": "euroleague", "season": "U2025" }`. Fill these in pre-season. A competition with `previous` but no `source` (the Trophy and Play-offs until their ids are published) is read for last season only; the sync skips it.
 - `config/venues.json`: an optional `directions` line shown with a venue change.

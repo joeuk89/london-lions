@@ -5,7 +5,7 @@ You write the prose for one matchday programme. A deterministic step has already
 ## Inputs
 
 - `DATA`: the data file. Every number in the programme comes from here: records, leaders, results, rosters with season averages, head to head, league table, fixtures to come. `sources` maps every source id to its publisher, title and URL.
-- `BUNDLE`: the source bundle. `articles` holds the text of every news article fetched for this fixture, already filtered to its freshness window, each with an `id`, a `scope` (`lions` or `opponent`), a `publisher` and a `published` date. `failed` lists sources that could not be read this morning; `notes` lists known gaps.
+- `BUNDLE`: the source bundle. `articles` holds the text of every news article fetched for this fixture, already filtered to its freshness window, each with an `id`, a `scope` (`lions` or `opponent`), a `publisher` and a `published` date. `headlines` holds Headlines: news items known only by their `title`, `publisher` and `published` date, with no text read. `failed` lists sources that could not be read this morning; `notes` lists known gaps.
 - `docs/programme-content.md`: the content model the renderer enforces.
 - `test/fixtures/programme/bristol.md`: a finished programme Joe approved. Match its voice, length and structure.
 
@@ -68,8 +68,9 @@ When `DATA.opponent.results` is empty, `DATA.opponent.last_season` holds their p
 - **Men's team only applies to the summer too.** The club news page mixes in women's team signings; leave out any player not named in `DATA.lions.roster` or `DATA.summer` unless the article is plainly about the men's team.
 - **Never calculate or estimate a number.** Quote figures exactly as `DATA` or an article gives them. No percentages, differences or projections of your own.
 - **Quotes**: quote only words an article prints in quotation marks, attributed as the article attributes them, with that article's marker in the same paragraph. Articles not in English are paraphrased in English, never quoted.
+- **Headlines**: a headline supports one sentence that says only what the headline plainly says and names its publisher, such as "Bristol have signed Jordan Smith, the Bristol Post reports [src:gn-3]". Never quote a headline, never build on it, and never use one as the material for a player card. Use a headline only when it tells the reader something the articles and `DATA` do not, and only where that fact does the section's job: a signing in The opposition, a doubt in Injury and availability. A headline that restates a result or a record adds nothing; leave it out. Use headlines only in The opposition, Injury and availability, Things to watch, Club news and The summer. Ignore a question or teaser headline ("What next for…?").
 - **Tactics**: describe how a team plays only when an article says so. Never infer style from box scores.
-- **Men's team only.** Ignore articles about women's, academy, NextGen or community teams, except NextGen news under Club news.
+- **Men's team only.** Ignore articles about women's, academy, NextGen or community teams, except NextGen news under Club news. An article that reports both Lions teams, as the Newham Recorder's often do, is used for its men's team paragraphs only.
 - **Omit rather than pad.** When an omittable section has nothing worth saying, leave it out and list it under `omitted` with the reason, such as "Neither club has published injury news since the Lions' previous fixture."
 - Say nothing about failed sources or missing data in the programme itself; the email reports them.
 - Write in British English for a Lions supporter: warm, specific, never hype.

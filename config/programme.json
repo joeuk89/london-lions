@@ -2,5 +2,13 @@
   "site_url": "https://joeuk89.github.io/london-lions/",
   "club_news": { "kind": "html", "url": "https://www.thelondonlions.com/news", "links": "/news/" },
   "hoopsfix": { "kind": "rss", "url": "https://www.hoopsfix.com/feed/" },
+  "newham_recorder": { "kind": "rss", "url": "https://www.newhamrecorder.co.uk/sport/rss/" },
+  "google_news": {
+    "kind": "google-news",
+    "queries": ["site:superleaguebasketballm.co.uk", "\"London Lions\" basketball", "\"{opponent}\" basketball"],
+    "exclude_publishers": ["DAZN", "Sofascore", "Flashscore", "365Scores"],
+    "decode_links": true,
+    "no_fetch_hosts": ["superleaguebasketballm.co.uk"]
+  },
   "youtube_channel_id": "UCBKv-7gkxC6kA-_yOB1JMiw"
 }

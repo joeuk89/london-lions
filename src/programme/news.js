@@ -137,7 +137,7 @@ export function newsWindow(now, previous) {
 
 export const highlightsWindow = (now) => new Date(now.getTime() - 7 * DAY).toISOString();
 
-const normalise = (s) => s.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ');
+export const normalise = (s) => s.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ');
 export function mentions(item, names) {
   const haystack = ` ${normalise(`${item.title} ${item.categories?.join(' ') ?? ''} ${item.html ?? item.text ?? ''}`)} `;
   return names.some((n) => haystack.includes(` ${normalise(n).trim()} `));
