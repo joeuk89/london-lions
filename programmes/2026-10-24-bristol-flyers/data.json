@@ -1,5 +1,6 @@
 {
-  "gathered_at": "2026-10-23T00:22:45.853Z",
+  "gathered_at": "2026-10-24T07:20:36.217Z",
+  "season_opener": false,
   "fixture": {
     "id": "slb-championship-2026-27-0007",
     "competition": "slb-championship-2026-27",
@@ -58,10 +59,6 @@
         {
           "name": "Deane Williams",
           "value": 1.5
-        },
-        {
-          "name": "Keenan Evans",
-          "value": 1.5
         }
       ],
       "threes": [
@@ -114,7 +111,18 @@
         "against": 66
       }
     ],
-    "highlights": [],
+    "highlights": [
+      {
+        "title": "LONDON LIONS HANDLE BUSINESS IN CLUJ MOVING TO 2-2 in EUROCUP",
+        "url": "https://www.youtube.com/watch?v=ujAttbC3_tw",
+        "published": "2026-10-21T18:33:40.000Z"
+      },
+      {
+        "title": "LONDON LIONS EDGE CHESHIRE 87-83 TO EXTEND UNBEATEN SLB START",
+        "url": "https://www.youtube.com/watch?v=rr-eHWukD8U",
+        "published": "2026-10-18T18:54:37.000Z"
+      }
+    ],
     "roster": [
       {
         "number": 1,
@@ -191,17 +199,6 @@
           "reb": 4.2,
           "ast": 1,
           "min": 17
-        }
-      },
-      {
-        "number": 12,
-        "name": "Keenan Evans",
-        "position": "G",
-        "season": {
-          "pts": 9.8,
-          "reb": 2,
-          "ast": 3.5,
-          "min": 20
         }
       },
       {
@@ -513,6 +510,13 @@
         "points": 8
       },
       {
+        "team": "Newcastle Eagles",
+        "played": 6,
+        "won": 4,
+        "lost": 2,
+        "points": 8
+      },
+      {
         "team": "Caledonia Gladiators",
         "played": 5,
         "won": 3,
@@ -520,10 +524,10 @@
         "points": 6
       },
       {
-        "team": "Newcastle Eagles",
-        "played": 5,
+        "team": "Manchester Basketball",
+        "played": 7,
         "won": 3,
-        "lost": 2,
+        "lost": 4,
         "points": 6
       },
       {
@@ -548,24 +552,17 @@
         "points": 4
       },
       {
-        "team": "Manchester Basketball",
-        "played": 6,
-        "won": 2,
-        "lost": 4,
-        "points": 4
-      },
-      {
         "team": "Surrey 89ers",
-        "played": 3,
+        "played": 4,
         "won": 1,
-        "lost": 2,
+        "lost": 3,
         "points": 2
       },
       {
         "team": "Leicester Riders",
-        "played": 5,
+        "played": 6,
         "won": 0,
-        "lost": 5,
+        "lost": 6,
         "points": 0
       }
     ]
@@ -607,12 +604,13 @@
   "data_sources": [
     "gs-standings",
     "gs-lions-roster",
-    "gs-lions-stats",
     "gs-opponent",
     "gs-opponent-roster",
+    "gs-lions-stats",
     "gs-opponent-stats",
     "el-games",
-    "gs-schedule-49597"
+    "gs-schedule-49597",
+    "yt-lions"
   ],
   "sources": {
     "gs-standings": {
@@ -625,11 +623,6 @@
       "title": "Lions roster",
       "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178242/roster"
     },
-    "gs-lions-stats": {
-      "publisher": "Genius Sports (SLB)",
-      "title": "Lions player statistics",
-      "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178242/statistics"
-    },
     "gs-opponent": {
       "publisher": "Genius Sports (SLB)",
       "title": "Bristol Flyers summary",
@@ -639,6 +632,11 @@
       "publisher": "Genius Sports (SLB)",
       "title": "Bristol Flyers roster",
       "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178237/roster"
+    },
+    "gs-lions-stats": {
+      "publisher": "Genius Sports (SLB)",
+      "title": "Lions player statistics",
+      "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178242/statistics"
     },
     "gs-opponent-stats": {
       "publisher": "Genius Sports (SLB)",
@@ -657,81 +655,116 @@
     },
     "club-1": {
       "publisher": "London Lions",
+      "title": "KEENAN EVANS RETURNS TO ŽALGIRIS KAUNAS",
+      "url": "https://www.thelondonlions.com/news/keenan-evans-returns-to-zalgiris-kaunas",
+      "published": "2026-10-23T12:00:00.000Z"
+    },
+    "club-2": {
+      "publisher": "London Lions",
       "title": "LIONS DOMINATE SECOND HALF TO BEAT CLUJ 89-72 ON THE ROAD",
       "url": "https://www.thelondonlions.com/news/lions-dominate-second-half-to-beat-cluj-89-72-on-the-road",
       "published": "2026-10-21T12:00:00.000Z"
     },
-    "club-2": {
+    "club-3": {
       "publisher": "London Lions",
       "title": "LIONS EDGE CHESHIRE 87-83 TO EXTEND UNBEATEN SLB START TO 6-0",
       "url": "https://www.thelondonlions.com/news/lions-edge-cheshire-87-83-to-extend-unbeaten-slb-start-to-6-0",
       "published": "2026-10-18T12:00:00.000Z"
     },
-    "club-3": {
-      "publisher": "London Lions",
-      "title": "LIONS CLAIM FIRST SLBW WIN WITH 94-65 VICTORY OVER NOTTINGHAM WILDCATS",
-      "url": "https://www.thelondonlions.com/news/lions-claim-first-slbw-win-with-94-65-victory-over-nottingham-wildcats",
-      "published": "2026-10-17T12:00:00.000Z"
-    },
     "opp-1": {
+      "publisher": "Bristol Flyers",
+      "title": "The podcast goes courtside | The Bristol Flyers Podcast",
+      "url": "https://www.bristolflyers.co.uk/video/podcasts/the-podcast-goes-courtside-the-bristol-flyers-podcast/",
+      "published": "2026-10-23T16:37:11.000Z"
+    },
+    "opp-2": {
       "publisher": "Bristol Flyers",
       "title": "SGS College hiring for part-time Basketball Coach",
       "url": "https://www.bristolflyers.co.uk/home-top-featured/sgs-college-hiring-for-part-time-basketball-coach/",
       "published": "2026-10-22T12:53:22.000Z"
     },
-    "opp-2": {
+    "opp-3": {
       "publisher": "Bristol Flyers",
       "title": "Fixture update – tip-off change confirmed for Manchester Cup game",
       "url": "https://www.bristolflyers.co.uk/mens-first-team/fixture-update-tip-off-change-confirmed-for-manchester-cup-game/",
       "published": "2026-10-22T11:43:39.000Z"
     },
-    "opp-3": {
+    "opp-4": {
       "publisher": "Bristol Flyers",
       "title": "All-Access: Inside Bristol Flyers’ European road trip to Germany",
       "url": "https://www.bristolflyers.co.uk/video/all-access-inside-bristol-flyers-european-road-trip-to-germany/",
       "published": "2026-10-22T11:35:02.000Z"
     },
-    "opp-4": {
+    "opp-5": {
       "publisher": "Bristol Flyers",
       "title": "Join us for Halloween hoops against Manchester",
       "url": "https://www.bristolflyers.co.uk/mens-first-team/join-us-for-halloween-hoops-against-manchester/",
       "published": "2026-10-20T15:10:10.000Z"
     },
-    "opp-5": {
+    "opp-6": {
       "publisher": "Bristol Flyers",
       "title": "Bristol Flyers 90-89 Liverpool Basketball | Game Highlights",
       "url": "https://www.bristolflyers.co.uk/video/highlights/bristol-flyers-90-89-liverpool-basketball-game-highlights/",
       "published": "2026-10-18T19:48:04.000Z"
     },
-    "opp-6": {
+    "opp-7": {
       "publisher": "Bristol Flyers",
       "title": "Bristol Flyers v Liverpool Basketball | Condensed Game",
       "url": "https://www.bristolflyers.co.uk/video/bristol-flyers-v-liverpool-basketball-condensed-game/",
       "published": "2026-10-18T19:45:40.000Z"
     },
-    "opp-7": {
+    "opp-8": {
       "publisher": "Bristol Flyers",
       "title": "Game Recap: Bristol Flyers 90-89 Liverpool Basketball | SLB Championship",
       "url": "https://www.bristolflyers.co.uk/mens-first-team/game-recap-bristol-flyers-90-89-liverpool-basketball-slb-championship/",
       "published": "2026-10-18T19:32:34.000Z"
     },
-    "opp-8": {
+    "opp-9": {
       "publisher": "Bristol Flyers",
       "title": "“We owe this one to the crowd” – Kapoulas",
       "url": "https://www.bristolflyers.co.uk/mens-first-team/we-owe-this-one-to-the-crowd-kapoulas/",
       "published": "2026-10-18T18:30:44.000Z"
     },
-    "opp-9": {
+    "opp-10": {
       "publisher": "Bristol Flyers",
       "title": "“The fans played their part” – Bailey",
       "url": "https://www.bristolflyers.co.uk/mens-first-team/the-fans-played-their-part-bailey/",
       "published": "2026-10-18T18:27:25.000Z"
     },
-    "opp-10": {
-      "publisher": "Bristol Flyers",
-      "title": "Game Preview » Bristol Flyers vs Liverpool Basketball | SLB Championship",
-      "url": "https://www.bristolflyers.co.uk/news/game-preview-bristol-flyers-vs-liverpool-basketball-slb-championship/",
-      "published": "2026-10-16T14:24:46.000Z"
+    "nr-1": {
+      "publisher": "Newham Recorder",
+      "title": "London Lions enjoy winning weekend as men remain unbeaten and women get off the mark",
+      "url": "https://www.newhamrecorder.co.uk/sport/26648125.london-lions-men-stay-unbeaten-women-claim-first-win/?ref=rss",
+      "published": "2026-10-19T08:36:33.000Z"
+    },
+    "gn-1": {
+      "publisher": "Super League Basketball",
+      "title": "89ers score first victory, Sharks streak ends and Lions roll on in weekend of competitive action",
+      "url": "https://www.superleaguebasketballm.co.uk/89ers-etch-first-victory-sharks-streak-ends-and-lions-roll-on-in-weekend-of-competitive-action/",
+      "published": "2026-10-19T18:24:31.000Z"
+    },
+    "gn-2": {
+      "publisher": "Flashscore.com",
+      "title": "Cluj-Napoca - London Lions 72-89",
+      "url": "https://www.flashscore.com/match/basketball/csu-cluj-napoca-Iy6Md8xS/london-lions-2L6k5Rg4/",
+      "published": "2026-10-21T07:00:00.000Z"
+    },
+    "gn-3": {
+      "publisher": "Euroleague Basketball",
+      "title": "U-BT Cluj-Napoca-London Lions | Round 4 Highlights | 2026-27 BKT EuroCup",
+      "url": "https://www.euroleaguebasketball.net/news/u-bt-cluj-napoca-vs-london-lions-round-4-highlights-2026-27-bkt-eurocup/",
+      "published": "2026-10-21T18:49:17.000Z"
+    },
+    "gn-4": {
+      "publisher": "Informat.ro",
+      "title": "Men's basketball: U BT Cluj loses to London Lions in the BKT EuroCup",
+      "url": "https://informat.ro/en/sport/mens-basketball-u-bt-cluj-loses-to-london-lions-in-the-bkt-eurocup-144729",
+      "published": "2026-10-22T05:15:07.000Z"
+    },
+    "yt-lions": {
+      "publisher": "YouTube",
+      "title": "London Lions channel feed",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBKv-7gkxC6kA-_yOB1JMiw"
     }
   }
 }

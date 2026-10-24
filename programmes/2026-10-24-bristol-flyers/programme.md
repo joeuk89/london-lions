@@ -1,97 +1,99 @@
 ---
-summary: Unbeaten Lions, 6–0 in the SLB, host second-placed Bristol after winning in Cluj on Wednesday.
-watch: Davion Bailey's scoring against a Lions side led by Thomas Kennedy.
+summary: Unbeaten Lions, 6–0 in the SLB, host second-placed Bristol, who lost 80–78 to them in September.
+watch: Bailey's 18.3 points a game against a Lions side missing the loaned Keenan Evans.
 omitted:
-  - section: Injury and availability
-    reason: Neither club has published injury or availability news since the Lions' previous fixture.
   - section: Club news
-    reason: The only Lions club news in the window was about the women's team or covered by match reports.
+    reason: The only off-court Lions story in the window is Keenan Evans's recall, covered under Injury and availability.
 ---
 
-Six wins from six in the SLB Championship, and back from Romania with a EuroCup win, the Lions host Bristol Flyers at the Copper Box Arena on Saturday. Bristol sit second on 4–2, the only side within a win of the Lions at the top. [src:gs-standings] [src:club-1] [src:club-2]
+Six wins from six in the SLB Championship and fresh off a win in Romania, the Lions welcome the side that sits second, Bristol Flyers, to the Copper Box Arena. Bristol are 4–2, and they were the closest to London in September, when the Lions won 80–78 at the SGS College Arena. [src:gs-standings] [src:gs-schedule-49597]
 
-The sides have met once already this season: the Lions won 80–78 at the SGS College Arena on 18 September. [src:gs-schedule-49597] [src:gs-opponent]
+It is a week of change in the Lions backcourt, with Keenan Evans recalled to Žalgiris Kaunas, and a Bristol side led by Davion Bailey's 18.3 points a game. Here is what to know before tip-off. [src:club-1] [src:gs-opponent-stats]
 
-## Form: 6–0 in the SLB, 2–2 in Europe
+## Form: 6–0 in the SLB, 2–2 in the EuroCup
 
-The week began with a close one at Cheshire on Sunday. The Lions led 45–35 at the break after a 10–0 run to close the half, with Tarik Phillip at the heart of it, then had to withstand a series of Cheshire runs before winning 87–83. Joel Scott's free throws with 13 seconds left stretched the lead, and Thomas Kennedy sealed it from the line with two seconds to go. [src:club-2]
+The Lions beat Cheshire Phoenix 87–83 on the road on Sunday 18 October. After a back-and-forth first half they closed it with a 10–0 run to lead 45–35 at the break, then had to withstand a series of Cheshire runs after the interval. Landrius Horton led the scoring with 17 points, shooting 4/5 from three, with Tarik Phillip and Thomas Kennedy adding 14 each. After Cheshire made it a one-point game with 13 seconds left, Joel Scott was fouled and made both free throws. [src:club-3] [src:nr-1]
 
-Landrius Horton led the scoring with 17, shooting 4 of 5 from three, with Phillip and Kennedy on 14 each. Phillip added seven assists, and Scott had 13 points and some crucial late baskets. [src:club-2]
+Three days later they won 89–72 at U-BT Cluj-Napoca to move to 2–2 in the EuroCup. London trailed 22–21 after the first quarter and led 40–37 at half-time before taking control after the interval, using defensive pressure and efficient scoring. Head coach Tautvydas Sabonis pointed to the defence: “Our defence, 72 points is crazy,” said Sabonis. [src:club-2]
 
-Wednesday in Romania was a different kind of win. After a first half that ended 40–37 to the Lions, the second half belonged to London: a defence that made life increasingly difficult for Cluj, a lead that reached 17, and a final score of 89–72. Kennedy had 16 points and shot 7 of 7 from two-point range, Scott added 15 points and five rebounds, and Devante Jones finished with 14 points, five rebounds, four assists and three steals. Head coach Tautvydas Sabonis pointed to the defence: "Our defence, 72 points is crazy." [src:club-1]
-
-That result followed a 76–81 home defeat to Skyliners Frankfurt in the EuroCup on 15 October, and the win in Cluj leaves the Lions 2–2 in Europe. Before that came an 89–77 win over La Laguna Tenerife and a 71–66 league win over Leicester Riders. [src:club-1] [src:gs-schedule-49597] [src:el-games]
+The EuroCup has not been all smooth. The Lions beat La Laguna Tenerife 89–77 at home on 6 October, then lost 81–76 to Skyliners Frankfurt at home on 15 October. In the league, they edged Leicester Riders 71–66 on 2 October. [src:gs-schedule-49597] [src:el-games]
 
 ## Lions roster: and who to watch
 
 ### Thomas Kennedy
 
-The Lions' leading scorer at 11.5 points a game, with 4.7 rebounds and 2.2 assists in 19 minutes. He opened the scoring with a dunk at Cheshire and again at Cluj, where he did not miss a two-point shot. [src:gs-lions-stats] [src:club-1] [src:club-2]
+The Lions' leading scorer on 11.5 points a game. He scored 16 at Cluj, shooting 7/7 from two-point range, and had 14 points, three assists and three steals at Cheshire. [src:gs-lions-stats] [src:club-2] [src:club-3]
 
 ### Joel Scott
 
-The team's leading rebounder at 4.8 a game, alongside 10.4 points. He made the key plays late at Cheshire, finishing in transition, winning an offensive rebound and hitting the closing free throws, then scored 15 at Cluj. [src:gs-lions-stats] [src:club-1] [src:club-2]
-
-### Devante Jones
-
-Averages 9.4 points and 3.6 assists. At Cluj he made his trademark floater off the ball screen and, in the last few minutes, drew a foul and made both free throws. [src:gs-lions-stats] [src:club-1]
-
-### Tarik Phillip
-
-Averages 8.2 points, four rebounds and 2.6 assists. He sparked the 10–0 run that closed the first half at Cheshire, had seven assists there, and stole the ball for a dunk late at Cluj. [src:gs-lions-stats] [src:club-1] [src:club-2]
+Averages 10.4 points and leads the Lions with 4.8 rebounds a game. He added 15 points and five rebounds at Cluj, and his two free throws late at Cheshire pushed the lead back out. [src:gs-lions-stats] [src:club-2] [src:club-3]
 
 ### Landrius Horton
 
-Averages 9.8 points and takes 4.6 threes a game, making two. His 4-of-5 night from deep led the Lions at Cheshire, where he also hit a step-back jumper late in the shot clock in the fourth quarter. [src:gs-lions-stats] [src:club-2]
+Averages 9.8 points and is the Lions' leading three-point shooter, making two of 4.6 attempts a game. He went 4/5 from deep for his 17 at Cheshire, and added a step-back jumper in the closing minutes. [src:gs-lions-stats] [src:club-3]
+
+### Tarik Phillip
+
+Averages 8.2 points, 4 rebounds and 2.6 assists. At Cheshire he had 14 points, seven assists and four rebounds, and helped lead the 10–0 run that closed the first half. [src:gs-lions-stats] [src:club-3]
+
+### Devante Jones
+
+Averages 9.4 points and 3.6 assists. At Cluj he finished with 14 points, five rebounds, four assists and three steals, and made both free throws when Cluj cut the deficit to 10. [src:gs-lions-stats] [src:club-2]
+
+## Injury and availability
+
+Keenan Evans will not be in the Lions squad. The club confirmed on Friday that he is returning to Žalgiris Kaunas following his loan, after being recalled because of an injury to Žalgiris guard Nigel Williams-Goss. Evans made four appearances in both EuroCup and SLB Championship play, averaging 9.8 points and 3.5 assists in the SLB Championship. He scored 12 points at Cluj on Wednesday. [src:club-1] [src:club-2]
+
+General Manager Martynas Purlys said: “Having Keenan Evans with us has been a great opportunity. He brought quality, experience and leadership to our backcourt, and we wish him all the best as he returns to Žalgiris Kaunas.” [src:club-1]
 
 ## The opposition: second, 4–2
 
-Andreas Kapoulas's Flyers have won four of their last five, with the one defeat a 68–94 loss at Newcastle Eagles on 25 September. Last Sunday they beat Liverpool Basketball 90–89 at home, with Davion Bailey's lefty lay-in giving them a one-point lead with 16 seconds left; Liverpool's Damiri Lindo then missed two free throws with just over a second on the clock. [src:gs-opponent] [src:opp-7]
+Bristol have won four of six in the league. Their losses are to the Lions and, on 25 September, 94–68 at Newcastle Eagles. Since then they beat Manchester Basketball 76–58 at home, won 78–73 at Leicester Riders and then edged Liverpool Basketball 90–89 on Sunday. That one was settled at the line: Davion Bailey's lefty lay-in put the Flyers one up with 16 seconds left, and Liverpool's Damiri Lindo missed two free throws with just over a second to play. [src:gs-opponent] [src:opp-8]
 
-Before that they won 78–73 at Leicester Riders and 76–58 at home to Manchester Basketball, and they opened with a 101–92 win at Cheshire Phoenix. The club has also been in Germany this week for its ENBL European campaign. [src:gs-opponent] [src:opp-3]
+Bristol's recap singled out the pairing of Matteus Case and Kasen Jennings in the backcourt as dynamic, and the forward combination of Mike Diggins Jr and Zach Anderson for keeping them in touch in the first half. Head coach Andreas Kapoulas and Cam Holden were on the club podcast this week looking back on the one-point win. [src:opp-8] [src:opp-1]
 
 ### Davion Bailey
 
-Bristol's leading scorer at 18.3 points a game, taking 7.3 threes and making 2.8. He had 17 points, six assists, five rebounds and three steals against Liverpool, coming into his own in the third quarter as Bristol built an 11-point lead. [src:gs-opponent-stats] [src:opp-7]
+Bristol's leading scorer on 18.3 points a game, and he shoots plenty: 7.3 three-point attempts a game, of which he makes 2.8. He had 17 points, six assists, five rebounds and three steals against Liverpool. [src:gs-opponent-stats] [src:opp-8]
 
 ### Cameron Holden
 
-Leads Bristol in rebounds (6.5) and assists (4.5) from the guard spot, playing 25 minutes and scoring 9.2 a game. [src:gs-opponent-stats]
+The guard averages 9.2 points, leads the team with 6.5 rebounds and 4.5 assists a game, and plays 25 minutes. [src:gs-opponent-stats]
 
 ### Michael Diggins Jr
 
-The forward averages 12.2 points and 5.5 rebounds in 29 minutes. Against Liverpool he and Zach Anderson kept draining shots to hold Bristol in touching distance in the first half. [src:gs-opponent-stats] [src:opp-7]
+The forward averages 12.2 points and 5.5 rebounds in 29 minutes a game. [src:gs-opponent-stats]
 
 ### Zachary Anderson
 
-Averages 9.7 points and five rebounds in 30 minutes, and shares Bristol's lead in steals at 1.3 a game. His run in the first quarter against Liverpool helped Bristol take the lead after a 12–4 deficit. [src:gs-opponent-stats] [src:opp-7]
+Averages 9.7 points, 5 rebounds and 1.3 steals in 30 minutes a game. Bristol's recap credited his run in the first quarter against Liverpool. [src:gs-opponent-stats] [src:opp-8]
 
 ### Matteus Case
 
-Averages 10 points in just 14 minutes a game. Against Liverpool he and Kasen Jennings came in together as a dynamic backcourt pairing and kept Bristol ahead through the rest of the first quarter. [src:gs-opponent-stats] [src:opp-7]
+Scores 10 points a game in 14 minutes, off the bench. [src:gs-opponent-stats]
 
 ## Things to watch
 
-- **Bailey against the Lions' scorers.** Bristol's Bailey averages 18.3 points a game; the Lions' best is Kennedy on 11.5. [src:gs-opponent-stats] [src:gs-lions-stats]
-- **The rematch.** The Lions won 80–78 in Bristol on 18 September, and Bristol sit second behind them. [src:gs-schedule-49597] [src:gs-standings]
-- **Close finishes.** Bristol's last win was by a point; the Lions' last league win was by four. [src:opp-7] [src:club-2]
-- **Europe.** The Lions were in Romania on Wednesday; Bristol have been in Germany for the ENBL this week. [src:club-1] [src:opp-3]
+- **The league's scorers.** Bailey leads Bristol on 18.3 points a game; Kennedy leads London on 11.5. The Lions spread the load more widely. [src:gs-opponent-stats] [src:gs-lions-stats]
+- **Without Evans.** Four of Evans's appearances came in the SLB, where he averaged 9.8 points and 3.5 assists. Soluade leads the team with 4.2 assists. [src:club-1] [src:gs-lions-stats]
+- **Late-game free throws.** Bristol's win over Liverpool turned on two misses at the line, and the Lions' win at Cheshire on Scott's two. [src:opp-8] [src:club-3]
+- **Legs.** London played in Romania on Wednesday. Bristol's last league game was against Liverpool on 18 October. [src:club-2] [src:gs-opponent]
 
 ## Head to head: Lions by two in September
 
-The only meeting this season was in Bristol on 18 September, an 80–78 win for the Lions at the SGS College Arena in the SLB. [src:gs-schedule-49597] [src:gs-opponent]
+London won 80–78 at the SGS College Arena on 18 September, in Bristol's home arena. It is the only meeting this season. [src:gs-schedule-49597] [src:gs-opponent]
 
 ## League table
 
-The Lions top the table on 12 points from six games, all won. Bristol are second on eight points from six, with four wins and two defeats, ahead of Caledonia Gladiators and Newcastle Eagles on six points from five games each. [src:gs-standings]
+London top the table on 12 points from six games, with Bristol second on eight, level with Newcastle Eagles after six games each. At the bottom, Leicester Riders are 0–6. [src:gs-standings]
 
 ## Notable stats
 
-- Kennedy leads the Lions at 11.5 points a game, Scott in rebounds at 4.8 and Morayo Soluade in assists at 4.2. [src:gs-lions-stats]
-- Deane Williams and Keenan Evans share the Lions' lead in steals at 1.5 a game. [src:gs-lions-stats]
-- Bailey's 18.3 points lead Bristol, with Holden leading in rebounds (6.5) and assists (4.5). [src:gs-opponent-stats]
-- Bristol's results this season include a 76–58 win over Manchester and a 68–94 loss at Newcastle. [src:gs-opponent]
+- Kennedy leads the Lions with 11.5 points a game; Scott has the most rebounds, 4.8, and Soluade the most assists, 4.2. [src:gs-lions-stats]
+- Deane Williams leads the Lions in steals with 1.5 a game. [src:gs-lions-stats]
+- Bristol's leaders: Bailey 18.3 points, Holden 6.5 rebounds and 4.5 assists, and Anderson and Jennings 1.3 steals each. [src:gs-opponent-stats]
+- The Lions have won every SLB game this season, 6–0, while Bristol are 4–2. [src:gs-standings]
 
 ## What's next
 
-A busy week follows: Turk Telekom Ankara in the EuroCup at the Copper Box Arena on Wednesday, then Sheffield Sharks in the SLB on Friday 30 October at New City College Hackney. [src:gs-schedule-49597] [src:el-games]
+The Lions are home to Turk Telekom Ankara in the EuroCup on Wednesday 28 October, then host Sheffield Sharks in the SLB at New City College Hackney on Friday 30 October. [src:gs-schedule-49597] [src:el-games]
