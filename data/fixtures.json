@@ -1359,5 +1359,16 @@
     "slb-cup-2026-27": 1,
     "eurocup-2026-27": 14
   },
-  "sources": {}
+  "sources": {
+    "slb-championship-2026-27": {
+      "failing": true,
+      "since": "2026-10-25T07:23:17.437Z",
+      "error": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178242/schedule responded 500"
+    },
+    "slb-cup-2026-27": {
+      "failing": true,
+      "since": "2026-10-25T07:23:17.437Z",
+      "error": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49599/team/178242/schedule responded 500"
+    }
+  }
 }
