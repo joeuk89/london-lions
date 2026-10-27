@@ -306,7 +306,7 @@
       "first_seen": "2026-10-22",
       "sequence": 1,
       "source_id": "genius:2882472",
-      "source_url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/match/2882472/preview",
+      "source_url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/match/2882472/boxscore",
       "opponent": "bristol-flyers",
       "opponent_name": "Bristol Flyers",
       "designated_home": true,
@@ -319,8 +319,11 @@
         "home_venue": true
       },
       "status": "scheduled",
-      "played": false,
-      "result": null,
+      "played": true,
+      "result": {
+        "lions": 82,
+        "opponent": 76
+      },
       "misses": 0,
       "home": true,
       "away": false,
@@ -1359,16 +1362,5 @@
     "slb-cup-2026-27": 1,
     "eurocup-2026-27": 14
   },
-  "sources": {
-    "slb-championship-2026-27": {
-      "failing": true,
-      "since": "2026-10-25T07:23:17.437Z",
-      "error": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178242/schedule responded 500"
-    },
-    "slb-cup-2026-27": {
-      "failing": true,
-      "since": "2026-10-25T07:23:17.437Z",
-      "error": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49599/team/178242/schedule responded 500"
-    }
-  }
+  "sources": {}
 }
