@@ -1,0 +1,676 @@
+{
+  "gathered_at": "2026-10-28T08:21:22.797Z",
+  "season_opener": false,
+  "fixture": {
+    "id": "eurocup-2026-27-0010",
+    "competition": "eurocup-2026-27",
+    "first_seen": "2026-10-22",
+    "sequence": 1,
+    "source_id": "euroleague:U2026_71",
+    "source_url": "https://www.euroleaguebasketball.net/eurocup/game-center/2026/71/",
+    "opponent": "turk-telekom-ankara",
+    "opponent_name": "Turk Telekom Ankara",
+    "designated_home": true,
+    "tipoff": "2026-10-28T19:30:00.000Z",
+    "venue": {
+      "key": "euroleague:AUW3",
+      "name": "Copper Box Arena",
+      "address": "Queen Elizabeth Olympic Park, London E20 3HB",
+      "in_london": true,
+      "home_venue": true
+    },
+    "status": "scheduled",
+    "played": false,
+    "result": null,
+    "misses": 0,
+    "home": true,
+    "away": false,
+    "venue_change": false,
+    "updated": "2026-10-22",
+    "competition_name": "EuroCup"
+  },
+  "lions": {
+    "name": "London Lions",
+    "record": {
+      "position": 4,
+      "won": 2,
+      "lost": 2
+    },
+    "leaders": {
+      "points": [
+        {
+          "name": "Thomas Kennedy",
+          "value": 15
+        }
+      ],
+      "rebounds": [
+        {
+          "name": "Joel Scott",
+          "value": 5.2
+        }
+      ],
+      "assists": [
+        {
+          "name": "Mo Soluade",
+          "value": 4.2
+        }
+      ],
+      "steals": [
+        {
+          "name": "Tarik Phillip",
+          "value": 2
+        }
+      ],
+      "threes": [
+        {
+          "name": "Devante Jones",
+          "made": 1,
+          "attempted": 2
+        }
+      ]
+    },
+    "results": [
+      {
+        "date": "2026-10-24T17:00:00.000Z",
+        "competition_name": "SLB",
+        "opponent_name": "Bristol Flyers",
+        "home": true,
+        "for": 82,
+        "against": 76
+      },
+      {
+        "date": "2026-10-21T16:00:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "U-BT Cluj-Napoca",
+        "home": false,
+        "for": 89,
+        "against": 72
+      },
+      {
+        "date": "2026-10-18T16:30:00.000Z",
+        "competition_name": "SLB",
+        "opponent_name": "Cheshire Phoenix",
+        "home": false,
+        "for": 87,
+        "against": 83
+      },
+      {
+        "date": "2026-10-15T18:30:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "Skyliners Frankfurt",
+        "home": true,
+        "for": 76,
+        "against": 81
+      },
+      {
+        "date": "2026-10-06T18:30:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "La Laguna Tenerife",
+        "home": true,
+        "for": 89,
+        "against": 77
+      }
+    ],
+    "highlights": [
+      {
+        "title": "JORDAN X SPACEJAM EXPERIENCE HIGHLIGHTS VS BRISTOL FLYERS | 24.10,.26 | London Lions Basketball UK",
+        "url": "https://www.youtube.com/watch?v=XIdKPbDw2M0",
+        "published": "2026-10-24T22:08:15.000Z"
+      },
+      {
+        "title": "LONDON LIONS HANDLE BUSINESS IN CLUJ MOVING TO 2-2 in EUROCUP",
+        "url": "https://www.youtube.com/watch?v=ujAttbC3_tw",
+        "published": "2026-10-21T18:33:40.000Z"
+      }
+    ],
+    "roster": [
+      {
+        "number": 1,
+        "name": "Joel Scott",
+        "position": "F",
+        "season": {
+          "pts": 14,
+          "reb": 5.2,
+          "ast": 1.8,
+          "min": 29
+        }
+      },
+      {
+        "number": 2,
+        "name": "Maxwell Lewis III",
+        "position": "F",
+        "season": {
+          "pts": 3.2,
+          "reb": 2,
+          "ast": 0.2,
+          "min": 8
+        }
+      },
+      {
+        "number": 3,
+        "name": "Devante Jones",
+        "position": "G",
+        "season": {
+          "pts": 12.5,
+          "reb": 3,
+          "ast": 2,
+          "min": 20
+        }
+      },
+      {
+        "number": 6,
+        "name": "Mo Soluade",
+        "position": "G",
+        "season": {
+          "pts": 2.2,
+          "reb": 2.5,
+          "ast": 4.2,
+          "min": 18
+        }
+      },
+      {
+        "number": 7,
+        "name": "Joshua O'Garro",
+        "position": "F"
+      },
+      {
+        "number": 8,
+        "name": "Emilis Zibuda",
+        "position": "F"
+      },
+      {
+        "number": 10,
+        "name": "Ethan Price",
+        "position": "F",
+        "season": {
+          "pts": 3,
+          "reb": 1.5,
+          "ast": 0.8,
+          "min": 8
+        }
+      },
+      {
+        "number": 21,
+        "name": "Aaryn Rai",
+        "position": "F"
+      },
+      {
+        "number": 22,
+        "name": "Tarik Phillip",
+        "position": "G",
+        "season": {
+          "pts": 9.2,
+          "reb": 3,
+          "ast": 4,
+          "min": 27
+        }
+      },
+      {
+        "number": 23,
+        "name": "Landrius Horton",
+        "position": "G",
+        "season": {
+          "pts": 5,
+          "reb": 3,
+          "ast": 1,
+          "min": 20
+        }
+      },
+      {
+        "number": 31,
+        "name": "Deane Williams",
+        "position": "F",
+        "season": {
+          "pts": 5.2,
+          "reb": 2.8,
+          "ast": 0.5,
+          "min": 19
+        }
+      },
+      {
+        "number": 54,
+        "name": "Thomas Kennedy",
+        "position": "C",
+        "season": {
+          "pts": 15,
+          "reb": 4.8,
+          "ast": 0.8,
+          "min": 24
+        }
+      }
+    ]
+  },
+  "opponent": {
+    "name": "Turk Telekom Ankara",
+    "record": {
+      "position": 8,
+      "won": 1,
+      "lost": 3
+    },
+    "leaders": {
+      "points": [
+        {
+          "name": "Jerrick Harding",
+          "value": 15.8
+        }
+      ],
+      "rebounds": [
+        {
+          "name": "Ismael Bako",
+          "value": 7.2
+        }
+      ],
+      "assists": [
+        {
+          "name": "Dogus Ozdemiroglu",
+          "value": 5.2
+        }
+      ],
+      "steals": [
+        {
+          "name": "Dogus Ozdemiroglu",
+          "value": 3.2
+        }
+      ],
+      "threes": [
+        {
+          "name": "Uros Trifunovic",
+          "made": 2,
+          "attempted": 5.5
+        }
+      ]
+    },
+    "results": [
+      {
+        "date": "2026-10-20T16:30:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "Siauliai",
+        "home": true,
+        "for": 84,
+        "against": 94
+      },
+      {
+        "date": "2026-10-14T19:00:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "Reyer Venice",
+        "home": false,
+        "for": 65,
+        "against": 75
+      },
+      {
+        "date": "2026-10-06T16:30:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "Maxima Roma",
+        "home": true,
+        "for": 92,
+        "against": 77
+      },
+      {
+        "date": "2026-09-30T19:00:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "La Laguna Tenerife",
+        "home": false,
+        "for": 75,
+        "against": 82
+      }
+    ],
+    "highlights": [],
+    "roster": [
+      {
+        "number": 0,
+        "name": "Anil Alyanak",
+        "position": "F"
+      },
+      {
+        "number": 3,
+        "name": "Tim Schneider",
+        "position": "F",
+        "season": {
+          "pts": 6.8,
+          "reb": 2.5,
+          "ast": 0.2,
+          "min": 14
+        }
+      },
+      {
+        "number": 6,
+        "name": "Ata Kahraman",
+        "position": "G",
+        "season": {
+          "pts": 2,
+          "reb": 0.5,
+          "ast": 0.8,
+          "min": 7
+        }
+      },
+      {
+        "number": 7,
+        "name": "Jerrick Harding",
+        "position": "G",
+        "season": {
+          "pts": 15.8,
+          "reb": 3,
+          "ast": 1.2,
+          "min": 25
+        }
+      },
+      {
+        "number": 8,
+        "name": "Omer Can",
+        "position": "F"
+      },
+      {
+        "number": 9,
+        "name": "Emircan Kosut",
+        "position": "C"
+      },
+      {
+        "number": 10,
+        "name": "Uros Trifunovic",
+        "position": "F",
+        "season": {
+          "pts": 10.5,
+          "reb": 4.2,
+          "ast": 0.8,
+          "min": 26
+        }
+      },
+      {
+        "number": 18,
+        "name": "Dogus Ozdemiroglu",
+        "position": "G",
+        "season": {
+          "pts": 8.2,
+          "reb": 5.2,
+          "ast": 5.2,
+          "min": 28
+        }
+      },
+      {
+        "number": 21,
+        "name": "Tony Taylor",
+        "position": "G",
+        "season": {
+          "pts": 8,
+          "reb": 1,
+          "ast": 1.3,
+          "min": 20
+        }
+      },
+      {
+        "number": 22,
+        "name": "Anthony Lamb",
+        "position": "F",
+        "season": {
+          "pts": 7.2,
+          "reb": 4.8,
+          "ast": 2,
+          "min": 25
+        }
+      },
+      {
+        "number": 28,
+        "name": "Ismael Bako",
+        "position": "C",
+        "season": {
+          "pts": 10,
+          "reb": 7.2,
+          "ast": 0.8,
+          "min": 21
+        }
+      },
+      {
+        "number": 30,
+        "name": "Kris Bankston",
+        "position": "C",
+        "season": {
+          "pts": 7.2,
+          "reb": 2.8,
+          "ast": 0.8,
+          "min": 21
+        }
+      },
+      {
+        "number": 55,
+        "name": "Mete Tekcevik",
+        "position": "G"
+      },
+      {
+        "number": 57,
+        "name": "Goktug Bas",
+        "position": "F"
+      },
+      {
+        "number": 77,
+        "name": "Shaquielle Mckissic",
+        "position": "G",
+        "season": {
+          "pts": 7,
+          "reb": 2.3,
+          "ast": 2,
+          "min": 20
+        }
+      }
+    ]
+  },
+  "head_to_head": {
+    "scope": "last-season",
+    "meetings": [
+      {
+        "date": "2026-01-14T16:00:00.000Z",
+        "competition_name": "EuroCup",
+        "home": false,
+        "venue_name": "Ankara Spor Salonu",
+        "lions": 63,
+        "opponent": 88
+      },
+      {
+        "date": "2025-10-29T19:30:00.000Z",
+        "competition_name": "EuroCup",
+        "home": true,
+        "venue_name": "Copper Box Arena",
+        "lions": 77,
+        "opponent": 89
+      }
+    ]
+  },
+  "table": {
+    "competition_name": "EuroCup group B",
+    "rows": [
+      {
+        "team": "La Laguna Tenerife",
+        "played": 4,
+        "won": 3,
+        "lost": 1
+      },
+      {
+        "team": "Skyliners Frankfurt",
+        "played": 5,
+        "won": 3,
+        "lost": 2
+      },
+      {
+        "team": "Reyer Venice",
+        "played": 4,
+        "won": 2,
+        "lost": 2
+      },
+      {
+        "team": "London Lions",
+        "played": 4,
+        "won": 2,
+        "lost": 2
+      },
+      {
+        "team": "Maxima Roma",
+        "played": 4,
+        "won": 2,
+        "lost": 2
+      },
+      {
+        "team": "Siauliai",
+        "played": 4,
+        "won": 2,
+        "lost": 2
+      },
+      {
+        "team": "U-BT Cluj-Napoca",
+        "played": 5,
+        "won": 2,
+        "lost": 3
+      },
+      {
+        "team": "Turk Telekom Ankara",
+        "played": 4,
+        "won": 1,
+        "lost": 3
+      }
+    ]
+  },
+  "next": [
+    {
+      "tipoff": "2026-10-30T19:00:00.000Z",
+      "competition_name": "SLB",
+      "opponent_name": "Sheffield Sharks",
+      "home": true,
+      "venue_name": "New City College Hackney",
+      "venue_change": true
+    },
+    {
+      "tipoff": "2026-11-04T19:30:00.000Z",
+      "competition_name": "EuroCup",
+      "opponent_name": "Maxima Roma",
+      "home": false,
+      "venue_name": "Palazzetto dello Sport",
+      "venue_change": false
+    },
+    {
+      "tipoff": "2026-11-06T19:00:00.000Z",
+      "competition_name": "SLB",
+      "opponent_name": "Leicester Riders",
+      "home": true,
+      "venue_name": "New City College Hackney",
+      "venue_change": true
+    },
+    {
+      "tipoff": "2026-11-10T19:30:00.000Z",
+      "competition_name": "EuroCup",
+      "opponent_name": "Reyer Venice",
+      "home": true,
+      "venue_name": "Copper Box Arena",
+      "venue_change": false
+    }
+  ],
+  "data_sources": [
+    "el-games",
+    "el-standings",
+    "el-stats",
+    "el-lions-roster",
+    "el-opponent-roster",
+    "gs-schedule-49597",
+    "el-u2025-games",
+    "yt-lions"
+  ],
+  "sources": {
+    "el-games": {
+      "publisher": "EuroLeague",
+      "title": "EuroCup games",
+      "url": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/games"
+    },
+    "el-standings": {
+      "publisher": "EuroLeague",
+      "title": "EuroCup standings after round 5",
+      "url": "https://api-live.euroleague.net/v3/competitions/U/seasons/U2026/rounds/5/basicstandings"
+    },
+    "el-stats": {
+      "publisher": "EuroLeague",
+      "title": "EuroCup player statistics",
+      "url": "https://api-live.euroleague.net/v3/competitions/U/statistics/players/traditional?seasonMode=Single&seasonCode=U2026&statisticMode=PerGame&limit=1000"
+    },
+    "el-lions-roster": {
+      "publisher": "EuroLeague",
+      "title": "Lions roster",
+      "url": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs/LLI/people"
+    },
+    "el-opponent-roster": {
+      "publisher": "EuroLeague",
+      "title": "Turk Telekom Ankara roster",
+      "url": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs/TTK/people"
+    },
+    "gs-schedule-49597": {
+      "publisher": "Genius Sports (SLB)",
+      "title": "Lions SLB Championship fixtures and results",
+      "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178242/schedule"
+    },
+    "el-u2025-games": {
+      "publisher": "EuroLeague",
+      "title": "EuroCup games, last season",
+      "url": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/games"
+    },
+    "club-1": {
+      "publisher": "London Lions",
+      "title": "LIONS HOLD OFF BRISTOL FIGHTBACK TO EXTEND UNBEATEN SLB RUN TO 7-0",
+      "url": "https://www.thelondonlions.com/news/lions-hold-off-bristol-fightback-to-extend-unbeaten-slb-run-to-7-0",
+      "published": "2026-10-24T12:00:00.000Z"
+    },
+    "club-2": {
+      "publisher": "London Lions",
+      "title": "KEENAN EVANS RETURNS TO ŽALGIRIS KAUNAS",
+      "url": "https://www.thelondonlions.com/news/keenan-evans-returns-to-zalgiris-kaunas",
+      "published": "2026-10-23T12:00:00.000Z"
+    },
+    "club-3": {
+      "publisher": "London Lions",
+      "title": "LIONS DOMINATE SECOND HALF TO BEAT CLUJ 89-72 ON THE ROAD",
+      "url": "https://www.thelondonlions.com/news/lions-dominate-second-half-to-beat-cluj-89-72-on-the-road",
+      "published": "2026-10-21T12:00:00.000Z"
+    },
+    "gn-1": {
+      "publisher": "Super League Basketball",
+      "title": "Space Jam magic for the Lions and Liverpool roar back to winning ways at home",
+      "url": "https://www.superleaguebasketballm.co.uk/space-jam-magic-for-the-lions-and-liverpool-roar-back-to-winning-ways-at-home/",
+      "published": "2026-10-26T10:36:34.000Z"
+    },
+    "gn-2": {
+      "publisher": "BasketNews.com",
+      "title": "London Lions: roster, news, schedule and stats",
+      "url": "https://basketnews.com/teams/2405-london-lions.html",
+      "published": "2026-10-27T17:35:54.000Z"
+    },
+    "gn-3": {
+      "publisher": "Euroleague Basketball",
+      "title": "U-BT Cluj-Napoca-London Lions | Round 4 Highlights | 2026-27 BKT EuroCup",
+      "url": "https://www.euroleaguebasketball.net/news/u-bt-cluj-napoca-vs-london-lions-round-4-highlights-2026-27-bkt-eurocup/",
+      "published": "2026-10-21T18:49:17.000Z"
+    },
+    "gn-4": {
+      "publisher": "Informat.ro",
+      "title": "Men's basketball: U BT Cluj loses to London Lions in the BKT EuroCup",
+      "url": "https://informat.ro/en/sport/mens-basketball-u-bt-cluj-loses-to-london-lions-in-the-bkt-eurocup-144729",
+      "published": "2026-10-22T05:15:07.000Z"
+    },
+    "gn-5": {
+      "publisher": "Euroleague Basketball",
+      "title": "Turk Telekom Ankara-Siauliai Basketball | Round 4 Highlights | 2026-27 BKT EuroCup",
+      "url": "https://www.euroleaguebasketball.net/news/turk-telekom-ankara-siauliai-basketball-round-4-highlights-2026-27-bkt-eurocup/",
+      "published": "2026-10-20T21:06:02.000Z"
+    },
+    "gn-6": {
+      "publisher": "Euroleague Basketball",
+      "title": "Game Notes and Facts: London vs. Turk Telekom",
+      "url": "https://www.euroleaguebasketball.net/eurocup/news/ec2627-rs5-game-sacts-lli-ttk/",
+      "published": "2026-10-26T21:38:27.000Z"
+    },
+    "gn-7": {
+      "publisher": "Sportsgambler",
+      "title": "Turk Telekom vs Merkezefendi Prediction, Betting Tips & Odds | 24 Oct 2026",
+      "url": "https://www.sportsgambler.com/betting-tips/basketball/turk-telekom-vs-merkezefendi-prediction-odds-2026-10-24/",
+      "published": "2026-10-23T19:47:10.000Z"
+    },
+    "yt-lions": {
+      "publisher": "YouTube",
+      "title": "London Lions channel feed",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBKv-7gkxC6kA-_yOB1JMiw"
+    }
+  }
+}
