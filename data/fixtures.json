@@ -349,8 +349,11 @@
         "home_venue": true
       },
       "status": "scheduled",
-      "played": false,
-      "result": null,
+      "played": true,
+      "result": {
+        "lions": 79,
+        "opponent": 61
+      },
       "misses": 0,
       "home": true,
       "away": false,
