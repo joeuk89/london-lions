@@ -366,7 +366,7 @@
       "first_seen": "2026-10-22",
       "sequence": 1,
       "source_id": "genius:2882464",
-      "source_url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/match/2882464/preview",
+      "source_url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/match/2882464/boxscore",
       "opponent": "sheffield-sharks",
       "opponent_name": "Sheffield Sharks",
       "designated_home": true,
@@ -379,8 +379,11 @@
         "home_venue": false
       },
       "status": "scheduled",
-      "played": false,
-      "result": null,
+      "played": true,
+      "result": {
+        "lions": 85,
+        "opponent": 76
+      },
       "misses": 0,
       "home": true,
       "away": false,
