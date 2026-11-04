@@ -1,0 +1,650 @@
+{
+  "gathered_at": "2026-11-04T08:17:49.478Z",
+  "season_opener": false,
+  "fixture": {
+    "id": "eurocup-2026-27-0009",
+    "competition": "eurocup-2026-27",
+    "first_seen": "2026-10-22",
+    "sequence": 1,
+    "source_id": "euroleague:U2026_87",
+    "source_url": "https://www.euroleaguebasketball.net/eurocup/game-center/2026/87/",
+    "opponent": "maxima-roma",
+    "opponent_name": "Maxima Roma",
+    "designated_home": false,
+    "tipoff": "2026-11-04T19:30:00.000Z",
+    "venue": {
+      "key": "euroleague:AJK",
+      "name": "Palazzetto dello Sport",
+      "address": "Piazza Apollodoro 10, Rome, Italy",
+      "in_london": false,
+      "home_venue": false
+    },
+    "status": "scheduled",
+    "played": false,
+    "result": null,
+    "misses": 0,
+    "home": false,
+    "away": true,
+    "venue_change": false,
+    "updated": "2026-10-22",
+    "competition_name": "EuroCup"
+  },
+  "lions": {
+    "name": "London Lions",
+    "record": {
+      "position": 2,
+      "won": 3,
+      "lost": 2
+    },
+    "leaders": {
+      "points": [
+        {
+          "name": "Joel Scott",
+          "value": 15.4
+        }
+      ],
+      "rebounds": [
+        {
+          "name": "Joel Scott",
+          "value": 6.8
+        }
+      ],
+      "assists": [
+        {
+          "name": "Tarik Phillip",
+          "value": 4.2
+        }
+      ],
+      "steals": [
+        {
+          "name": "Tarik Phillip",
+          "value": 2
+        }
+      ],
+      "threes": [
+        {
+          "name": "Devante Jones",
+          "made": 1.2,
+          "attempted": 2.6
+        }
+      ]
+    },
+    "results": [
+      {
+        "date": "2026-10-30T19:00:00.000Z",
+        "competition_name": "SLB",
+        "opponent_name": "Sheffield Sharks",
+        "home": true,
+        "for": 85,
+        "against": 76
+      },
+      {
+        "date": "2026-10-28T19:30:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "Turk Telekom Ankara",
+        "home": true,
+        "for": 79,
+        "against": 61
+      },
+      {
+        "date": "2026-10-24T17:00:00.000Z",
+        "competition_name": "SLB",
+        "opponent_name": "Bristol Flyers",
+        "home": true,
+        "for": 82,
+        "against": 76
+      },
+      {
+        "date": "2026-10-21T16:00:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "U-BT Cluj-Napoca",
+        "home": false,
+        "for": 89,
+        "against": 72
+      },
+      {
+        "date": "2026-10-18T16:30:00.000Z",
+        "competition_name": "SLB",
+        "opponent_name": "Cheshire Phoenix",
+        "home": false,
+        "for": 87,
+        "against": 83
+      }
+    ],
+    "highlights": [
+      {
+        "title": "LONDON LIONS EUROCUP POST GAME SHOW VS TÜRK TELEKOM",
+        "url": "https://www.youtube.com/watch?v=Z9nqcc2X8RI",
+        "published": "2026-10-30T13:10:28.000Z"
+      },
+      {
+        "title": "LONDON LIONS DEFEAT TÜRK TELEKOM IN EUROCUP ROUND 5",
+        "url": "https://www.youtube.com/watch?v=k7baDziIAOE",
+        "published": "2026-10-28T23:17:09.000Z"
+      }
+    ],
+    "roster": [
+      {
+        "number": 1,
+        "name": "Joel Scott",
+        "position": "F",
+        "season": {
+          "pts": 15.4,
+          "reb": 6.8,
+          "ast": 1.6,
+          "min": 29
+        }
+      },
+      {
+        "number": 2,
+        "name": "Maxwell Lewis III",
+        "position": "F",
+        "season": {
+          "pts": 2.6,
+          "reb": 1.8,
+          "ast": 0.2,
+          "min": 7
+        }
+      },
+      {
+        "number": 3,
+        "name": "Devante Jones",
+        "position": "G",
+        "season": {
+          "pts": 12,
+          "reb": 2.6,
+          "ast": 2.6,
+          "min": 21
+        }
+      },
+      {
+        "number": 6,
+        "name": "Mo Soluade",
+        "position": "G",
+        "season": {
+          "pts": 3,
+          "reb": 2.4,
+          "ast": 4,
+          "min": 19
+        }
+      },
+      {
+        "number": 7,
+        "name": "Joshua O'Garro",
+        "position": "F"
+      },
+      {
+        "number": 8,
+        "name": "Emilis Zibuda",
+        "position": "F"
+      },
+      {
+        "number": 10,
+        "name": "Ethan Price",
+        "position": "F",
+        "season": {
+          "pts": 4.4,
+          "reb": 2.2,
+          "ast": 0.6,
+          "min": 11
+        }
+      },
+      {
+        "number": 21,
+        "name": "Aaryn Rai",
+        "position": "F"
+      },
+      {
+        "number": 22,
+        "name": "Tarik Phillip",
+        "position": "G",
+        "season": {
+          "pts": 10.4,
+          "reb": 2.6,
+          "ast": 4.2,
+          "min": 25
+        }
+      },
+      {
+        "number": 23,
+        "name": "Landrius Horton",
+        "position": "G",
+        "season": {
+          "pts": 6.2,
+          "reb": 3,
+          "ast": 1.2,
+          "min": 23
+        }
+      },
+      {
+        "number": 31,
+        "name": "Deane Williams",
+        "position": "F",
+        "season": {
+          "pts": 4.2,
+          "reb": 2.8,
+          "ast": 0.4,
+          "min": 19
+        }
+      },
+      {
+        "number": 54,
+        "name": "Thomas Kennedy",
+        "position": "C",
+        "season": {
+          "pts": 13.2,
+          "reb": 4.2,
+          "ast": 0.8,
+          "min": 21
+        }
+      }
+    ]
+  },
+  "opponent": {
+    "name": "Maxima Roma",
+    "record": {
+      "position": 6,
+      "won": 2,
+      "lost": 3
+    },
+    "leaders": {
+      "points": [
+        {
+          "name": "Miro Bilan",
+          "value": 13.2
+        }
+      ],
+      "rebounds": [
+        {
+          "name": "Miro Bilan",
+          "value": 6
+        }
+      ],
+      "assists": [
+        {
+          "name": "Xavier Moon",
+          "value": 6.2
+        }
+      ],
+      "steals": [
+        {
+          "name": "John Brown III",
+          "value": 1.8
+        }
+      ],
+      "threes": [
+        {
+          "name": "Giovanni Veronesi",
+          "made": 2.2,
+          "attempted": 4.8
+        }
+      ]
+    },
+    "results": [
+      {
+        "date": "2026-10-28T16:30:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "Siauliai",
+        "home": false,
+        "for": 93,
+        "against": 98
+      },
+      {
+        "date": "2026-10-21T18:30:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "Reyer Venice",
+        "home": true,
+        "for": 90,
+        "against": 79
+      },
+      {
+        "date": "2026-10-14T19:00:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "La Laguna Tenerife",
+        "home": false,
+        "for": 71,
+        "against": 96
+      },
+      {
+        "date": "2026-10-06T16:30:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "Turk Telekom Ankara",
+        "home": false,
+        "for": 77,
+        "against": 92
+      },
+      {
+        "date": "2026-09-30T19:00:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "U-BT Cluj-Napoca",
+        "home": true,
+        "for": 89,
+        "against": 55
+      }
+    ],
+    "highlights": [],
+    "roster": [
+      {
+        "number": 0,
+        "name": "John Brown III",
+        "position": "C",
+        "season": {
+          "pts": 4.6,
+          "reb": 3.6,
+          "ast": 1.8,
+          "min": 19
+        }
+      },
+      {
+        "number": 2,
+        "name": "Miro Bilan",
+        "position": "C",
+        "season": {
+          "pts": 13.2,
+          "reb": 6,
+          "ast": 1.6,
+          "min": 23
+        }
+      },
+      {
+        "number": 3,
+        "name": "Aaron Holiday",
+        "position": "G",
+        "season": {
+          "pts": 9.5,
+          "reb": 1.2,
+          "ast": 4.8,
+          "min": 22
+        }
+      },
+      {
+        "number": 4,
+        "name": "Hunter Tyson",
+        "position": "F",
+        "season": {
+          "pts": 10.6,
+          "reb": 4.2,
+          "ast": 0.6,
+          "min": 22
+        }
+      },
+      {
+        "number": 5,
+        "name": "Mirza Alibegovic",
+        "position": "G",
+        "season": {
+          "pts": 7,
+          "reb": 2,
+          "ast": 1.2,
+          "min": 18
+        }
+      },
+      {
+        "number": 8,
+        "name": "Francesco Carnevale",
+        "position": "G"
+      },
+      {
+        "number": 11,
+        "name": "Brynton Lemar",
+        "position": "G",
+        "season": {
+          "pts": 10.8,
+          "reb": 2.4,
+          "ast": 2.8,
+          "min": 21
+        }
+      },
+      {
+        "number": 16,
+        "name": "Giovanni Veronesi",
+        "position": "F",
+        "season": {
+          "pts": 9.2,
+          "reb": 1.4,
+          "ast": 0.8,
+          "min": 21
+        }
+      },
+      {
+        "number": 17,
+        "name": "Xavier Moon",
+        "position": "G",
+        "season": {
+          "pts": 10.5,
+          "reb": 3,
+          "ast": 6.2,
+          "min": 23
+        }
+      },
+      {
+        "number": 23,
+        "name": "Federico Bonacini",
+        "position": "G",
+        "season": {
+          "pts": 0.4,
+          "reb": 1.2,
+          "ast": 0.4,
+          "min": 6
+        }
+      },
+      {
+        "number": 24,
+        "name": "Carl Wheatle",
+        "position": "F",
+        "season": {
+          "pts": 4.6,
+          "reb": 5,
+          "ast": 1,
+          "min": 20
+        }
+      },
+      {
+        "number": 29,
+        "name": "Gora Camara",
+        "position": "C",
+        "season": {
+          "pts": 5.5,
+          "reb": 5.2,
+          "ast": 0.5,
+          "min": 12
+        }
+      },
+      {
+        "number": 32,
+        "name": "Matt Ryan",
+        "position": "F"
+      },
+      {
+        "number": 77,
+        "name": "Andrija Dozic",
+        "position": "F"
+      }
+    ]
+  },
+  "head_to_head": {
+    "scope": "last-season",
+    "meetings": []
+  },
+  "table": {
+    "competition_name": "EuroCup group B",
+    "rows": [
+      {
+        "team": "La Laguna Tenerife",
+        "played": 5,
+        "won": 4,
+        "lost": 1
+      },
+      {
+        "team": "London Lions",
+        "played": 5,
+        "won": 3,
+        "lost": 2
+      },
+      {
+        "team": "Siauliai",
+        "played": 5,
+        "won": 3,
+        "lost": 2
+      },
+      {
+        "team": "Skyliners Frankfurt",
+        "played": 5,
+        "won": 3,
+        "lost": 2
+      },
+      {
+        "team": "Reyer Venice",
+        "played": 5,
+        "won": 2,
+        "lost": 3
+      },
+      {
+        "team": "Maxima Roma",
+        "played": 5,
+        "won": 2,
+        "lost": 3
+      },
+      {
+        "team": "U-BT Cluj-Napoca",
+        "played": 5,
+        "won": 2,
+        "lost": 3
+      },
+      {
+        "team": "Turk Telekom Ankara",
+        "played": 5,
+        "won": 1,
+        "lost": 4
+      }
+    ]
+  },
+  "next": [
+    {
+      "tipoff": "2026-11-06T19:00:00.000Z",
+      "competition_name": "SLB",
+      "opponent_name": "Leicester Riders",
+      "home": true,
+      "venue_name": "New City College Hackney",
+      "venue_change": true
+    },
+    {
+      "tipoff": "2026-11-10T19:30:00.000Z",
+      "competition_name": "EuroCup",
+      "opponent_name": "Reyer Venice",
+      "home": true,
+      "venue_name": "Copper Box Arena",
+      "venue_change": false
+    },
+    {
+      "tipoff": "2026-11-13T19:30:00.000Z",
+      "competition_name": "SLB",
+      "opponent_name": "Surrey 89ers",
+      "home": true,
+      "venue_name": "Copper Box Arena",
+      "venue_change": false
+    },
+    {
+      "tipoff": "2026-11-17T19:30:00.000Z",
+      "competition_name": "EuroCup",
+      "opponent_name": "Siauliai",
+      "home": true,
+      "venue_name": "Copper Box Arena",
+      "venue_change": false
+    }
+  ],
+  "data_sources": [
+    "el-games",
+    "el-standings",
+    "el-stats",
+    "el-lions-roster",
+    "el-opponent-roster",
+    "gs-schedule-49597",
+    "yt-lions"
+  ],
+  "sources": {
+    "el-games": {
+      "publisher": "EuroLeague",
+      "title": "EuroCup games",
+      "url": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/games"
+    },
+    "el-standings": {
+      "publisher": "EuroLeague",
+      "title": "EuroCup standings after round 6",
+      "url": "https://api-live.euroleague.net/v3/competitions/U/seasons/U2026/rounds/6/basicstandings"
+    },
+    "el-stats": {
+      "publisher": "EuroLeague",
+      "title": "EuroCup player statistics",
+      "url": "https://api-live.euroleague.net/v3/competitions/U/statistics/players/traditional?seasonMode=Single&seasonCode=U2026&statisticMode=PerGame&limit=1000"
+    },
+    "el-lions-roster": {
+      "publisher": "EuroLeague",
+      "title": "Lions roster",
+      "url": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs/LLI/people"
+    },
+    "el-opponent-roster": {
+      "publisher": "EuroLeague",
+      "title": "Maxima Roma roster",
+      "url": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs/MRO/people"
+    },
+    "gs-schedule-49597": {
+      "publisher": "Genius Sports (SLB)",
+      "title": "Lions SLB Championship fixtures and results",
+      "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178242/schedule"
+    },
+    "club-1": {
+      "publisher": "London Lions",
+      "title": "LONDON LIONS FIGHT BACK TO BEAT SHEFFIELD SHARKS 85-76 AND EXTEND UNBEATEN SLB RUN",
+      "url": "https://www.thelondonlions.com/news/london-lions-fight-back-to-beat-sheffield-sharks-85-76-and-extend-unbeaten-slb-run",
+      "published": "2026-10-30T12:00:00.000Z"
+    },
+    "club-2": {
+      "publisher": "London Lions",
+      "title": "LIONS DOMINATE SECOND HALF TO BEAT TÜRK TELEKOM 79-61",
+      "url": "https://www.thelondonlions.com/news/lions-dominate-second-half-to-beat-turk-telekom-79-61",
+      "published": "2026-10-28T12:00:00.000Z"
+    },
+    "gn-1": {
+      "publisher": "Euroleague Basketball",
+      "title": "U18 Vienna Basketball vs U18 London Lions 2026-11-28 10:15 | NextGen",
+      "url": "https://www.euroleaguebasketball.net/nge/game-center/2026-2027-vienna/u18-vienna-basketball-u18-london-lions/JTV26/8/",
+      "published": "2026-11-02T03:05:00.000Z"
+    },
+    "gn-2": {
+      "publisher": "North East Londoner",
+      "title": "London Lions historic NBA match \"ruined\" by \"dreadful\" broadcast",
+      "url": "https://www.nelondoner.co.uk/sport/29102026-london-lions-historic-nba-match-ruined-by-dreadful-broadcast",
+      "published": "2026-10-29T19:48:50.000Z"
+    },
+    "gn-3": {
+      "publisher": "Euroleague Basketball",
+      "title": "London Lions-Turk Telekom Ankara | Round 5 Highlights | 2026-27 BKT EuroCup",
+      "url": "https://www.euroleaguebasketball.net/en/euroleague/videos/london-lions-turk-telekom-ankara-round-5-highlights-2026-27-bkt-eurocup/",
+      "published": "2026-10-28T22:25:49.000Z"
+    },
+    "gn-4": {
+      "publisher": "Euroleague Basketball",
+      "title": "Siauliai Basketball-Maxima Roma | Round 5 Highlights | 2026-27 BKT EuroCup",
+      "url": "https://www.euroleaguebasketball.net/eurocup/news/siauliai-basketball-maxima-roma-round-5-highlights-2026-27-bkt-eurocup/",
+      "published": "2026-10-28T18:58:10.000Z"
+    },
+    "gn-5": {
+      "publisher": "BasketNews.com",
+      "title": "Wesley Van Beck vs Maxima Roma: stats, game log",
+      "url": "https://basketnews.com/players/37873-wesley-van-beck/statistics/vs/3473-maxima-roma.html",
+      "published": "2026-11-02T20:45:08.000Z"
+    },
+    "gn-6": {
+      "publisher": "basketballsphere.com",
+      "title": "Trento vs Maxima Roma – Preview & Prediction (Nov. 01, 2026)",
+      "url": "https://basketballsphere.com/en/trento-vs-maxima-roma-preview-prediction-nov-01-2026/",
+      "published": "2026-10-31T16:37:39.000Z"
+    },
+    "yt-lions": {
+      "publisher": "YouTube",
+      "title": "London Lions channel feed",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBKv-7gkxC6kA-_yOB1JMiw"
+    }
+  }
+}
