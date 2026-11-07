@@ -426,7 +426,7 @@
       "first_seen": "2026-10-22",
       "sequence": 1,
       "source_id": "genius:2882470",
-      "source_url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/match/2882470/preview",
+      "source_url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/match/2882470/boxscore",
       "opponent": "leicester-riders",
       "opponent_name": "Leicester Riders",
       "designated_home": true,
@@ -439,8 +439,11 @@
         "home_venue": false
       },
       "status": "scheduled",
-      "played": false,
-      "result": null,
+      "played": true,
+      "result": {
+        "lions": 76,
+        "opponent": 97
+      },
       "misses": 0,
       "home": true,
       "away": false,
