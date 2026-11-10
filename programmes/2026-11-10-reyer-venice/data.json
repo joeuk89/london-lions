@@ -1,0 +1,718 @@
+{
+  "gathered_at": "2026-11-10T08:18:43.345Z",
+  "season_opener": false,
+  "fixture": {
+    "id": "eurocup-2026-27-0008",
+    "competition": "eurocup-2026-27",
+    "first_seen": "2026-10-22",
+    "sequence": 1,
+    "source_id": "euroleague:U2026_102",
+    "source_url": "https://www.euroleaguebasketball.net/eurocup/game-center/2026/102/",
+    "opponent": "reyer-venice",
+    "opponent_name": "Reyer Venice",
+    "designated_home": true,
+    "tipoff": "2026-11-10T19:30:00.000Z",
+    "venue": {
+      "key": "euroleague:AUW3",
+      "name": "Copper Box Arena",
+      "address": "Queen Elizabeth Olympic Park, London E20 3HB",
+      "in_london": true,
+      "home_venue": true
+    },
+    "status": "scheduled",
+    "played": false,
+    "result": null,
+    "misses": 0,
+    "home": true,
+    "away": false,
+    "venue_change": false,
+    "updated": "2026-10-22",
+    "competition_name": "EuroCup"
+  },
+  "lions": {
+    "name": "London Lions",
+    "record": {
+      "position": 3,
+      "won": 3,
+      "lost": 3
+    },
+    "leaders": {
+      "points": [
+        {
+          "name": "Joel Scott",
+          "value": 14.7
+        }
+      ],
+      "rebounds": [
+        {
+          "name": "Joel Scott",
+          "value": 6.5
+        }
+      ],
+      "assists": [
+        {
+          "name": "Tarik Phillip",
+          "value": 3.8
+        }
+      ],
+      "steals": [
+        {
+          "name": "Tarik Phillip",
+          "value": 1.7
+        }
+      ],
+      "threes": [
+        {
+          "name": "Devante Jones",
+          "made": 1.2,
+          "attempted": 2.8
+        }
+      ]
+    },
+    "results": [
+      {
+        "date": "2026-11-06T19:00:00.000Z",
+        "competition_name": "SLB",
+        "opponent_name": "Leicester Riders",
+        "home": true,
+        "for": 76,
+        "against": 97
+      },
+      {
+        "date": "2026-11-04T19:30:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "Maxima Roma",
+        "home": false,
+        "for": 84,
+        "against": 86
+      },
+      {
+        "date": "2026-10-30T19:00:00.000Z",
+        "competition_name": "SLB",
+        "opponent_name": "Sheffield Sharks",
+        "home": true,
+        "for": 85,
+        "against": 76
+      },
+      {
+        "date": "2026-10-28T19:30:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "Turk Telekom Ankara",
+        "home": true,
+        "for": 79,
+        "against": 61
+      },
+      {
+        "date": "2026-10-24T17:00:00.000Z",
+        "competition_name": "SLB",
+        "opponent_name": "Bristol Flyers",
+        "home": true,
+        "for": 82,
+        "against": 76
+      }
+    ],
+    "highlights": [
+      {
+        "title": "LONDON LIONS LOSE THEIR FIRST SLB GAME OF THE 2026/27 SEASON",
+        "url": "https://www.youtube.com/watch?v=Dx6PiVGKkAA",
+        "published": "2026-11-07T13:08:05.000Z"
+      },
+      {
+        "title": "HEARTBREAK ON THE ROAD AS LIONS COME UP SHORT IN ROME",
+        "url": "https://www.youtube.com/watch?v=BhuARddT3UE",
+        "published": "2026-11-04T22:31:30.000Z"
+      }
+    ],
+    "roster": [
+      {
+        "number": 1,
+        "name": "Joel Scott",
+        "position": "F",
+        "season": {
+          "pts": 14.7,
+          "reb": 6.5,
+          "ast": 1.7,
+          "min": 30
+        }
+      },
+      {
+        "number": 2,
+        "name": "Maxwell Lewis III",
+        "position": "F",
+        "season": {
+          "pts": 4.5,
+          "reb": 2.3,
+          "ast": 0.5,
+          "min": 10
+        }
+      },
+      {
+        "number": 3,
+        "name": "Devante Jones",
+        "position": "G",
+        "season": {
+          "pts": 12.2,
+          "reb": 2.8,
+          "ast": 3.3,
+          "min": 23
+        }
+      },
+      {
+        "number": 6,
+        "name": "Mo Soluade",
+        "position": "G",
+        "season": {
+          "pts": 2.5,
+          "reb": 2,
+          "ast": 3.3,
+          "min": 16
+        }
+      },
+      {
+        "number": 7,
+        "name": "Joshua O'Garro",
+        "position": "F"
+      },
+      {
+        "number": 8,
+        "name": "Emilis Zibuda",
+        "position": "F"
+      },
+      {
+        "number": 10,
+        "name": "Ethan Price",
+        "position": "F",
+        "season": {
+          "pts": 5.7,
+          "reb": 2.2,
+          "ast": 0.8,
+          "min": 12
+        }
+      },
+      {
+        "number": 21,
+        "name": "Aaryn Rai",
+        "position": "F"
+      },
+      {
+        "number": 22,
+        "name": "Tarik Phillip",
+        "position": "G",
+        "season": {
+          "pts": 10.2,
+          "reb": 2.5,
+          "ast": 3.8,
+          "min": 24
+        }
+      },
+      {
+        "number": 23,
+        "name": "Landrius Horton",
+        "position": "G",
+        "season": {
+          "pts": 6.5,
+          "reb": 3.2,
+          "ast": 1.8,
+          "min": 25
+        }
+      },
+      {
+        "number": 31,
+        "name": "Deane Williams",
+        "position": "F",
+        "season": {
+          "pts": 4.5,
+          "reb": 3.3,
+          "ast": 0.3,
+          "min": 20
+        }
+      },
+      {
+        "number": 54,
+        "name": "Thomas Kennedy",
+        "position": "C",
+        "season": {
+          "pts": 11.7,
+          "reb": 4.5,
+          "ast": 0.7,
+          "min": 20
+        }
+      }
+    ]
+  },
+  "opponent": {
+    "name": "Reyer Venice",
+    "record": {
+      "position": 2,
+      "won": 3,
+      "lost": 3
+    },
+    "leaders": {
+      "points": [
+        {
+          "name": "Glynn Watson",
+          "value": 14.2
+        }
+      ],
+      "rebounds": [
+        {
+          "name": "Amedeo Tessitori",
+          "value": 7.2
+        }
+      ],
+      "assists": [
+        {
+          "name": "Ky Bowman",
+          "value": 3.3
+        },
+        {
+          "name": "Glynn Watson",
+          "value": 3.3
+        }
+      ],
+      "steals": [
+        {
+          "name": "Jordan Parks",
+          "value": 1.3
+        }
+      ],
+      "threes": [
+        {
+          "name": "Glynn Watson",
+          "made": 2.5,
+          "attempted": 5.5
+        }
+      ]
+    },
+    "results": [
+      {
+        "date": "2026-11-04T19:00:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "Siauliai",
+        "home": true,
+        "for": 98,
+        "against": 77
+      },
+      {
+        "date": "2026-10-28T20:00:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "La Laguna Tenerife",
+        "home": false,
+        "for": 80,
+        "against": 82
+      },
+      {
+        "date": "2026-10-21T18:30:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "Maxima Roma",
+        "home": false,
+        "for": 79,
+        "against": 90
+      },
+      {
+        "date": "2026-10-14T19:00:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "Turk Telekom Ankara",
+        "home": true,
+        "for": 75,
+        "against": 65
+      },
+      {
+        "date": "2026-10-07T16:00:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "U-BT Cluj-Napoca",
+        "home": false,
+        "for": 92,
+        "against": 98
+      }
+    ],
+    "highlights": [],
+    "roster": [
+      {
+        "number": 0,
+        "name": "Amedeo Tessitori",
+        "position": "C",
+        "season": {
+          "pts": 10.8,
+          "reb": 7.2,
+          "ast": 2.2,
+          "min": 23
+        }
+      },
+      {
+        "number": 1,
+        "name": "Octavio Maretto",
+        "position": "G",
+        "season": {
+          "pts": 4.5,
+          "reb": 0.7,
+          "ast": 0.7,
+          "min": 14
+        }
+      },
+      {
+        "number": 5,
+        "name": "Giovanni De Nicolao",
+        "position": "G",
+        "season": {
+          "pts": 7,
+          "reb": 1.8,
+          "ast": 3.2,
+          "min": 14
+        }
+      },
+      {
+        "number": 7,
+        "name": "Leonardo Candi",
+        "position": "G",
+        "season": {
+          "pts": 10.8,
+          "reb": 2,
+          "ast": 3,
+          "min": 22
+        }
+      },
+      {
+        "number": 8,
+        "name": "Ky Bowman",
+        "position": "G",
+        "season": {
+          "pts": 5.7,
+          "reb": 3.5,
+          "ast": 3.3,
+          "min": 22
+        }
+      },
+      {
+        "number": 10,
+        "name": "Sir'Jabari Rice",
+        "position": "G"
+      },
+      {
+        "number": 13,
+        "name": "Enoch Boakye",
+        "position": "C",
+        "season": {
+          "pts": 3.4,
+          "reb": 3.4,
+          "ast": 0.8,
+          "min": 16
+        }
+      },
+      {
+        "number": 14,
+        "name": "Giga Janelidze",
+        "position": "F"
+      },
+      {
+        "number": 19,
+        "name": "Louis Olinde",
+        "position": "F",
+        "season": {
+          "pts": 9.4,
+          "reb": 6.8,
+          "ast": 0.8,
+          "min": 19
+        }
+      },
+      {
+        "number": 22,
+        "name": "Jordan Parks",
+        "position": "F",
+        "season": {
+          "pts": 9,
+          "reb": 2.2,
+          "ast": 1.2,
+          "min": 22
+        }
+      },
+      {
+        "number": 30,
+        "name": "Glynn Watson",
+        "position": "G",
+        "season": {
+          "pts": 14.2,
+          "reb": 2.7,
+          "ast": 3.3,
+          "min": 25
+        }
+      },
+      {
+        "number": 32,
+        "name": "Erick Green",
+        "position": "G",
+        "season": {
+          "pts": 8.2,
+          "reb": 1.2,
+          "ast": 1.4,
+          "min": 15
+        }
+      },
+      {
+        "number": 33,
+        "name": "Kyle Wiltjer",
+        "position": "F",
+        "season": {
+          "pts": 10.8,
+          "reb": 3,
+          "ast": 0.6,
+          "min": 18
+        }
+      },
+      {
+        "number": 40,
+        "name": "Gabriele Sarghini",
+        "position": "G"
+      },
+      {
+        "number": 44,
+        "name": "Sasha Grant",
+        "position": "F",
+        "season": {
+          "pts": 4.4,
+          "reb": 1.4,
+          "ast": 0.8,
+          "min": 13
+        }
+      },
+      {
+        "number": 45,
+        "name": "Federico Fasolo",
+        "position": "G"
+      }
+    ]
+  },
+  "head_to_head": {
+    "scope": "last-season",
+    "meetings": []
+  },
+  "table": {
+    "competition_name": "EuroCup group B",
+    "rows": [
+      {
+        "team": "La Laguna Tenerife",
+        "played": 6,
+        "won": 5,
+        "lost": 1
+      },
+      {
+        "team": "Reyer Venice",
+        "played": 6,
+        "won": 3,
+        "lost": 3
+      },
+      {
+        "team": "London Lions",
+        "played": 6,
+        "won": 3,
+        "lost": 3
+      },
+      {
+        "team": "Maxima Roma",
+        "played": 6,
+        "won": 3,
+        "lost": 3
+      },
+      {
+        "team": "Siauliai",
+        "played": 6,
+        "won": 3,
+        "lost": 3
+      },
+      {
+        "team": "Skyliners Frankfurt",
+        "played": 6,
+        "won": 3,
+        "lost": 3
+      },
+      {
+        "team": "Turk Telekom Ankara",
+        "played": 6,
+        "won": 2,
+        "lost": 4
+      },
+      {
+        "team": "U-BT Cluj-Napoca",
+        "played": 6,
+        "won": 2,
+        "lost": 4
+      }
+    ]
+  },
+  "next": [
+    {
+      "tipoff": "2026-11-13T19:30:00.000Z",
+      "competition_name": "SLB",
+      "opponent_name": "Surrey 89ers",
+      "home": true,
+      "venue_name": "Copper Box Arena",
+      "venue_change": false
+    },
+    {
+      "tipoff": "2026-11-17T19:30:00.000Z",
+      "competition_name": "EuroCup",
+      "opponent_name": "Siauliai",
+      "home": true,
+      "venue_name": "Copper Box Arena",
+      "venue_change": false
+    },
+    {
+      "tipoff": "2026-11-20T19:30:00.000Z",
+      "competition_name": "SLB",
+      "opponent_name": "Sheffield Sharks",
+      "home": false,
+      "venue_name": "Canon Medical Arena",
+      "venue_change": false
+    },
+    {
+      "tipoff": "2026-11-22T16:00:00.000Z",
+      "competition_name": "SLB",
+      "opponent_name": "Manchester Basketball",
+      "home": false,
+      "venue_name": "National Basketball Performance Centre",
+      "venue_change": false
+    }
+  ],
+  "data_sources": [
+    "el-games",
+    "el-standings",
+    "el-stats",
+    "el-lions-roster",
+    "el-opponent-roster",
+    "gs-schedule-49597",
+    "yt-lions"
+  ],
+  "sources": {
+    "el-games": {
+      "publisher": "EuroLeague",
+      "title": "EuroCup games",
+      "url": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/games"
+    },
+    "el-standings": {
+      "publisher": "EuroLeague",
+      "title": "EuroCup standings after round 6",
+      "url": "https://api-live.euroleague.net/v3/competitions/U/seasons/U2026/rounds/6/basicstandings"
+    },
+    "el-stats": {
+      "publisher": "EuroLeague",
+      "title": "EuroCup player statistics",
+      "url": "https://api-live.euroleague.net/v3/competitions/U/statistics/players/traditional?seasonMode=Single&seasonCode=U2026&statisticMode=PerGame&limit=1000"
+    },
+    "el-lions-roster": {
+      "publisher": "EuroLeague",
+      "title": "Lions roster",
+      "url": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs/LLI/people"
+    },
+    "el-opponent-roster": {
+      "publisher": "EuroLeague",
+      "title": "Reyer Venice roster",
+      "url": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs/VNC/people"
+    },
+    "gs-schedule-49597": {
+      "publisher": "Genius Sports (SLB)",
+      "title": "Lions SLB Championship fixtures and results",
+      "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178242/schedule"
+    },
+    "club-1": {
+      "publisher": "London Lions",
+      "title": "LIONS FALL TO LEICESTER",
+      "url": "https://www.thelondonlions.com/news/lions-fall-to-leicester",
+      "published": "2026-11-06T12:00:00.000Z"
+    },
+    "club-2": {
+      "publisher": "London Lions",
+      "title": "LIONS FALL 86-84 IN OVERTIME TO MAXIMA ROMA ON THE ROAD",
+      "url": "https://www.thelondonlions.com/news/lions-fall-86-84-in-overtime-to-maxima-roma-on-the-road",
+      "published": "2026-11-04T12:00:00.000Z"
+    },
+    "opp-1": {
+      "publisher": "Reyer Venice",
+      "title": "LBA UNA Hotels Reggio Emilia – Umana Reyer 78-83",
+      "url": "https://www.reyer.it/news/maschile/2026-11-07/lba-una-hotels-reggio-emilia-umana-reyer-78-83/",
+      "published": "2026-11-07T21:32:32.000Z"
+    },
+    "opp-2": {
+      "publisher": "Reyer Venice",
+      "title": "LBF: Umana Reyer Venezia – Autosped G Derthona 78-64",
+      "url": "https://www.reyer.it/news/femminile/2026-11-07/lbf-umana-reyer-venezia-autosped-g-derthona-78-62/",
+      "published": "2026-11-07T20:22:16.000Z"
+    },
+    "opp-3": {
+      "publisher": "Reyer Venice",
+      "title": "Preview LBF: Umana Reyer Venezia – Autosped G BCC Derthona",
+      "url": "https://www.reyer.it/news/femminile/2026-11-06/preview-lbf-umana-reyer-venezia-autosped-g-bcc-derthona/",
+      "published": "2026-11-06T13:50:43.000Z"
+    },
+    "opp-4": {
+      "publisher": "Reyer Venice",
+      "title": "Sabato sera a Reggio Emilia: l’Umana Reyer cerca continuità al PalaBigi",
+      "url": "https://www.reyer.it/news/maschile/2026-11-06/sabato-sera-a-reggio-emilia-lumana-reyer-cerca-continuita-al-palabigi/",
+      "published": "2026-11-06T13:27:05.000Z"
+    },
+    "opp-5": {
+      "publisher": "Reyer Venice",
+      "title": "Settore giovanile: i risultati della settimana di Reyer Project",
+      "url": "https://www.reyer.it/news/giovanile/2026-11-06/settore-giovanile-i-risultati-della-settimana-di-reyer-project/",
+      "published": "2026-11-06T10:27:21.000Z"
+    },
+    "opp-6": {
+      "publisher": "Reyer Venice",
+      "title": "Umana Reyer al fianco della Fondazione Foresta per Movember 2026: la prevenzione maschile gioca d’anticipo",
+      "url": "https://www.reyer.it/news/societa/2026-11-05/umana-reyer-al-fianco-della-fondazione-foresta-per-movember-2026-la-prevenzione-maschile-gioca-danticipo/",
+      "published": "2026-11-05T08:26:10.000Z"
+    },
+    "opp-7": {
+      "publisher": "Reyer Venice",
+      "title": "BKT EuroCup: Umana Reyer Venezia – Siauliai Basketball 98-77",
+      "url": "https://www.reyer.it/news/maschile/2026-11-04/bkt-eurocup-umana-reyer-venezia-siauliai-basketball-98-77/",
+      "published": "2026-11-04T20:56:24.000Z"
+    },
+    "opp-8": {
+      "publisher": "Reyer Venice",
+      "title": "EuroCup Women: Universitatea Cluj – Umana Reyer Venezia 43-96",
+      "url": "https://www.reyer.it/news/femminile/2026-11-04/eurocup-women-universitatea-cluj-umana-reyer-venezia-43-96/",
+      "published": "2026-11-04T18:48:44.000Z"
+    },
+    "opp-9": {
+      "publisher": "Reyer Venice",
+      "title": "Preview EuroCup Women Universitatea Cluj -Umana Reyer Venezia",
+      "url": "https://www.reyer.it/news/femminile/2026-11-03/preview-eurocup-women-universitatea-cluj-umana-reyer-venezia/",
+      "published": "2026-11-03T09:52:05.000Z"
+    },
+    "opp-10": {
+      "publisher": "Reyer Venice",
+      "title": "Umana Reyer – Maxima Roma | Info biglietti",
+      "url": "https://www.reyer.it/news/maschile/2026-11-03/umana-reyer-maxima-biglietti/",
+      "published": "2026-11-03T08:43:02.000Z"
+    },
+    "nr-1": {
+      "publisher": "Newham Recorder",
+      "title": "London Lions fall 97-76 as Leicester Riders take control after half-time",
+      "url": "https://www.newhamrecorder.co.uk/sport/26709615.london-lions-suffer-97-76-defeat-leicester-riders/?ref=rss",
+      "published": "2026-11-08T12:50:37.000Z"
+    },
+    "gn-1": {
+      "publisher": "Leicester Riders",
+      "title": "Riders face league-leading London Lions in the Capital",
+      "url": "https://riders.basketball/riders-face-league-leading-london-lions-in-the-capital/",
+      "published": "2026-11-04T14:42:54.000Z"
+    },
+    "gn-2": {
+      "publisher": "Euroleague Basketball",
+      "title": "Maxima Roma-London Lions | Round 6 Highlights | 2026-27 BKT EuroCup",
+      "url": "https://www.euroleaguebasketball.net/en/videos/maxima-roma-london-lions-round-6-highlights-2026-27-bkt-eurocup/?feedId=60c1a58a5eb4fd8da365da6c&title=Latest%20Videos",
+      "published": "2026-11-04T22:56:29.000Z"
+    },
+    "gn-3": {
+      "publisher": "Euroleague Basketball",
+      "title": "Umana Reyer Venice-Siauliai Basketball | Round 6 Highlights | 2026-27 BKT EuroCup",
+      "url": "https://www.euroleaguebasketball.net/news/umana-reyer-venice-siauliai-basketball-round-6-highlights-2026-27-bkt-eurocup/",
+      "published": "2026-11-04T21:44:46.000Z"
+    },
+    "yt-lions": {
+      "publisher": "YouTube",
+      "title": "London Lions channel feed",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBKv-7gkxC6kA-_yOB1JMiw"
+    }
+  }
+}
