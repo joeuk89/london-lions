@@ -486,7 +486,7 @@
       "first_seen": "2026-10-22",
       "sequence": 1,
       "source_id": "genius:2882478",
-      "source_url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/match/2882478/preview",
+      "source_url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/match/2882478/boxscore",
       "opponent": "surrey-89ers",
       "opponent_name": "Surrey 89ers",
       "designated_home": true,
@@ -499,8 +499,11 @@
         "home_venue": true
       },
       "status": "scheduled",
-      "played": false,
-      "result": null,
+      "played": true,
+      "result": {
+        "lions": 80,
+        "opponent": 77
+      },
       "misses": 0,
       "home": true,
       "away": false,
