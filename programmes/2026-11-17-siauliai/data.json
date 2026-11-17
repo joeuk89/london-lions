@@ -1,0 +1,712 @@
+{
+  "gathered_at": "2026-11-17T08:18:25.459Z",
+  "season_opener": false,
+  "fixture": {
+    "id": "eurocup-2026-27-0007",
+    "competition": "eurocup-2026-27",
+    "first_seen": "2026-10-22",
+    "sequence": 1,
+    "source_id": "euroleague:U2026_120",
+    "source_url": "https://www.euroleaguebasketball.net/eurocup/game-center/2026/120/",
+    "opponent": "siauliai",
+    "opponent_name": "Siauliai",
+    "designated_home": true,
+    "tipoff": "2026-11-17T19:30:00.000Z",
+    "venue": {
+      "key": "euroleague:AUW3",
+      "name": "Copper Box Arena",
+      "address": "Queen Elizabeth Olympic Park, London E20 3HB",
+      "in_london": true,
+      "home_venue": true
+    },
+    "status": "scheduled",
+    "played": false,
+    "result": null,
+    "misses": 0,
+    "home": true,
+    "away": false,
+    "venue_change": false,
+    "updated": "2026-10-22",
+    "competition_name": "EuroCup"
+  },
+  "lions": {
+    "name": "London Lions",
+    "record": {
+      "position": 2,
+      "won": 4,
+      "lost": 3
+    },
+    "leaders": {
+      "points": [
+        {
+          "name": "Joel Scott",
+          "value": 14.6
+        }
+      ],
+      "rebounds": [
+        {
+          "name": "Joel Scott",
+          "value": 6.3
+        }
+      ],
+      "assists": [
+        {
+          "name": "Tarik Phillip",
+          "value": 3.9
+        }
+      ],
+      "steals": [
+        {
+          "name": "Tarik Phillip",
+          "value": 1.4
+        }
+      ],
+      "threes": [
+        {
+          "name": "Devante Jones",
+          "made": 1.2,
+          "attempted": 2.8
+        }
+      ]
+    },
+    "results": [
+      {
+        "date": "2026-11-13T19:30:00.000Z",
+        "competition_name": "SLB",
+        "opponent_name": "Surrey 89ers",
+        "home": true,
+        "for": 80,
+        "against": 77
+      },
+      {
+        "date": "2026-11-10T19:30:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "Reyer Venice",
+        "home": true,
+        "for": 80,
+        "against": 76
+      },
+      {
+        "date": "2026-11-06T19:00:00.000Z",
+        "competition_name": "SLB",
+        "opponent_name": "Leicester Riders",
+        "home": true,
+        "for": 76,
+        "against": 97
+      },
+      {
+        "date": "2026-11-04T19:30:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "Maxima Roma",
+        "home": false,
+        "for": 84,
+        "against": 86
+      },
+      {
+        "date": "2026-10-30T19:00:00.000Z",
+        "competition_name": "SLB",
+        "opponent_name": "Sheffield Sharks",
+        "home": true,
+        "for": 85,
+        "against": 76
+      }
+    ],
+    "highlights": [
+      {
+        "title": "LONDON LIONS DEFEAT SURREY89ers IN THRILLER AT THE COPPER BOX",
+        "url": "https://www.youtube.com/watch?v=9oasMxubRDI",
+        "published": "2026-11-13T23:27:36.000Z"
+      },
+      {
+        "title": "LONDON LIONS EUROCUP POST GAME REACTION VS UMANA REYER VENEZIA",
+        "url": "https://www.youtube.com/watch?v=MJodYzjns5M",
+        "published": "2026-11-11T18:49:31.000Z"
+      }
+    ],
+    "roster": [
+      {
+        "number": 1,
+        "name": "Joel Scott",
+        "position": "F",
+        "season": {
+          "pts": 14.6,
+          "reb": 6.3,
+          "ast": 1.6,
+          "min": 30
+        }
+      },
+      {
+        "number": 2,
+        "name": "Maxwell Lewis III",
+        "position": "F",
+        "season": {
+          "pts": 5.9,
+          "reb": 2.1,
+          "ast": 0.9,
+          "min": 13
+        }
+      },
+      {
+        "number": 3,
+        "name": "Devante Jones",
+        "position": "G",
+        "season": {
+          "pts": 12.2,
+          "reb": 2.8,
+          "ast": 3.3,
+          "min": 23
+        }
+      },
+      {
+        "number": 5,
+        "name": "Ade Adebayo",
+        "position": "G"
+      },
+      {
+        "number": 6,
+        "name": "Mo Soluade",
+        "position": "G",
+        "season": {
+          "pts": 2.5,
+          "reb": 2,
+          "ast": 3.3,
+          "min": 16
+        }
+      },
+      {
+        "number": 7,
+        "name": "Joshua O'Garro",
+        "position": "F",
+        "season": {
+          "pts": 3,
+          "reb": 3.2,
+          "ast": 0.5,
+          "min": 13
+        }
+      },
+      {
+        "number": 8,
+        "name": "Emilis Zibuda",
+        "position": "F"
+      },
+      {
+        "number": 10,
+        "name": "Ethan Price",
+        "position": "F",
+        "season": {
+          "pts": 5.9,
+          "reb": 2.4,
+          "ast": 0.7,
+          "min": 12
+        }
+      },
+      {
+        "number": 21,
+        "name": "Aaryn Rai",
+        "position": "F"
+      },
+      {
+        "number": 22,
+        "name": "Tarik Phillip",
+        "position": "G",
+        "season": {
+          "pts": 9,
+          "reb": 2.3,
+          "ast": 3.9,
+          "min": 22
+        }
+      },
+      {
+        "number": 23,
+        "name": "Landrius Horton",
+        "position": "G",
+        "season": {
+          "pts": 7.7,
+          "reb": 3,
+          "ast": 2,
+          "min": 26
+        }
+      },
+      {
+        "number": 31,
+        "name": "Deane Williams",
+        "position": "F",
+        "season": {
+          "pts": 4.9,
+          "reb": 3.9,
+          "ast": 0.4,
+          "min": 22
+        }
+      },
+      {
+        "number": 54,
+        "name": "Thomas Kennedy",
+        "position": "C",
+        "season": {
+          "pts": 12.3,
+          "reb": 5,
+          "ast": 1,
+          "min": 22
+        }
+      },
+      {
+        "number": 55,
+        "name": "Dominykas Grunkis",
+        "position": "G"
+      }
+    ]
+  },
+  "opponent": {
+    "name": "Siauliai",
+    "record": {
+      "position": 6,
+      "won": 3,
+      "lost": 4
+    },
+    "leaders": {
+      "points": [
+        {
+          "name": "Cedric Henderson Jr",
+          "value": 15.5
+        }
+      ],
+      "rebounds": [
+        {
+          "name": "Efton Reid",
+          "value": 5.2
+        }
+      ],
+      "assists": [
+        {
+          "name": "Dayvion Mcknight",
+          "value": 4.6
+        }
+      ],
+      "steals": [
+        {
+          "name": "Dayvion Mcknight",
+          "value": 1.7
+        }
+      ],
+      "threes": [
+        {
+          "name": "Cedric Henderson Jr",
+          "made": 2.5,
+          "attempted": 6
+        }
+      ]
+    },
+    "results": [
+      {
+        "date": "2026-11-11T16:30:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "La Laguna Tenerife",
+        "home": true,
+        "for": 71,
+        "against": 86
+      },
+      {
+        "date": "2026-11-04T19:00:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "Reyer Venice",
+        "home": false,
+        "for": 77,
+        "against": 98
+      },
+      {
+        "date": "2026-10-28T16:30:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "Maxima Roma",
+        "home": true,
+        "for": 98,
+        "against": 93
+      },
+      {
+        "date": "2026-10-20T16:30:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "Turk Telekom Ankara",
+        "home": false,
+        "for": 94,
+        "against": 84
+      },
+      {
+        "date": "2026-10-14T15:30:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "U-BT Cluj-Napoca",
+        "home": true,
+        "for": 75,
+        "against": 94
+      }
+    ],
+    "highlights": [],
+    "roster": [
+      {
+        "number": 2,
+        "name": "Cedric Henderson Jr",
+        "position": "G",
+        "season": {
+          "pts": 15.5,
+          "reb": 5,
+          "ast": 2,
+          "min": 24
+        }
+      },
+      {
+        "number": 7,
+        "name": "Selim Fofana",
+        "position": "G",
+        "season": {
+          "pts": 8.3,
+          "reb": 2.3,
+          "ast": 2.4,
+          "min": 23
+        }
+      },
+      {
+        "number": 8,
+        "name": "Kassim Nicholson",
+        "position": "F",
+        "season": {
+          "pts": 6,
+          "reb": 3.7,
+          "ast": 0.5,
+          "min": 20
+        }
+      },
+      {
+        "number": 9,
+        "name": "Martynas Pacevicius",
+        "position": "C",
+        "season": {
+          "pts": 10.4,
+          "reb": 5.1,
+          "ast": 1.3,
+          "min": 21
+        }
+      },
+      {
+        "number": 15,
+        "name": "Efton Reid",
+        "position": "C",
+        "season": {
+          "pts": 5.5,
+          "reb": 5.2,
+          "ast": 1.2,
+          "min": 16
+        }
+      },
+      {
+        "number": 16,
+        "name": "Karolis Lukosiunas",
+        "position": "G",
+        "season": {
+          "pts": 3.7,
+          "reb": 0.4,
+          "ast": 1.3,
+          "min": 16
+        }
+      },
+      {
+        "number": 17,
+        "name": "Simas Jarumbauskas",
+        "position": "F",
+        "season": {
+          "pts": 9.7,
+          "reb": 3,
+          "ast": 0.8,
+          "min": 18
+        }
+      },
+      {
+        "number": 20,
+        "name": "Dayvion Mcknight",
+        "position": "G",
+        "season": {
+          "pts": 8.9,
+          "reb": 2.1,
+          "ast": 4.6,
+          "min": 23
+        }
+      },
+      {
+        "number": 21,
+        "name": "Erikas Venskus",
+        "position": "F",
+        "season": {
+          "pts": 4,
+          "reb": 2.3,
+          "ast": 0.9,
+          "min": 15
+        }
+      },
+      {
+        "number": 22,
+        "name": "Tauras Jogela",
+        "position": "F",
+        "season": {
+          "pts": 5.8,
+          "reb": 3.6,
+          "ast": 0.6,
+          "min": 15
+        }
+      },
+      {
+        "number": 25,
+        "name": "Dovydas Romancenko",
+        "position": "F",
+        "season": {
+          "pts": 8.1,
+          "reb": 3.3,
+          "ast": 0.3,
+          "min": 20
+        }
+      },
+      {
+        "number": 55,
+        "name": "Michael Caffey",
+        "position": "G",
+        "season": {
+          "pts": 6.7,
+          "reb": 1.6,
+          "ast": 4.3,
+          "min": 16
+        }
+      },
+      {
+        "number": 77,
+        "name": "Rokas Civilis",
+        "position": "F"
+      }
+    ]
+  },
+  "head_to_head": {
+    "scope": "this-season",
+    "meetings": [
+      {
+        "date": "2026-09-30T15:30:00.000Z",
+        "competition_name": "EuroCup",
+        "home": false,
+        "venue_name": "Siauliai Arena",
+        "lions": 71,
+        "opponent": 74
+      }
+    ]
+  },
+  "table": {
+    "competition_name": "EuroCup group B",
+    "rows": [
+      {
+        "team": "La Laguna Tenerife",
+        "played": 7,
+        "won": 6,
+        "lost": 1
+      },
+      {
+        "team": "London Lions",
+        "played": 7,
+        "won": 4,
+        "lost": 3
+      },
+      {
+        "team": "Maxima Roma",
+        "played": 7,
+        "won": 4,
+        "lost": 3
+      },
+      {
+        "team": "Reyer Venice",
+        "played": 7,
+        "won": 3,
+        "lost": 4
+      },
+      {
+        "team": "Turk Telekom Ankara",
+        "played": 7,
+        "won": 3,
+        "lost": 4
+      },
+      {
+        "team": "Siauliai",
+        "played": 7,
+        "won": 3,
+        "lost": 4
+      },
+      {
+        "team": "Skyliners Frankfurt",
+        "played": 7,
+        "won": 3,
+        "lost": 4
+      },
+      {
+        "team": "U-BT Cluj-Napoca",
+        "played": 7,
+        "won": 2,
+        "lost": 5
+      }
+    ]
+  },
+  "next": [
+    {
+      "tipoff": "2026-11-20T19:30:00.000Z",
+      "competition_name": "SLB",
+      "opponent_name": "Sheffield Sharks",
+      "home": false,
+      "venue_name": "Canon Medical Arena",
+      "venue_change": false
+    },
+    {
+      "tipoff": "2026-11-22T16:00:00.000Z",
+      "competition_name": "SLB",
+      "opponent_name": "Manchester Basketball",
+      "home": false,
+      "venue_name": "National Basketball Performance Centre",
+      "venue_change": false
+    },
+    {
+      "tipoff": "2026-12-02T19:30:00.000Z",
+      "competition_name": "SLB",
+      "opponent_name": "Caledonia Gladiators",
+      "home": true,
+      "venue_name": "Copper Box Arena",
+      "venue_change": false
+    },
+    {
+      "tipoff": "2026-12-08T20:00:00.000Z",
+      "competition_name": "EuroCup",
+      "opponent_name": "La Laguna Tenerife",
+      "home": false,
+      "venue_name": "Pabellon Santiago Martin",
+      "venue_change": false
+    }
+  ],
+  "data_sources": [
+    "el-games",
+    "el-standings",
+    "el-stats",
+    "el-lions-roster",
+    "el-opponent-roster",
+    "gs-schedule-49597",
+    "yt-lions"
+  ],
+  "sources": {
+    "el-games": {
+      "publisher": "EuroLeague",
+      "title": "EuroCup games",
+      "url": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/games"
+    },
+    "el-standings": {
+      "publisher": "EuroLeague",
+      "title": "EuroCup standings after round 7",
+      "url": "https://api-live.euroleague.net/v3/competitions/U/seasons/U2026/rounds/7/basicstandings"
+    },
+    "el-stats": {
+      "publisher": "EuroLeague",
+      "title": "EuroCup player statistics",
+      "url": "https://api-live.euroleague.net/v3/competitions/U/statistics/players/traditional?seasonMode=Single&seasonCode=U2026&statisticMode=PerGame&limit=1000"
+    },
+    "el-lions-roster": {
+      "publisher": "EuroLeague",
+      "title": "Lions roster",
+      "url": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs/LLI/people"
+    },
+    "el-opponent-roster": {
+      "publisher": "EuroLeague",
+      "title": "Siauliai roster",
+      "url": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs/SIA/people"
+    },
+    "gs-schedule-49597": {
+      "publisher": "Genius Sports (SLB)",
+      "title": "Lions SLB Championship fixtures and results",
+      "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178242/schedule"
+    },
+    "club-1": {
+      "publisher": "London Lions",
+      "title": "LONDON LIONS SIGN LITHUANIAN GUARD DOMINYKAS GRUNKIS ON LOAN FROM ŽALGIRIS KAUNAS",
+      "url": "https://www.thelondonlions.com/news/london-lions-sign-lithuanian-guard-dominykas-grunkis-on-loan-from-zalgiris-kaunas",
+      "published": "2026-11-15T12:00:00.000Z"
+    },
+    "club-2": {
+      "publisher": "London Lions",
+      "title": "LONDON LIONS EDGE SURREY 89ERS IN FOURTH-QUARTER THRILLER TO MOVE TO 9-1",
+      "url": "https://www.thelondonlions.com/news/london-lions-edge-surrey-89ers-in-fourth-quarter-thriller-to-move-to-9-1",
+      "published": "2026-11-13T12:00:00.000Z"
+    },
+    "club-3": {
+      "publisher": "London Lions",
+      "title": "ADE ADEBAYO RETURNS TO THE LONDON LIONS ON SHORT-TERM CONTRACT",
+      "url": "https://www.thelondonlions.com/news/ade-adebayo-returns-to-the-london-lions-on-short-term-contract",
+      "published": "2026-11-13T12:00:00.000Z"
+    },
+    "club-4": {
+      "publisher": "London Lions",
+      "title": "LIONS RALLY LATE TO BEAT VENICE 80-76 IN EUROCUP THRILLER",
+      "url": "https://www.thelondonlions.com/news/lions-rally-late-to-beat-venice-80-76-in-eurocup-thriller",
+      "published": "2026-11-10T12:00:00.000Z"
+    },
+    "opp-1": {
+      "publisher": "Siauliai",
+      "title": "Jarumbausko karjeros mačas nukalė pergalę prieš „Gargždus“",
+      "url": "https://bcsiauliai.lt/jarumbausko-karjeros-macas-nukale-pergale-pries-gargzdus/",
+      "published": "2026-11-14T17:36:47.000Z"
+    },
+    "opp-2": {
+      "publisher": "Siauliai",
+      "title": "Slogus puolimas neleido mesti iššūkio Europos taurės lyderiams",
+      "url": "https://bcsiauliai.lt/slogus-puolimas-neleido-mesti-issukio-europos-taures-lyderiams/",
+      "published": "2026-11-11T21:49:01.000Z"
+    },
+    "opp-3": {
+      "publisher": "Siauliai",
+      "title": "M. Caffey – apie rekordinį pasirodymą ir ikoninius Tenerifės veidus",
+      "url": "https://bcsiauliai.lt/m-caffey-apie-rekordini-pasirodyma-ir-ikoninius-tenerifes-veidus/",
+      "published": "2026-11-10T15:01:21.000Z"
+    },
+    "opp-4": {
+      "publisher": "Siauliai",
+      "title": "D. Songaila – apie ryšį su Jaka Lakovičiumi ir Tenerifės klubo discipliną",
+      "url": "https://bcsiauliai.lt/d-songaila-apie-rysi-su-jaka-lakoviciumi-ir-tenerifes-klubo-disciplina/",
+      "published": "2026-11-10T14:46:02.000Z"
+    },
+    "gn-1": {
+      "publisher": "City AM",
+      "title": "London Lions may have to wait until 2032 for EuroLeague entry",
+      "url": "https://www.cityam.com/london-lions-may-have-to-wait-until-2032-for-euroleague-entry/",
+      "published": "2026-11-16T12:25:36.000Z"
+    },
+    "gn-2": {
+      "publisher": "Euroleague Basketball",
+      "title": "London Lions-Umana Reyer Venice | Round 7 Highlights | 2026-27 BKT EuroCup",
+      "url": "https://www.euroleaguebasketball.net/eurocup/news/london-lions-vs-reyer-round-7-highlights-2026-27-bkt-eurocup/",
+      "published": "2026-11-10T22:18:42.000Z"
+    },
+    "gn-3": {
+      "publisher": "City AM",
+      "title": "London Lions handed EuroLeague setback but refuse to give up on 2030 bid",
+      "url": "https://www.cityam.com/london-lions-set-for-euroleague-snub-but-refuse-to-give-up-on-2030-bid/",
+      "published": "2026-11-11T17:01:40.000Z"
+    },
+    "gn-4": {
+      "publisher": "Sportsgambler",
+      "title": "London Lions vs Siauliai Prediction, Betting Tips & Odds | 17 Nov 2026",
+      "url": "https://www.sportsgambler.com/betting-tips/basketball/london-lions-vs-siauliai-prediction-odds-2026-11-17/",
+      "published": "2026-11-17T01:25:55.000Z"
+    },
+    "gn-5": {
+      "publisher": "Euroleague Basketball",
+      "title": "Siauliai Basketball-La Laguna Tenerife | Round 7 Highlights | 2026-27 BKT EuroCup",
+      "url": "https://www.euroleaguebasketball.net/news/siauliai-vs-tenerife-round-7-highlights-2026-27-bkt-eurocup/",
+      "published": "2026-11-11T18:47:52.000Z"
+    },
+    "gn-6": {
+      "publisher": "Euroleague Basketball",
+      "title": "Siauliai Basketball vs Turk Telekom Ankara 2026-12-23 16:30 | EuroCup",
+      "url": "https://www.euroleaguebasketball.net/el/eurocup/game-center/2026-27/siauliai-basketball-turk-telekom-ankara/U2026/167/",
+      "published": "2026-11-12T09:21:07.000Z"
+    },
+    "yt-lions": {
+      "publisher": "YouTube",
+      "title": "London Lions channel feed",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBKv-7gkxC6kA-_yOB1JMiw"
+    }
+  }
+}
