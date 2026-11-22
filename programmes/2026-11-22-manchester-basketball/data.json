@@ -1,0 +1,818 @@
+{
+  "gathered_at": "2026-11-22T08:16:31.685Z",
+  "season_opener": false,
+  "fixture": {
+    "id": "slb-championship-2026-27-0012",
+    "competition": "slb-championship-2026-27",
+    "first_seen": "2026-10-22",
+    "sequence": 1,
+    "source_id": "genius:2882486",
+    "source_url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/match/2882486/preview",
+    "opponent": "manchester-basketball",
+    "opponent_name": "Manchester Basketball",
+    "designated_home": false,
+    "tipoff": "2026-11-22T16:00:00.000Z",
+    "venue": {
+      "key": "genius:35249",
+      "name": "National Basketball Performance Centre",
+      "address": "Sportcity, Manchester M11 3FF",
+      "in_london": false,
+      "home_venue": false
+    },
+    "status": "scheduled",
+    "played": false,
+    "result": null,
+    "misses": 0,
+    "home": false,
+    "away": true,
+    "venue_change": false,
+    "updated": "2026-10-22",
+    "competition_name": "SLB Championship"
+  },
+  "lions": {
+    "name": "London Lions",
+    "record": {
+      "position": 1,
+      "won": 9,
+      "lost": 2
+    },
+    "leaders": {
+      "points": [
+        {
+          "name": "Thomas Kennedy",
+          "value": 11.1
+        }
+      ],
+      "rebounds": [
+        {
+          "name": "Thomas Kennedy",
+          "value": 4.8
+        }
+      ],
+      "assists": [
+        {
+          "name": "Devante Jones",
+          "value": 4
+        }
+      ],
+      "steals": [
+        {
+          "name": "Devante Jones",
+          "value": 1.5
+        }
+      ],
+      "threes": [
+        {
+          "name": "Landrius Horton",
+          "made": 1.7,
+          "attempted": 3.9
+        }
+      ]
+    },
+    "results": [
+      {
+        "date": "2026-11-20T19:30:00.000Z",
+        "competition_name": "SLB",
+        "opponent_name": "Sheffield Sharks",
+        "home": false,
+        "for": 83,
+        "against": 98
+      },
+      {
+        "date": "2026-11-17T19:30:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "Siauliai",
+        "home": true,
+        "for": 68,
+        "against": 55
+      },
+      {
+        "date": "2026-11-13T19:30:00.000Z",
+        "competition_name": "SLB",
+        "opponent_name": "Surrey 89ers",
+        "home": true,
+        "for": 80,
+        "against": 77
+      },
+      {
+        "date": "2026-11-10T19:30:00.000Z",
+        "competition_name": "EuroCup",
+        "opponent_name": "Reyer Venice",
+        "home": true,
+        "for": 80,
+        "against": 76
+      },
+      {
+        "date": "2026-11-06T19:00:00.000Z",
+        "competition_name": "SLB",
+        "opponent_name": "Leicester Riders",
+        "home": true,
+        "for": 76,
+        "against": 97
+      }
+    ],
+    "highlights": [
+      {
+        "title": "LONDON LIONS PICK UP THEIR SECOND SLB DEFEAT IN SHEFFIELD",
+        "url": "https://www.youtube.com/watch?v=8wavQveyz74",
+        "published": "2026-11-20T22:02:57.000Z"
+      }
+    ],
+    "roster": [
+      {
+        "number": 1,
+        "name": "Joel Scott",
+        "position": "C/F",
+        "season": {
+          "pts": 10.4,
+          "reb": 4,
+          "ast": 1.5,
+          "min": 22
+        }
+      },
+      {
+        "number": 2,
+        "name": "Maxwell Lewis III",
+        "position": "F",
+        "season": {
+          "pts": 10.6,
+          "reb": 3.3,
+          "ast": 1.5,
+          "min": 19
+        }
+      },
+      {
+        "number": 3,
+        "name": "Devante Jones",
+        "position": "G",
+        "season": {
+          "pts": 8.8,
+          "reb": 1.3,
+          "ast": 4,
+          "min": 19
+        }
+      },
+      {
+        "number": 5,
+        "name": "Ade Adebayo",
+        "position": "F",
+        "season": {
+          "pts": 2.4,
+          "reb": 1.4,
+          "ast": 0.4,
+          "min": 12
+        }
+      },
+      {
+        "number": 6,
+        "name": "Morayo Soluade",
+        "position": "F",
+        "season": {
+          "pts": 2.4,
+          "reb": 2.1,
+          "ast": 3.9,
+          "min": 19
+        }
+      },
+      {
+        "number": 7,
+        "name": "Joshua O’Garro",
+        "position": "F",
+        "season": {
+          "pts": 6.4,
+          "reb": 3.7,
+          "ast": 0.7,
+          "min": 19
+        }
+      },
+      {
+        "number": 8,
+        "name": "Emilis Zibuda",
+        "position": "F",
+        "season": {
+          "pts": 2.6,
+          "reb": 1.7,
+          "ast": 0.3,
+          "min": 11
+        }
+      },
+      {
+        "number": 10,
+        "name": "Ethan Price",
+        "position": "C/F",
+        "season": {
+          "pts": 8.4,
+          "reb": 3.8,
+          "ast": 1.1,
+          "min": 18
+        }
+      },
+      {
+        "number": 13,
+        "name": "Jaden Latrell Shackelford",
+        "position": "G",
+        "season": {
+          "pts": 17,
+          "reb": 2,
+          "ast": 2,
+          "min": 24
+        }
+      },
+      {
+        "number": 21,
+        "name": "Aaryn Rai",
+        "position": "F",
+        "season": {
+          "pts": 3,
+          "reb": 4.5,
+          "ast": 2,
+          "min": 18
+        }
+      },
+      {
+        "number": 22,
+        "name": "Tarik Phillip",
+        "position": "G",
+        "season": {
+          "pts": 7.4,
+          "reb": 3.4,
+          "ast": 2.3,
+          "min": 20
+        }
+      },
+      {
+        "number": 23,
+        "name": "Landrius Horton",
+        "position": "F/G",
+        "season": {
+          "pts": 9.4,
+          "reb": 1.9,
+          "ast": 3.2,
+          "min": 23
+        }
+      },
+      {
+        "number": 31,
+        "name": "Deane Williams",
+        "position": "C/F",
+        "season": {
+          "pts": 8.4,
+          "reb": 3.8,
+          "ast": 1.1,
+          "min": 22
+        }
+      },
+      {
+        "number": 54,
+        "name": "Thomas Kennedy",
+        "position": "C",
+        "season": {
+          "pts": 11.1,
+          "reb": 4.8,
+          "ast": 1.6,
+          "min": 19
+        }
+      },
+      {
+        "number": 55,
+        "name": "Dominykas Grunkis",
+        "position": "G",
+        "season": {
+          "pts": 12,
+          "reb": 2,
+          "ast": 4,
+          "min": 25
+        }
+      }
+    ]
+  },
+  "opponent": {
+    "name": "Manchester Basketball",
+    "record": {
+      "position": 7,
+      "won": 5,
+      "lost": 6
+    },
+    "leaders": {
+      "points": [
+        {
+          "name": "Keon Thompson Jr",
+          "value": 18.2
+        }
+      ],
+      "rebounds": [
+        {
+          "name": "Keon Thompson Jr",
+          "value": 4.7
+        },
+        {
+          "name": "Brandon Mitchell-Day",
+          "value": 4.7
+        }
+      ],
+      "assists": [
+        {
+          "name": "Luke Nelson",
+          "value": 6.3
+        }
+      ],
+      "steals": [
+        {
+          "name": "Chandler Piggé",
+          "value": 1.6
+        }
+      ],
+      "threes": [
+        {
+          "name": "Jonathan Brown",
+          "made": 1.6,
+          "attempted": 4
+        }
+      ]
+    },
+    "results": [
+      {
+        "date": "2026-11-15",
+        "opponent_name": "Bristol Flyers",
+        "home": true,
+        "for": 84,
+        "against": 86,
+        "competition_name": "SLB"
+      },
+      {
+        "date": "2026-11-06",
+        "opponent_name": "Cheshire Phoenix",
+        "home": true,
+        "for": 90,
+        "against": 93,
+        "competition_name": "SLB"
+      },
+      {
+        "date": "2026-11-01",
+        "opponent_name": "Liverpool Basketball",
+        "home": false,
+        "for": 91,
+        "against": 85,
+        "competition_name": "SLB"
+      },
+      {
+        "date": "2026-10-30",
+        "opponent_name": "Bristol Flyers",
+        "home": false,
+        "for": 78,
+        "against": 74,
+        "competition_name": "SLB"
+      },
+      {
+        "date": "2026-10-23",
+        "opponent_name": "Leicester Riders",
+        "home": false,
+        "for": 89,
+        "against": 87,
+        "competition_name": "SLB"
+      }
+    ],
+    "highlights": [],
+    "roster": [
+      {
+        "number": 1,
+        "name": "Jonathan Brown",
+        "position": "G",
+        "season": {
+          "pts": 9.2,
+          "reb": 2.9,
+          "ast": 1.2,
+          "min": 20
+        }
+      },
+      {
+        "number": 2,
+        "name": "Elijah Walsh",
+        "position": "G",
+        "season": {
+          "pts": 1.7,
+          "reb": 1,
+          "ast": 0.3,
+          "min": 5
+        }
+      },
+      {
+        "number": 3,
+        "name": "Ciaran Sandy",
+        "position": "F",
+        "season": {
+          "pts": 5.9,
+          "reb": 2.9,
+          "ast": 0.6,
+          "min": 20
+        }
+      },
+      {
+        "number": 5,
+        "name": "Keon Thompson Jr",
+        "position": "G",
+        "season": {
+          "pts": 18.2,
+          "reb": 4.7,
+          "ast": 2.8,
+          "min": 31
+        }
+      },
+      {
+        "number": 6,
+        "name": "Luke Nelson",
+        "position": "G",
+        "season": {
+          "pts": 12.5,
+          "reb": 4.4,
+          "ast": 6.3,
+          "min": 28
+        }
+      },
+      {
+        "number": 7,
+        "name": "Brandon Mitchell-Day",
+        "position": "F",
+        "season": {
+          "pts": 8.7,
+          "reb": 4.7,
+          "ast": 1.6,
+          "min": 21
+        }
+      },
+      {
+        "number": 9,
+        "name": "Kaiyem Cleary",
+        "position": "G",
+        "season": {
+          "pts": 14.5,
+          "reb": 4,
+          "ast": 0.5,
+          "min": 19
+        }
+      },
+      {
+        "number": 11,
+        "name": "Jordan Johnson",
+        "position": "G",
+        "season": {
+          "pts": 10.2,
+          "reb": 2,
+          "ast": 3,
+          "min": 23
+        }
+      },
+      {
+        "number": 12,
+        "name": "Chandler Piggé",
+        "position": "G",
+        "season": {
+          "pts": 6.8,
+          "reb": 4.2,
+          "ast": 2.3,
+          "min": 23
+        }
+      },
+      {
+        "number": 13,
+        "name": "Jaydon Kayne Henry McCalla",
+        "position": "F",
+        "season": {
+          "pts": 3.9,
+          "reb": 3.1,
+          "ast": 0.6,
+          "min": 15
+        }
+      },
+      {
+        "number": 30,
+        "name": "Duke Shelton",
+        "position": "C/F",
+        "season": {
+          "pts": 6.8,
+          "reb": 4.1,
+          "ast": 0.7,
+          "min": 16
+        }
+      },
+      {
+        "number": 33,
+        "name": "Charlie Williams",
+        "position": "F",
+        "season": {
+          "pts": 2.6,
+          "reb": 1.1,
+          "ast": 0.4,
+          "min": 10
+        }
+      },
+      {
+        "number": 34,
+        "name": "Matthew Nicholson",
+        "position": "C",
+        "season": {
+          "pts": 2.5,
+          "reb": 3.2,
+          "ast": 0.5,
+          "min": 11
+        }
+      }
+    ]
+  },
+  "head_to_head": {
+    "scope": "last-season",
+    "meetings": [
+      {
+        "date": "2026-04-19T14:00:00.000Z",
+        "competition_name": "SLB",
+        "home": false,
+        "venue_name": "National Basketball Performance Centre",
+        "lions": 91,
+        "opponent": 86
+      },
+      {
+        "date": "2026-03-22T16:30:00.000Z",
+        "competition_name": "SLB Cup",
+        "home": true,
+        "venue_name": "AO Arena",
+        "lions": 83,
+        "opponent": 74
+      },
+      {
+        "date": "2026-03-04T19:30:00.000Z",
+        "competition_name": "SLB",
+        "home": true,
+        "venue_name": "Copper Box Arena",
+        "lions": 71,
+        "opponent": 72
+      },
+      {
+        "date": "2026-02-22T15:00:00.000Z",
+        "competition_name": "SLB",
+        "home": false,
+        "venue_name": "National Basketball Performance Centre",
+        "lions": 82,
+        "opponent": 74
+      },
+      {
+        "date": "2025-12-19T19:30:00.000Z",
+        "competition_name": "SLB",
+        "home": true,
+        "venue_name": "Copper Box Arena",
+        "lions": 74,
+        "opponent": 91
+      }
+    ]
+  },
+  "table": {
+    "competition_name": "SLB Championship",
+    "rows": [
+      {
+        "team": "London Lions",
+        "played": 11,
+        "won": 9,
+        "lost": 2,
+        "points": 18
+      },
+      {
+        "team": "Newcastle Eagles",
+        "played": 12,
+        "won": 8,
+        "lost": 4,
+        "points": 16
+      },
+      {
+        "team": "Bristol Flyers",
+        "played": 12,
+        "won": 6,
+        "lost": 6,
+        "points": 12
+      },
+      {
+        "team": "Sheffield Sharks",
+        "played": 9,
+        "won": 5,
+        "lost": 4,
+        "points": 10
+      },
+      {
+        "team": "Liverpool Basketball",
+        "played": 10,
+        "won": 5,
+        "lost": 5,
+        "points": 10
+      },
+      {
+        "team": "Cheshire Phoenix",
+        "played": 11,
+        "won": 5,
+        "lost": 6,
+        "points": 10
+      },
+      {
+        "team": "Manchester Basketball",
+        "played": 11,
+        "won": 5,
+        "lost": 6,
+        "points": 10
+      },
+      {
+        "team": "Caledonia Gladiators",
+        "played": 9,
+        "won": 4,
+        "lost": 5,
+        "points": 8
+      },
+      {
+        "team": "Surrey 89ers",
+        "played": 9,
+        "won": 3,
+        "lost": 6,
+        "points": 6
+      },
+      {
+        "team": "Leicester Riders",
+        "played": 10,
+        "won": 2,
+        "lost": 8,
+        "points": 4
+      }
+    ]
+  },
+  "next": [
+    {
+      "tipoff": "2026-12-02T19:30:00.000Z",
+      "competition_name": "SLB",
+      "opponent_name": "Caledonia Gladiators",
+      "home": true,
+      "venue_name": "Copper Box Arena",
+      "venue_change": false
+    },
+    {
+      "tipoff": "2026-12-08T20:00:00.000Z",
+      "competition_name": "EuroCup",
+      "opponent_name": "La Laguna Tenerife",
+      "home": false,
+      "venue_name": "Pabellon Santiago Martin",
+      "venue_change": false
+    },
+    {
+      "tipoff": "2026-12-13T16:00:00.000Z",
+      "competition_name": "SLB",
+      "opponent_name": "Liverpool Basketball",
+      "home": false,
+      "venue_name": "M&S Bank Arena",
+      "venue_change": false
+    },
+    {
+      "tipoff": "2026-12-15T18:30:00.000Z",
+      "competition_name": "EuroCup",
+      "opponent_name": "Skyliners Frankfurt",
+      "home": false,
+      "venue_name": "Suwag Energie Arena",
+      "venue_change": false
+    }
+  ],
+  "data_sources": [
+    "gs-standings",
+    "gs-lions-roster",
+    "gs-opponent",
+    "gs-opponent-roster",
+    "gs-lions-stats",
+    "gs-opponent-stats",
+    "gs-schedule-49597",
+    "el-games",
+    "gs-41897-178234-schedule",
+    "gs-47714-178234-schedule",
+    "yt-lions"
+  ],
+  "sources": {
+    "gs-standings": {
+      "publisher": "Genius Sports (SLB)",
+      "title": "SLB Championship standings",
+      "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/standings"
+    },
+    "gs-lions-roster": {
+      "publisher": "Genius Sports (SLB)",
+      "title": "Lions roster",
+      "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178242/roster"
+    },
+    "gs-opponent": {
+      "publisher": "Genius Sports (SLB)",
+      "title": "Manchester Basketball summary",
+      "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178234"
+    },
+    "gs-opponent-roster": {
+      "publisher": "Genius Sports (SLB)",
+      "title": "Manchester Basketball roster",
+      "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178234/roster"
+    },
+    "gs-lions-stats": {
+      "publisher": "Genius Sports (SLB)",
+      "title": "Lions player statistics",
+      "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178242/statistics"
+    },
+    "gs-opponent-stats": {
+      "publisher": "Genius Sports (SLB)",
+      "title": "Manchester Basketball player statistics",
+      "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178234/statistics"
+    },
+    "gs-schedule-49597": {
+      "publisher": "Genius Sports (SLB)",
+      "title": "Lions SLB Championship fixtures and results",
+      "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/team/178242/schedule"
+    },
+    "el-games": {
+      "publisher": "EuroLeague",
+      "title": "EuroCup games",
+      "url": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/games"
+    },
+    "gs-41897-178234-schedule": {
+      "publisher": "Genius Sports (SLB)",
+      "title": "Manchester Basketball SLB Championship results, last season",
+      "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/41897/team/178234/schedule"
+    },
+    "gs-47714-178234-schedule": {
+      "publisher": "Genius Sports (SLB)",
+      "title": "Manchester Basketball SLB Cup results, last season",
+      "url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/47714/team/178234/schedule"
+    },
+    "club-1": {
+      "publisher": "London Lions",
+      "title": "LIONS FALL SHORT ON THE ROAD IN SHEFFIELD",
+      "url": "https://www.thelondonlions.com/news/lions-fall-short-on-the-road-in-sheffield",
+      "published": "2026-11-20T12:00:00.000Z"
+    },
+    "club-2": {
+      "publisher": "London Lions",
+      "title": "LONDON LIONS SECURE DEFENSIVE EUROCUP WIN OVER ŠIAULIAI",
+      "url": "https://www.thelondonlions.com/news/london-lions-secure-defensive-eurocup-win-over-siauliai",
+      "published": "2026-11-17T12:00:00.000Z"
+    },
+    "club-3": {
+      "publisher": "London Lions",
+      "title": "LONDON LIONS SIGN AMERICAN GUARD JADEN SHACKELFORD",
+      "url": "https://www.thelondonlions.com/news/london-lions-sign-american-guard-jaden-shackelford",
+      "published": "2026-11-17T12:00:00.000Z"
+    },
+    "club-4": {
+      "publisher": "London Lions",
+      "title": "LONDON LIONS SIGN LITHUANIAN GUARD DOMINYKAS GRUNKIS ON LOAN FROM ŽALGIRIS KAUNAS",
+      "url": "https://www.thelondonlions.com/news/london-lions-sign-lithuanian-guard-dominykas-grunkis-on-loan-from-zalgiris-kaunas",
+      "published": "2026-11-15T12:00:00.000Z"
+    },
+    "opp-1": {
+      "publisher": "Manchester Basketball",
+      "title": "Key Information: London Lions",
+      "url": "https://www.manchester.basketball/news/key-information-london-lions",
+      "published": "2026-11-20T12:00:00.000Z"
+    },
+    "opp-2": {
+      "publisher": "Manchester Basketball",
+      "title": "Game Report: BC Bashkimi 84-95 MCR",
+      "url": "https://www.manchester.basketball/news/game-report-bc-bashkimi-84-95-mcr",
+      "published": "2026-11-18T12:00:00.000Z"
+    },
+    "opp-3": {
+      "publisher": "Manchester Basketball",
+      "title": "MCR confirm Lions half-time performance",
+      "url": "https://www.manchester.basketball/news/mcr-confirm-lions-half-time-performance",
+      "published": "2026-11-17T12:00:00.000Z"
+    },
+    "opp-4": {
+      "publisher": "Manchester Basketball",
+      "title": "Game Report MCR 84-86 Bristol Flyers",
+      "url": "https://www.manchester.basketball/news/game-report-mcr-84-86-bristol-flyers",
+      "published": "2026-11-15T12:00:00.000Z"
+    },
+    "gn-1": {
+      "publisher": "Euroleague Basketball",
+      "title": "London Lions-Siauliai Basketball | Round 8 Highlights | 2026-27 BKT EuroCup",
+      "url": "https://www.euroleaguebasketball.net/en/videos/london-lions-siauliai-basketball-round-8-highlights-2026-27-bkt-eurocup/?feedId=60c1a58a5eb4fd8da365da6c&title=Latest%20Videos",
+      "published": "2026-11-17T23:22:16.000Z"
+    },
+    "gn-2": {
+      "publisher": "City AM",
+      "title": "London Lions may have to wait until 2032 for EuroLeague entry",
+      "url": "https://www.cityam.com/london-lions-may-have-to-wait-until-2032-for-euroleague-entry/",
+      "published": "2026-11-16T12:26:21.000Z"
+    },
+    "gn-3": {
+      "publisher": "Eurohoops",
+      "title": "London Lions target EuroLeague entry in 2030 amid new arena plans",
+      "url": "https://www.eurohoops.net/en/euroleague/2037548/london-lions-president-talks-euroleague-eurocup/",
+      "published": "2026-11-19T06:19:00.000Z"
+    },
+    "gn-4": {
+      "publisher": "MaxPreps",
+      "title": "Manchester Basketball Schedule",
+      "url": "https://www.maxpreps.com/in/north-manchester/manchester-squires/basketball/schedule/",
+      "published": "2026-11-16T14:49:28.000Z"
+    },
+    "yt-lions": {
+      "publisher": "YouTube",
+      "title": "London Lions channel feed",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBKv-7gkxC6kA-_yOB1JMiw"
+    }
+  }
+}
