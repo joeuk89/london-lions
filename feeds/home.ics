@@ -303,6 +303,21 @@ URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
  ch/2882549/preview
 END:VEVENT
 BEGIN:VEVENT
+UID:slb-championship-2026-27-0035
+DTSTAMP:20261126T000000Z
+LAST-MODIFIED:20261126T000000Z
+SEQUENCE:1
+DTSTART:20270221T160000Z
+DTEND:20270221T180000Z
+SUMMARY:London Lions v Caledonia Gladiators (SLB Championship)
+LOCATION:Copper Box Arena\, Queen Elizabeth Olympic Park\, London E20 3HB
+DESCRIPTION:SLB Championship\nHome\nhttps://hosted.dcd.shared.geniussports.
+ com/SLB/en/competition/49597/match/2961218/preview
+STATUS:CONFIRMED
+URL:https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/mat
+ ch/2961218/preview
+END:VEVENT
+BEGIN:VEVENT
 UID:slb-championship-2026-27-0023
 DTSTAMP:20261022T000000Z
 LAST-MODIFIED:20261022T000000Z

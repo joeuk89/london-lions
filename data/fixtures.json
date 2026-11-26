@@ -1060,6 +1060,33 @@
       "updated": "2026-10-22"
     },
     {
+      "id": "slb-championship-2026-27-0035",
+      "competition": "slb-championship-2026-27",
+      "first_seen": "2026-11-26",
+      "sequence": 1,
+      "source_id": "genius:2961218",
+      "source_url": "https://hosted.dcd.shared.geniussports.com/SLB/en/competition/49597/match/2961218/preview",
+      "opponent": "caledonia-gladiators",
+      "opponent_name": "Caledonia Gladiators",
+      "designated_home": true,
+      "tipoff": "2027-02-21T16:00:00.000Z",
+      "venue": {
+        "key": "genius:35248",
+        "name": "Copper Box Arena",
+        "address": "Queen Elizabeth Olympic Park, London E20 3HB",
+        "in_london": true,
+        "home_venue": true
+      },
+      "status": "scheduled",
+      "played": false,
+      "result": null,
+      "misses": 0,
+      "home": true,
+      "away": false,
+      "venue_change": false,
+      "updated": "2026-11-26"
+    },
+    {
       "id": "slb-championship-2026-27-0023",
       "competition": "slb-championship-2026-27",
       "first_seen": "2026-10-22",
@@ -1385,7 +1412,7 @@
     }
   ],
   "counters": {
-    "slb-championship-2026-27": 34,
+    "slb-championship-2026-27": 35,
     "slb-cup-2026-27": 1,
     "eurocup-2026-27": 14
   },
